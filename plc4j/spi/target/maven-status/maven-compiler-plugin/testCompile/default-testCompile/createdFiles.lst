@@ -1,0 +1,6 @@
+org\apache\plc4x\java\spi\internal\DefaultSendRequestContextTest.class
+org\apache\plc4x\java\spi\generation\ReadBufferTest.class
+org\apache\plc4x\java\spi\parser\ConnectionParserTest$PropertiesDescriptor.class
+org\apache\plc4x\java\spi\Plc4xNettyWrapperTest.class
+org\apache\plc4x\java\spi\optimizer\RequestTransactionManagerTest.class
+org\apache\plc4x\java\spi\parser\ConnectionParserTest.class

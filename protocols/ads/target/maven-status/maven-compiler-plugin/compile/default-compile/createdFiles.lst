@@ -1,0 +1,2 @@
+org\apache\plc4x\protocol\ads\ADSProtocol.class
+org\apache\plc4x\protocol\ads\ADSDiscoveryProtocol.class

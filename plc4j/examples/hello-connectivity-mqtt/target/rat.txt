@@ -1,0 +1,35 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T10:57:56+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 9
+
+Apache Licensed: 9
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/examples/hello-connectivity-mqtt/mqtt-connector.yml
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/examples/hello-connectivity-mqtt/pom.xml
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/examples/hello-connectivity-mqtt/src/main/java/org/apache/plc4x/java/examples/connectivity/mqtt/model/Configuration.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/examples/hello-connectivity-mqtt/src/main/java/org/apache/plc4x/java/examples/connectivity/mqtt/model/MqttConfig.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/examples/hello-connectivity-mqtt/src/main/java/org/apache/plc4x/java/examples/connectivity/mqtt/model/PlcConfig.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/examples/hello-connectivity-mqtt/src/main/java/org/apache/plc4x/java/examples/connectivity/mqtt/model/PlcFieldConfig.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/examples/hello-connectivity-mqtt/src/main/java/org/apache/plc4x/java/examples/connectivity/mqtt/model/PlcMemoryBlock.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/examples/hello-connectivity-mqtt/src/main/java/org/apache/plc4x/java/examples/connectivity/mqtt/MqttConnector.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/examples/hello-connectivity-mqtt/src/main/resources/logback.xml
+ 
+*****************************************************

@@ -1,0 +1,6 @@
+org\apache\plc4x\java\examples\connectivity\kafka\model\KafkaConfig.class
+org\apache\plc4x\java\examples\connectivity\kafka\model\PlcConfig.class
+org\apache\plc4x\java\examples\connectivity\kafka\model\PlcFieldConfig.class
+org\apache\plc4x\java\examples\connectivity\kafka\model\Configuration.class
+org\apache\plc4x\java\examples\connectivity\kafka\model\PlcMemoryBlock.class
+org\apache\plc4x\java\examples\connectivity\kafka\KafkaConnector.class

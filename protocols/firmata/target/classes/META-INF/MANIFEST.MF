@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Built-By: imzjh
+Bundle-Description: Protocol specification for the Firmata protocol, mos
+ tly used for Arduino communication.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Protocols: Firmata
+Bundle-SymbolicName: org.apache.plc4x.protocols-firmata
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.protocol.firmata;uses:="org.apache.plc4
+ x.plugins.codegenerator.protocol,org.apache.plc4x.plugins.codegenerator
+ .types.definitions,org.apache.plc4x.plugins.codegenerator.types.excepti
+ ons";version="0.9.1"
+Implementation-Title: Protocols: Firmata
+Implementation-URL: https://plc4x.apache.org/plc4x-protocols/plc4x-proto
+ cols-firmata
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: org.apache.plc4x.plugins.codegenerator.language.mspec.pa
+ rser,org.apache.plc4x.plugins.codegenerator.protocol,org.apache.plc4x.p
+ lugins.codegenerator.types.definitions,org.apache.plc4x.plugins.codegen
+ erator.types.exceptions
+Include-Resource: META-INF/services/org.apache.plc4x.plugins.codegenerat
+ or.protocol.Protocol=src/main/resources/META-INF/services/org.apache.pl
+ c4x.plugins.codegenerator.protocol.Protocol,protocols/firmata/firmata.m
+ spec=src/main/resources/protocols/firmata/firmata.mspec
+Private-Package: protocols.firmata
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Protocols: Firmata
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

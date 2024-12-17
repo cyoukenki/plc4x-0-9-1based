@@ -1,0 +1,5 @@
+org\apache\plc4x\java\examples\integration\iotdb\IIoTDBWriter.class
+org\apache\plc4x\java\examples\integration\iotdb\IoTDBWriterWithSession.class
+org\apache\plc4x\java\examples\integration\iotdb\IoTDBWriterWithJDBC.class
+org\apache\plc4x\java\examples\integration\iotdb\PlcLogger.class
+org\apache\plc4x\java\examples\integration\iotdb\CliOptions.class

@@ -1,0 +1,36 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:12:20+08:00
+
+Notes: 2
+Binaries: 0
+Archives: 0
+Standards: 8
+
+Apache Licensed: 8
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/pcap-shared/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/pcap-shared/src/main/java/org/apache/plc4x/java/utils/pcap/netty/address/PcapSocketAddress.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/pcap-shared/src/main/java/org/apache/plc4x/java/utils/pcap/netty/config/PcapChannelConfig.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/pcap-shared/src/main/java/org/apache/plc4x/java/utils/pcap/netty/config/PcapChannelOption.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/pcap-shared/src/main/java/org/apache/plc4x/java/utils/pcap/netty/exception/PcapException.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/pcap-shared/src/main/java/org/apache/plc4x/java/utils/pcap/netty/handlers/PacketHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/pcap-shared/src/main/java/org/apache/plc4x/java/utils/pcap/netty/handlers/TcpIpPacketHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/pcap-shared/src/main/java/org/apache/plc4x/java/utils/pcap/netty/handlers/UdpIpPacketHandler.java
+  N     F:/workspace/github/plc4x-0-9-1based/plc4j/utils/pcap-shared/src/main/remote-resources/META-INF/LICENSE
+  N     F:/workspace/github/plc4x-0-9-1based/plc4j/utils/pcap-shared/src/main/remote-resources/META-INF/NOTICE
+ 
+*****************************************************

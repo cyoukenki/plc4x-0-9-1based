@@ -1,0 +1,3 @@
+org\apache\plc4x\java\can\generic\field\GenericCANFieldHandlerTest.class
+org\apache\plc4x\java\can\generic\GenericCANDriverTest.class
+org\apache\plc4x\java\can\generic\GenericCANDriverTest$1.class

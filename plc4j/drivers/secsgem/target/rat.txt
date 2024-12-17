@@ -1,0 +1,56 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:48+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 30
+
+Apache Licensed: 30
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/configuration/SecsgemConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/configuration/SecsgemParam.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/constant/Alarm.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/constant/ConnectionStatus.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/constant/ServerConstants.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/constant/VariableValueType.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/field/SecsgemField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/field/SecsgemFieldHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/internal/Activator.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/internal/DataHolder.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/model/BaseSettingInfo.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/model/DataDefinitionInfo.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/model/EventInfo.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/model/HostChannelInfo.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/model/PushMessageInfo.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/model/ReportInfo.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/model/WriteParam.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/protocol/SecsgemProtocolLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/SecsgemDriver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/task/LinkTestReqTask.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/task/SelectReqCommandtask.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/util/ByteUtils.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/util/LogFormatUtils.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/util/LogicRequestUtils.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/util/RequestMatchUtil.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/util/SecsDataUtils.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/util/TimeVerifyUtils.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/java/org/apache/plc4x/java/secsgem/readwrite/util/WebSocketUtil.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/secsgem/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+ 
+*****************************************************

@@ -1,0 +1,15 @@
+org\apache\plc4x\java\transport\socketcan\SocketCANTransport.class
+org\apache\plc4x\java\socketcan\readwrite\io\SocketCANFrameIO.class
+org\apache\plc4x\java\transport\socketcan\netty\SocketCANChannel$CANOutputStream.class
+org\apache\plc4x\java\transport\socketcan\SocketCANTransport$1$1.class
+org\apache\plc4x\java\transport\socketcan\SocketCANFrameBuilder.class
+org\apache\plc4x\java\transport\socketcan\SocketCANTransport$1.class
+org\apache\plc4x\java\transport\socketcan\helper\HeaderParser.class
+org\apache\plc4x\java\transport\socketcan\netty\SocketCANChannel$1.class
+org\apache\plc4x\java\transport\socketcan\netty\SocketCANChannel$CANInputStream.class
+org\apache\plc4x\java\transport\socketcan\netty\SocketCANChannelConfig.class
+org\apache\plc4x\java\transport\socketcan\netty\address\SocketCANAddress.class
+org\apache\plc4x\java\transport\socketcan\netty\SocketCANChannel$RawSocketUnsafe.class
+org\apache\plc4x\java\transport\socketcan\SocketCANChannelFactory.class
+org\apache\plc4x\java\socketcan\readwrite\SocketCANFrame.class
+org\apache\plc4x\java\transport\socketcan\netty\SocketCANChannel.class

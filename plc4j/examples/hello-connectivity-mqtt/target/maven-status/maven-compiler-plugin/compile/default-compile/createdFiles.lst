@@ -1,0 +1,6 @@
+org\apache\plc4x\java\examples\connectivity\mqtt\model\PlcConfig.class
+org\apache\plc4x\java\examples\connectivity\mqtt\MqttConnector.class
+org\apache\plc4x\java\examples\connectivity\mqtt\model\PlcMemoryBlock.class
+org\apache\plc4x\java\examples\connectivity\mqtt\model\MqttConfig.class
+org\apache\plc4x\java\examples\connectivity\mqtt\model\Configuration.class
+org\apache\plc4x\java\examples\connectivity\mqtt\model\PlcFieldConfig.class

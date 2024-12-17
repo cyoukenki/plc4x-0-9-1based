@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Description: Classes shared between all PCAP related channels.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Utils: Pcap (Shared)
+Bundle-SymbolicName: org.apache.plc4x.plc4j-utils-pcap-shared
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.utils.pcap.netty.address;version="
+ 0.9.1",org.apache.plc4x.java.utils.pcap.netty.config;uses:="io.netty.ch
+ annel,org.apache.plc4x.java.utils.pcap.netty.handlers";version="0.9.1",
+ org.apache.plc4x.java.utils.pcap.netty.exception;version="0.9.1",org.ap
+ ache.plc4x.java.utils.pcap.netty.handlers;uses:="org.pcap4j.packet";ver
+ sion="0.9.1"
+Implementation-Title: PLC4J: Utils: Pcap (Shared)
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-utils/plc4j-uti
+ ls-pcap-shared
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: io.netty.channel;version="[4.1,5)",org.apache.plc4x.java
+ .utils.pcap.netty.handlers,org.pcap4j.packet
+Private-Package: org.apache.plc4x.java.utils.pcap.netty.address,org.apac
+ he.plc4x.java.utils.pcap.netty.config,org.apache.plc4x.java.utils.pcap.
+ netty.exception,org.apache.plc4x.java.utils.pcap.netty.handlers
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Utils: Pcap (Shared)
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

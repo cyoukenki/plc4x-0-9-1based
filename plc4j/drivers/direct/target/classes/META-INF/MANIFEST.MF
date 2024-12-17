@@ -1,0 +1,78 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Activator: org.apache.plc4x.java.osgi.DriverActivator
+Bundle-Description: Implementation of a PLC4X driver able to speak a dir
+ ect device.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Driver: Direct
+Bundle-SymbolicName: org.apache.plc4x.plc4j-driver-direct
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.direct.readwrite.configuration;use
+ s:="org.apache.plc4x.java.spi.configuration,org.apache.plc4x.java.trans
+ port.serial";version="0.9.1",org.apache.plc4x.java.direct.readwrite;use
+ s:="io.netty.buffer,org.apache.plc4x.java.api.listener,org.apache.plc4x
+ .java.api.model,org.apache.plc4x.java.api.value,org.apache.plc4x.java.d
+ irect.readwrite.field,org.apache.plc4x.java.direct.readwrite.model,org.
+ apache.plc4x.java.spi.configuration,org.apache.plc4x.java.spi.connectio
+ n";version="0.9.1",org.apache.plc4x.java.direct.readwrite.field;uses:="
+ org.apache.plc4x.java.api.exceptions,org.apache.plc4x.java.api.model,or
+ g.apache.plc4x.java.spi.connection,org.apache.plc4x.java.spi.generation
+ ,org.apache.plc4x.java.spi.utils";version="0.9.1",org.apache.plc4x.java
+ .direct.readwrite.model;uses:="org.apache.commons.lang3.builder,org.apa
+ che.plc4x.java.spi.generation";version="0.9.1",org.apache.plc4x.java.di
+ rect.readwrite.model.io;uses:="org.apache.plc4x.java.direct.readwrite.m
+ odel,org.apache.plc4x.java.spi.generation";version="0.9.1",org.apache.p
+ lc4x.java.direct.readwrite.protocol;uses:="org.apache.plc4x.java.api.li
+ stener,org.apache.plc4x.java.api.messages,org.apache.plc4x.java.direct.
+ readwrite.configuration,org.apache.plc4x.java.direct.readwrite.model,or
+ g.apache.plc4x.java.spi,org.apache.plc4x.java.spi.configuration";versio
+ n="0.9.1"
+Implementation-Title: PLC4J: Driver: Direct
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-drivers/plc4j-d
+ river-direct
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: io.netty.buffer;version="[4.1,5)",io.netty.channel;versi
+ on="[4.1,5)",org.apache.commons.lang3;version="[3.12,4)",org.apache.com
+ mons.lang3.builder;version="[3.12,4)",org.apache.plc4x.java.api.excepti
+ ons;version="[0.9,1)",org.apache.plc4x.java.api.listener;version="[0.9,
+ 1)",org.apache.plc4x.java.api.messages;version="[0.9,1)",org.apache.plc
+ 4x.java.api.model;version="[0.9,1)",org.apache.plc4x.java.api.types;ver
+ sion="[0.9,1)",org.apache.plc4x.java.api.value;version="[0.9,1)",org.ap
+ ache.plc4x.java.direct.readwrite,org.apache.plc4x.java.direct.readwrite
+ .configuration,org.apache.plc4x.java.direct.readwrite.field,org.apache.
+ plc4x.java.direct.readwrite.model,org.apache.plc4x.java.direct.readwrit
+ e.model.io,org.apache.plc4x.java.direct.readwrite.protocol,org.apache.p
+ lc4x.java.osgi,org.apache.plc4x.java.spi;version="[0.9,1)",org.apache.p
+ lc4x.java.spi.configuration;version="[0.9,1)",org.apache.plc4x.java.spi
+ .configuration.annotations;version="[0.9,1)",org.apache.plc4x.java.spi.
+ configuration.annotations.defaults;version="[0.9,1)",org.apache.plc4x.j
+ ava.spi.connection;version="[0.9,1)",org.apache.plc4x.java.spi.generati
+ on;version="[0.9,1)",org.apache.plc4x.java.spi.messages;version="[0.9,1
+ )",org.apache.plc4x.java.spi.messages.utils;version="[0.9,1)",org.apach
+ e.plc4x.java.spi.transaction;version="[0.9,1)",org.apache.plc4x.java.sp
+ i.utils;version="[0.9,1)",org.apache.plc4x.java.spi.values;version="[0.
+ 9,1)",org.apache.plc4x.java.transport.serial;version="[0.9,1)",org.slf4
+ j;version="[1.7,2)",com.fasterxml.jackson.annotation;resolution:=option
+ al;version="[2.12,3)"
+Include-Resource: META-INF/services/org.apache.plc4x.java.api.PlcDriver=
+ src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDrive
+ r
+Private-Package: org.apache.plc4x.java.direct.readwrite.configuration,or
+ g.apache.plc4x.java.direct.readwrite,org.apache.plc4x.java.direct.readw
+ rite.field,org.apache.plc4x.java.direct.readwrite.model,org.apache.plc4
+ x.java.direct.readwrite.model.io,org.apache.plc4x.java.direct.readwrite
+ .protocol
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="org.apache.pl
+ c4x.java.api.PlcDriver"
+Require-Capability: osgi.extender;filter:="(osgi.extender=osgi.servicelo
+ ader.registrar)",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Driver: Direct
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

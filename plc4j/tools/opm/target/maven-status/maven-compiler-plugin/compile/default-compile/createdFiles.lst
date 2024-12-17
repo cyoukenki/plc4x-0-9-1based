@@ -1,0 +1,8 @@
+org\apache\plc4x\java\opm\AliasRegistry.class
+org\apache\plc4x\java\opm\PlcEntity.class
+org\apache\plc4x\java\opm\OpmUtils.class
+org\apache\plc4x\java\opm\PlcEntityInterceptor.class
+org\apache\plc4x\java\opm\SimpleAliasRegistry.class
+org\apache\plc4x\java\opm\PlcField.class
+org\apache\plc4x\java\opm\OPMException.class
+org\apache\plc4x\java\opm\PlcEntityManager.class

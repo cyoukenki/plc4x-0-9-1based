@@ -1,0 +1,46 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:48+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 20
+
+Apache Licensed: 20
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/main/java/org/apache/plc4x/java/ads/ADSPlcDriver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/main/java/org/apache/plc4x/java/ads/configuration/AdsConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/main/java/org/apache/plc4x/java/ads/field/AdsField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/main/java/org/apache/plc4x/java/ads/field/AdsFieldHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/main/java/org/apache/plc4x/java/ads/field/AdsStringField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/main/java/org/apache/plc4x/java/ads/field/DirectAdsField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/main/java/org/apache/plc4x/java/ads/field/DirectAdsStringField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/main/java/org/apache/plc4x/java/ads/field/SymbolicAdsField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/main/java/org/apache/plc4x/java/ads/field/SymbolicAdsStringField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/main/java/org/apache/plc4x/java/ads/model/AdsSubscriptionHandle.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/main/java/org/apache/plc4x/java/ads/protocol/AdsProtocolLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/main/java/org/apache/plc4x/java/ads/utils/StaticHelper.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/test/java/org/apache/plc4x/protocol/ads/AdsDiscoverySerializerParserTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/test/java/org/apache/plc4x/protocol/ads/AdsDriverIT.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/test/java/org/apache/plc4x/protocol/ads/AdsSerializerParserTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/test/java/org/apache/plc4x/protocol/ads/HexBase64Helper.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/test/java/org/apache/plc4x/protocol/ads/ManualAdsDriverTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ads/src/test/java/org/apache/plc4x/protocol/ads/ManualParserSerializerTest.java
+ 
+*****************************************************

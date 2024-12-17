@@ -1,0 +1,47 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:40+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 21
+
+Apache Licensed: 21
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/adapter/CANDriverAdapter.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/adapter/conversation/ConversationContextWrapper.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/adapter/conversation/DeferredErrorHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/adapter/conversation/DeferredRequestContextWrapper.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/adapter/conversation/DeferredTimeoutHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/adapter/conversation/ResolvedSendRequestContextWrapper.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/adapter/conversation/SendRequestContextWrapper.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/adapter/Plc4xCANProtocolBase.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/generic/configuration/GenericCANConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/generic/context/GenericCANDriverContext.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/generic/field/GenericCANField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/generic/field/GenericCANFieldHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/generic/GenericCANDriver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/generic/protocol/GenericCANProtocolLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/generic/protocol/GenericCANSubscriptionHandle.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/generic/transport/GenericCANFrameDataHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/java/org/apache/plc4x/java/can/generic/transport/GenericFrame.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/test/java/org/apache/plc4x/java/can/generic/field/GenericCANFieldHandlerTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/can/src/test/java/org/apache/plc4x/java/can/generic/GenericCANDriverTest.java
+ 
+*****************************************************

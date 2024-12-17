@@ -1,0 +1,9 @@
+org\apache\plc4x\edgent\PlcConnectionAdapter$MyListSupplier.class
+org\apache\plc4x\edgent\PlcConnectionAdapter$BaseConsumer.class
+org\apache\plc4x\edgent\PlcConnectionAdapter$ObjectConsumer.class
+org\apache\plc4x\edgent\PlcConnectionAdapter.class
+org\apache\plc4x\edgent\PlcConnectionAdapter$JsonConsumer.class
+org\apache\plc4x\edgent\PlcConnectionAdapter$1.class
+org\apache\plc4x\edgent\PlcFunctions.class
+org\apache\plc4x\edgent\PlcConnectionAdapter$2.class
+org\apache\plc4x\edgent\PlcConnectionAdapter$MySupplier.class

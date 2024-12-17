@@ -1,0 +1,38 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:47+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 12
+
+Apache Licensed: 12
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/profinet/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/profinet/src/main/java/org/apache/plc4x/java/profinet/config/ProfinetConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/profinet/src/main/java/org/apache/plc4x/java/profinet/context/ProfinetDiscoveryContext.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/profinet/src/main/java/org/apache/plc4x/java/profinet/discovery/ProfinetPlcDiscoverer.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/profinet/src/main/java/org/apache/plc4x/java/profinet/field/ProfinetField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/profinet/src/main/java/org/apache/plc4x/java/profinet/field/ProfinetFieldHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/profinet/src/main/java/org/apache/plc4x/java/profinet/ProfinetDriver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/profinet/src/main/java/org/apache/plc4x/java/profinet/protocol/ProfinetDiscoveryLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/profinet/src/main/java/org/apache/plc4x/java/profinet/protocol/ProfinetProtocolLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/profinet/src/main/java/org/apache/plc4x/java/profinet/utils/StaticHelper.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/profinet/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/profinet/src/test/java/org/apache/plc4x/java/profinet/ProfinetPoc.java
+ 
+*****************************************************

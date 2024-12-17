@@ -1,0 +1,41 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:47+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 15
+
+Apache Licensed: 15
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/README.adoc
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/src/main/java/org/apache/plc4x/java/firmata/readwrite/configuration/FirmataConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/src/main/java/org/apache/plc4x/java/firmata/readwrite/context/FirmataDriverContext.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/src/main/java/org/apache/plc4x/java/firmata/readwrite/field/FirmataField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/src/main/java/org/apache/plc4x/java/firmata/readwrite/field/FirmataFieldAnalog.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/src/main/java/org/apache/plc4x/java/firmata/readwrite/field/FirmataFieldDigital.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/src/main/java/org/apache/plc4x/java/firmata/readwrite/field/FirmataFieldHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/src/main/java/org/apache/plc4x/java/firmata/readwrite/FirmataDriver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/src/main/java/org/apache/plc4x/java/firmata/readwrite/model/FirmataSubscriptionHandle.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/src/main/java/org/apache/plc4x/java/firmata/readwrite/protocol/FirmataProtocolLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/src/main/java/org/apache/plc4x/java/firmata/readwrite/utils/FirmataUtils.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/src/test/java/org/apache/plc4x/java/firmata/readwrite/FirmataParserSerializerTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/firmata/src/test/resources/testsuite/recording.txt
+ 
+*****************************************************

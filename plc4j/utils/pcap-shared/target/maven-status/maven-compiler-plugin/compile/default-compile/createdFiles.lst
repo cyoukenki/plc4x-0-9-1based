@@ -1,0 +1,7 @@
+org\apache\plc4x\java\utils\pcap\netty\handlers\TcpIpPacketHandler.class
+org\apache\plc4x\java\utils\pcap\netty\handlers\PacketHandler.class
+org\apache\plc4x\java\utils\pcap\netty\handlers\UdpIpPacketHandler.class
+org\apache\plc4x\java\utils\pcap\netty\config\PcapChannelConfig.class
+org\apache\plc4x\java\utils\pcap\netty\config\PcapChannelOption.class
+org\apache\plc4x\java\utils\pcap\netty\address\PcapSocketAddress.class
+org\apache\plc4x\java\utils\pcap\netty\exception\PcapException.class

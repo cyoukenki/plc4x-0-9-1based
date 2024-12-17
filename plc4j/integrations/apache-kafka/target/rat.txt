@@ -1,0 +1,51 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:12:26+08:00
+
+Notes: 2
+Binaries: 0
+Archives: 0
+Standards: 23
+
+Apache Licensed: 23
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/config/plc4x-sink.properties
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/config/plc4x-source.properties
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/README.md
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/Constants.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/Field.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/Job.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/JobReference.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/Sink.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/SinkConfig.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/Source.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/SourceConfig.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/Plc4xSinkConnector.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/Plc4xSinkTask.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/Plc4xSourceConnector.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/Plc4xSourceTask.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/util/VersionUtil.java
+  N     F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/remote-resources/LICENSE
+  N     F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/remote-resources/NOTICE
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/test/java/org/apache/plc4x/kafka/config/SinkConfigTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/test/java/org/apache/plc4x/kafka/config/SinkTaskTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/test/java/org/apache/plc4x/kafka/config/SourceConfigTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/test/java/org/apache/plc4x/kafka/config/SourceTaskTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/test/java/org/apache/plc4x/kafka/properties/sink_task_no_error.properties
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/test/java/org/apache/plc4x/kafka/properties/source_task_no_error.properties
+ 
+*****************************************************

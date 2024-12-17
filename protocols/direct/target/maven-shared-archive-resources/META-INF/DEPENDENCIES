@@ -1,0 +1,25 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Protocols: Direct
+
+
+From: 'ANTLR' (http://www.antlr.org)
+  - ANTLR 4 Runtime (http://www.antlr.org/antlr4-runtime) org.antlr:antlr4-runtime:jar:4.9.2
+    License: The BSD License  (http://www.antlr.org/license.html)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Commons IO (https://commons.apache.org/proper/commons-io/) commons-io:commons-io:jar:2.11.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - PLC4X: Build Utils: Protocol Base: MSpec (https://plc4x.apache.org/plc4x-code-generation/plc4x-code-generation-protocol-base-mspec) org.apache.plc4x:plc4x-code-generation-protocol-base-mspec:jar:0.9.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - PLC4X Build Tools: Code Generation: Protocol Base (https://www.apache.org/plc4x-code-generaton/plc4x-code-generation-protocol-base/) org.apache.plc4x.plugins:plc4x-code-generation-protocol-base:jar:1.5.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - PLC4X Build Tools: Code Generation: Base Types (https://www.apache.org/plc4x-code-generaton/plc4x-code-generation-types-base/) org.apache.plc4x.plugins:plc4x-code-generation-types-base:jar:1.5.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

@@ -1,0 +1,39 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:12:24+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 13
+
+Apache Licensed: 13
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/plc-simulator/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/plc-simulator/src/main/java/org/apache/plc4x/java/s7/utils/StaticHelper.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/plc-simulator/src/main/java/org/apache/plc4x/simulator/exceptions/SimulatorExcepiton.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/plc-simulator/src/main/java/org/apache/plc4x/simulator/model/Context.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/plc-simulator/src/main/java/org/apache/plc4x/simulator/PlcSimulator.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/plc-simulator/src/main/java/org/apache/plc4x/simulator/server/s7/protocol/S7Step7ServerAdapter.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/plc-simulator/src/main/java/org/apache/plc4x/simulator/server/s7/S7ServerModule.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/plc-simulator/src/main/java/org/apache/plc4x/simulator/server/ServerModule.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/plc-simulator/src/main/java/org/apache/plc4x/simulator/simulation/SimulationModule.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/plc-simulator/src/main/java/org/apache/plc4x/simulator/simulation/watertank/WaterTankSimulationModule.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/plc-simulator/src/main/resources/logback.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/plc-simulator/src/main/resources/META-INF/services/org.apache.plc4x.simulator.server.ServerModule
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/plc-simulator/src/main/resources/META-INF/services/org.apache.plc4x.simulator.simulation.SimulationModule
+ 
+*****************************************************

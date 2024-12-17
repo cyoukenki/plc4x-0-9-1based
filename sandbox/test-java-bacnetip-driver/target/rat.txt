@@ -1,0 +1,44 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:12:22+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 18
+
+Apache Licensed: 18
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/java/org/apache/plc4x/java/bacnetip/BacNetIpDriver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/java/org/apache/plc4x/java/bacnetip/configuration/BacNetIpConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/java/org/apache/plc4x/java/bacnetip/ede/EdeParser.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/java/org/apache/plc4x/java/bacnetip/ede/layouts/EdeLayout.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/java/org/apache/plc4x/java/bacnetip/ede/layouts/EdeLayoutFactory.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/java/org/apache/plc4x/java/bacnetip/ede/layouts/EdeVersion2Layout.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/java/org/apache/plc4x/java/bacnetip/ede/layouts/EdeVersion3Layout.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/java/org/apache/plc4x/java/bacnetip/ede/layouts/EdeVersion4Layout.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/java/org/apache/plc4x/java/bacnetip/ede/model/Datapoint.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/java/org/apache/plc4x/java/bacnetip/ede/model/EdeModel.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/java/org/apache/plc4x/java/bacnetip/field/BacNetIpField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/java/org/apache/plc4x/java/bacnetip/field/BacNetIpFieldHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/java/org/apache/plc4x/java/bacnetip/protocol/BacNetIpProtocolLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/test/java/org/apache/plc4x/java/bacnetip/ManualBacNetDecoder.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/test/java/org/apache/plc4x/java/bacnetip/PassiveBacNetIpDriverManual.java
+  AL    F:/workspace/github/plc4x-0-9-1based/sandbox/test-java-bacnetip-driver/src/test/resources/logback.xml
+ 
+*****************************************************

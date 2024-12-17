@@ -1,0 +1,45 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+PLC4X: Build Utils: Language: Java
+
+
+From: 'an unknown organization'
+  - exp4j (http://www.objecthunter.net/exp4j) net.objecthunter:exp4j:jar:0.4.8
+    License: Apache License 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'ANTLR' (http://www.antlr.org)
+  - ANTLR 4 Runtime (http://www.antlr.org/antlr4-runtime) org.antlr:antlr4-runtime:jar:4.9.2
+    License: The BSD License  (http://www.antlr.org/license.html)
+
+From: 'Apache Software Foundation' (http://apache.org)
+  - Apache FreeMarker (https://freemarker.apache.org/) org.freemarker:freemarker:jar:2.3.31
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.32
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Commons IO (https://commons.apache.org/proper/commons-io/) commons-io:commons-io:jar:2.11.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Lang (https://commons.apache.org/proper/commons-lang/) org.apache.commons:commons-lang3:jar:3.12.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Text (https://commons.apache.org/proper/commons-text) org.apache.commons:commons-text:jar:1.9
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - PLC4X: Build Utils: Language Base: Freemarker (https://plc4x.apache.org/plc4x-code-generation/plc4x-code-generation-language-base-freemarker) org.apache.plc4x:plc4x-code-generation-language-base-freemarker:jar:0.9.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - PLC4X: Build Utils: Protocol Base: MSpec (https://plc4x.apache.org/plc4x-code-generation/plc4x-code-generation-protocol-base-mspec) org.apache.plc4x:plc4x-code-generation-protocol-base-mspec:jar:0.9.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - PLC4X Build Tools: Code Generation: Language Base (https://www.apache.org/plc4x-code-generaton/plc4x-code-generation-language-base/) org.apache.plc4x.plugins:plc4x-code-generation-language-base:jar:1.5.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - PLC4X Build Tools: Code Generation: Protocol Base (https://www.apache.org/plc4x-code-generaton/plc4x-code-generation-protocol-base/) org.apache.plc4x.plugins:plc4x-code-generation-protocol-base:jar:1.5.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - PLC4X Build Tools: Code Generation: Base Types (https://www.apache.org/plc4x-code-generaton/plc4x-code-generation-types-base/) org.apache.plc4x.plugins:plc4x-code-generation-types-base:jar:1.5.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

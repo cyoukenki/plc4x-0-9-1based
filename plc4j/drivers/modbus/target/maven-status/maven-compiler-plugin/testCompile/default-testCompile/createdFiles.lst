@@ -1,0 +1,6 @@
+org\apache\plc4x\java\modbus\ModbusDriverIT.class
+org\apache\plc4x\java\modbus\ModbusEncodeTest.class
+org\apache\plc4x\java\modbus\ModbusFieldTest.class
+org\apache\plc4x\java\modbus\ModbusParserSerializerTest.class
+org\apache\plc4x\java\modbus\ModbusFieldDataTypeTest.class
+org\apache\plc4x\java\modbus\ManualModbusDriverTest.class

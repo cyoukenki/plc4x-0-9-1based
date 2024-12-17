@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Build-Jdk: 17.0.13
+Bundle-Description: Tool for actively sending out packets captured via W
+ ireShark.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Tools: Capture Replay
+Bundle-SymbolicName: org.apache.plc4x.plc4j-capture-replay
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.utils.capturereplay;uses:="org.pca
+ p4j.core";version="0.9.1"
+Implementation-Title: PLC4J: Tools: Capture Replay
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-tools/plc4j-cap
+ ture-replay
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: org.apache.commons.cli;version="[1.4,2)",org.pcap4j.core
+ ,org.pcap4j.packet,org.slf4j;version="[1.7,2)"
+Include-Resource: logback.xml=src/main/resources/logback.xml
+Private-Package: org.apache.plc4x.java.utils.capturereplay
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Tools: Capture Replay
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

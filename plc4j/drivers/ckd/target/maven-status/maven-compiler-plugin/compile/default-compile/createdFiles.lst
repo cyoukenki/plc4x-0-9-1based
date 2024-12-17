@@ -1,0 +1,11 @@
+org\apache\plc4x\java\ckd\readwrite\protocol\CkdProtocolLogic.class
+org\apache\plc4x\java\ckd\readwrite\field\CkdFieldHandler.class
+org\apache\plc4x\java\ckd\readwrite\CkdDriver.class
+org\apache\plc4x\java\ckd\readwrite\util\WebSocketUtil.class
+org\apache\plc4x\java\ckd\readwrite\model\io\CkdPacketIO.class
+org\apache\plc4x\java\ckd\readwrite\CkdDriver$ByteLengthEstimator.class
+org\apache\plc4x\java\ckd\readwrite\constant\CkdConstants.class
+org\apache\plc4x\java\ckd\readwrite\model\CkdPacket.class
+org\apache\plc4x\java\ckd\readwrite\configuration\CkdConfiguration.class
+org\apache\plc4x\java\ckd\readwrite\model\PushMessageInfo.class
+org\apache\plc4x\java\ckd\readwrite\field\CkdField.class

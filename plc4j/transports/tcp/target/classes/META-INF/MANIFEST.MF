@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Activator: org.apache.plc4x.java.osgi.TransportActivator
+Bundle-Description: Base classes needed to implement plc4x drivers based
+  on TCP connections.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Transports: TCP
+Bundle-SymbolicName: org.apache.plc4x.plc4j-transport-tcp
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.transport.tcp;uses:="io.netty.boot
+ strap,io.netty.channel,org.apache.plc4x.java.spi.configuration,org.apac
+ he.plc4x.java.spi.connection,org.apache.plc4x.java.spi.transport";versi
+ on="0.9.1"
+Export-Service: org.apache.plc4x.java.spi.transport.Transport,org.apache
+ .plc4x.java.transport.tcp.TcpTransport
+Implementation-Title: PLC4J: Transports: TCP
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-transports/plc4
+ j-transport-tcp
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: io.netty.bootstrap;version="[4.1,5)",io.netty.channel;ve
+ rsion="[4.1,5)",io.netty.channel.socket.nio;version="[4.1,5)",org.apach
+ e.plc4x.java.api.exceptions;version="[0.9,1)",org.apache.plc4x.java.osg
+ i,org.apache.plc4x.java.spi.configuration;version="[0.9,1)",org.apache.
+ plc4x.java.spi.connection;version="[0.9,1)",org.apache.plc4x.java.spi.t
+ ransport;version="[0.9,1)",org.slf4j;version="[1.7,2)"
+Include-Resource: META-INF/services/org.apache.plc4x.java.spi.transport.
+ Transport=src/main/resources/META-INF/services/org.apache.plc4x.java.sp
+ i.transport.Transport
+Private-Package: org.apache.plc4x.java.transport.tcp
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Transports: TCP
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+SPI-Provider: *
+Tool: Bnd-5.1.1.202006162103

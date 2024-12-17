@@ -1,0 +1,105 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Activator: org.apache.plc4x.java.osgi.DriverActivator
+Bundle-Description: Implementation of a PLC4X driver for the classic Ste
+ p7 S7 protocol.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Driver: S7 (Step7)
+Bundle-SymbolicName: org.apache.plc4x.plc4j-driver-s7
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.0.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.s7.events;uses:="org.apache.plc4x.
+ java.api.messages,org.apache.plc4x.java.api.model,org.apache.plc4x.java
+ .api.types,org.apache.plc4x.java.api.value,org.apache.plc4x.java.s7.rea
+ dwrite";version="1.0.1",org.apache.plc4x.java.s7.readwrite;uses:="io.ne
+ tty.buffer,org.apache.commons.lang3.builder,org.apache.plc4x.java.api.m
+ odel,org.apache.plc4x.java.api.value,org.apache.plc4x.java.s7.readwrite
+ .field,org.apache.plc4x.java.s7.readwrite.types,org.apache.plc4x.java.s
+ pi.configuration,org.apache.plc4x.java.spi.connection,org.apache.plc4x.
+ java.spi.generation,org.apache.plc4x.java.spi.optimizer";version="1.0.1
+ ",org.apache.plc4x.java.s7.readwrite.configuration;uses:="org.apache.pl
+ c4x.java.spi.configuration,org.apache.plc4x.java.spi.configuration.anno
+ tations,org.apache.plc4x.java.spi.configuration.annotations.defaults,or
+ g.apache.plc4x.java.transport.tcp";version="1.0.1",org.apache.plc4x.jav
+ a.s7.readwrite.context;uses:="org.apache.plc4x.java.s7.readwrite.config
+ uration,org.apache.plc4x.java.s7.readwrite.types,org.apache.plc4x.java.
+ spi.configuration,org.apache.plc4x.java.spi.context";version="1.0.1",or
+ g.apache.plc4x.java.s7.readwrite.field;uses:="com.fasterxml.jackson.ann
+ otation,org.apache.plc4x.java.api.model,org.apache.plc4x.java.s7.readwr
+ ite.types,org.apache.plc4x.java.spi.connection,org.apache.plc4x.java.sp
+ i.generation,org.apache.plc4x.java.spi.utils";version="1.0.1",org.apach
+ e.plc4x.java.s7.readwrite.io;uses:="org.apache.plc4x.java.api.value,org
+ .apache.plc4x.java.s7.readwrite,org.apache.plc4x.java.s7.readwrite.type
+ s,org.apache.plc4x.java.spi.generation";version="1.0.1",org.apache.plc4
+ x.java.s7.readwrite.optimizer;uses:="io.vavr.control,org.apache.plc4x.j
+ ava.api.exceptions,org.apache.plc4x.java.api.messages,org.apache.plc4x.
+ java.s7.readwrite,org.apache.plc4x.java.spi.context,org.apache.plc4x.ja
+ va.spi.optimizer";version="1.0.1",org.apache.plc4x.java.s7.readwrite.pr
+ otocol;uses:="org.apache.plc4x.java.api.messages,org.apache.plc4x.java.
+ api.model,org.apache.plc4x.java.s7.readwrite,org.apache.plc4x.java.spi,
+ org.apache.plc4x.java.spi.context,org.apache.plc4x.java.spi.messages";v
+ ersion="1.0.1",org.apache.plc4x.java.s7.readwrite.types;version="1.0.1"
+ ,org.apache.plc4x.java.s7.readwrite.utils;uses:="org.apache.plc4x.java.
+ s7.readwrite.types,org.apache.plc4x.java.spi.messages,org.apache.plc4x.
+ java.spi.model";version="1.0.1",org.apache.plc4x.java.s7.utils;uses:="i
+ o.netty.buffer,org.apache.plc4x.java.api.types,org.apache.plc4x.java.ap
+ i.value,org.apache.plc4x.java.s7.events,org.apache.plc4x.java.s7.readwr
+ ite.types,org.apache.plc4x.java.spi.generation";version="1.0.1"
+Export-Service: org.apache.plc4x.java.api.PlcDriver,org.apache.plc4x.jav
+ a.s7.readwrite.S7Driver
+Implementation-Title: PLC4J: Driver: S7 (Step7)
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-drivers/plc4j-d
+ river-s7
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 1.0.1
+Import-Package: com.fasterxml.jackson.annotation;resolution:=optional;ve
+ rsion="[2.12,3)",io.netty.buffer;version="[4.1,5)",io.netty.channel;ver
+ sion="[4.1,5)",io.vavr.control;version="[0.10,1)",org.apache.commons.co
+ dec;version="[1.15,2)",org.apache.commons.codec.binary;version="[1.15,2
+ )",org.apache.commons.lang3;version="[3.12,4)",org.apache.commons.lang3
+ .builder;version="[3.12,4)",org.apache.plc4x.java.api.exceptions;versio
+ n="[0.9,1)",org.apache.plc4x.java.api.messages;version="[0.9,1)",org.ap
+ ache.plc4x.java.api.model;version="[0.9,1)",org.apache.plc4x.java.api.t
+ ypes;version="[0.9,1)",org.apache.plc4x.java.api.value;version="[0.9,1)
+ ",org.apache.plc4x.java.osgi,org.apache.plc4x.java.s7.events,org.apache
+ .plc4x.java.s7.readwrite,org.apache.plc4x.java.s7.readwrite.configurati
+ on,org.apache.plc4x.java.s7.readwrite.context,org.apache.plc4x.java.s7.
+ readwrite.field,org.apache.plc4x.java.s7.readwrite.io,org.apache.plc4x.
+ java.s7.readwrite.optimizer,org.apache.plc4x.java.s7.readwrite.protocol
+ ,org.apache.plc4x.java.s7.readwrite.types,org.apache.plc4x.java.s7.read
+ write.utils,org.apache.plc4x.java.s7.utils,org.apache.plc4x.java.spi;ve
+ rsion="[0.9,1)",org.apache.plc4x.java.spi.configuration;version="[0.9,1
+ )",org.apache.plc4x.java.spi.configuration.annotations;version="[0.9,1)
+ ",org.apache.plc4x.java.spi.configuration.annotations.defaults;version=
+ "[0.9,1)",org.apache.plc4x.java.spi.connection;version="[0.9,1)",org.ap
+ ache.plc4x.java.spi.context;version="[0.9,1)",org.apache.plc4x.java.spi
+ .generation;version="[0.9,1)",org.apache.plc4x.java.spi.messages;versio
+ n="[0.9,1)",org.apache.plc4x.java.spi.messages.utils;version="[0.9,1)",
+ org.apache.plc4x.java.spi.model;version="[0.9,1)",org.apache.plc4x.java
+ .spi.optimizer;version="[0.9,1)",org.apache.plc4x.java.spi.transaction;
+ version="[0.9,1)",org.apache.plc4x.java.spi.utils;version="[0.9,1)",org
+ .apache.plc4x.java.spi.values;version="[0.9,1)",org.apache.plc4x.java.t
+ ransport.tcp;version="[0.9,1)",org.slf4j;version="[1.7,2)"
+Include-Resource: META-INF/services/org.apache.plc4x.java.api.PlcDriver=
+ src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDrive
+ r
+Private-Package: org.apache.plc4x.java.s7.events,org.apache.plc4x.java.s
+ 7.readwrite,org.apache.plc4x.java.s7.readwrite.configuration,org.apache
+ .plc4x.java.s7.readwrite.context,org.apache.plc4x.java.s7.readwrite.fie
+ ld,org.apache.plc4x.java.s7.readwrite.io,org.apache.plc4x.java.s7.readw
+ rite.optimizer,org.apache.plc4x.java.s7.readwrite.protocol,org.apache.p
+ lc4x.java.s7.readwrite.types,org.apache.plc4x.java.s7.readwrite.utils,o
+ rg.apache.plc4x.java.s7.utils
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="org.apache.pl
+ c4x.java.api.PlcDriver"
+Require-Capability: osgi.extender;filter:="(osgi.extender=osgi.servicelo
+ ader.registrar)",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Driver: S7 (Step7)
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.0.1
+SPI-consumer: *
+Tool: Bnd-5.1.1.202006162103

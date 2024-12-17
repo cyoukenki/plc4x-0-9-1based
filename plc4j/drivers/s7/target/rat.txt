@@ -1,0 +1,65 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:44+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 39
+
+Apache Licensed: 39
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/events/S7AlarmEvent.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/events/S7CyclicValueEvent.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/events/S7Event.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/events/S7ModeEvent.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/events/S7SysEvent.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/events/S7UserEvent.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/configuration/S7Configuration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/context/S7DriverContext.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/field/S7Field.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/field/S7PlcFieldHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/field/S7SslField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/field/S7StringField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/field/S7SubscriptionField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/optimizer/DefaultS7MessageProcessor.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/optimizer/S7MessageProcessor.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/optimizer/S7Optimizer.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/protocol/S7ProtocolEventLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/protocol/S7ProtocolLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/S7Driver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/types/S7ControllerType.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/types/S7SubscriptionFieldType.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/utils/S7PlcSubscriptionHandle.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/readwrite/utils/S7TsapIdEncoder.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/utils/S7DiagnosticEventId.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/utils/S7EventHelper.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/utils/S7ParamErrorCode.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/java/org/apache/plc4x/java/s7/utils/StaticHelper.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/test/java/BenchmarkGeneratedS7.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/test/java/org/apache/plc4x/java/s7/readwrite/DatatypesTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/test/java/org/apache/plc4x/java/s7/readwrite/field/S7FieldTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/test/java/org/apache/plc4x/java/s7/readwrite/issues/PLC4X272.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/test/java/org/apache/plc4x/java/s7/readwrite/ManualS7DriverTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/test/java/org/apache/plc4x/java/s7/readwrite/S7DriverIT.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/test/java/org/apache/plc4x/java/s7/readwrite/S7ParserSerializerTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/test/java/S7IoTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/test/resources/logback.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/s7/src/test/resources/tests/PLC4X-272.xml
+ 
+*****************************************************

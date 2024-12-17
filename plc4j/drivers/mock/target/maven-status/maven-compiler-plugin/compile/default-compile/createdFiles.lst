@@ -1,0 +1,16 @@
+org\apache\plc4x\java\mock\connection\MockConnection$1.class
+org\apache\plc4x\java\mock\util\Assert$1.class
+org\apache\plc4x\java\mock\field\MockFieldHandler.class
+org\apache\plc4x\java\mock\connection\tcp\TcpHexDumper.class
+org\apache\plc4x\java\mock\protocol\Plc4XSupportedDataTypes$DataTypePair.class
+org\apache\plc4x\java\mock\field\MockField.class
+org\apache\plc4x\java\mock\util\HexUtil.class
+org\apache\plc4x\java\mock\field\MockValueHandler.class
+org\apache\plc4x\java\mock\connection\MockConnection.class
+org\apache\plc4x\java\mock\MockDriver.class
+org\apache\plc4x\java\mock\field\MockType.class
+org\apache\plc4x\java\mock\util\Assert.class
+org\apache\plc4x\java\mock\field\MockField$1.class
+org\apache\plc4x\java\mock\connection\MockDevice.class
+org\apache\plc4x\java\mock\field\MockPlcValue.class
+org\apache\plc4x\java\mock\protocol\Plc4XSupportedDataTypes.class

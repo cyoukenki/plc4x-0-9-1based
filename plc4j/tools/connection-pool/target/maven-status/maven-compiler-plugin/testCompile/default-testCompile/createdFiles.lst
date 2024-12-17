@@ -1,0 +1,8 @@
+org\apache\plc4x\java\utils\connectionpool\PooledPlcDriverManagerTest.class
+org\apache\plc4x\java\utils\connectionpool\PoolKeyFactoryTest.class
+org\apache\plc4x\java\utils\connectionpool\PoolKeyFactoryTest$Generic.class
+org\apache\plc4x\java\utils\connectionpool\PoolKeyFactoryTest$S7.class
+org\apache\plc4x\java\utils\connectionpool\PoolKeyFactoryTest$Modbus.class
+org\apache\plc4x\java\utils\connectionpool\PooledDummyDriver.class
+org\apache\plc4x\java\utils\connectionpool\PooledPlcDriverManagerTest$DummyPlcConnection.class
+org\apache\plc4x\java\utils\connectionpool\PoolKeyFactoryTest$ADS.class

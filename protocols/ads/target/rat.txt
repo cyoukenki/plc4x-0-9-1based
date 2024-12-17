@@ -1,0 +1,35 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:40+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 9
+
+Apache Licensed: 9
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/ads/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/ads/src/main/java/org/apache/plc4x/protocol/ads/ADSDiscoveryProtocol.java
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/ads/src/main/java/org/apache/plc4x/protocol/ads/ADSProtocol.java
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/ads/src/main/resources/META-INF/services/org.apache.plc4x.plugins.codegenerator.protocol.Protocol
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/ads/src/main/resources/protocols/ads/ads-discovery.mspec
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/ads/src/main/resources/protocols/ads/ads.mspec
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/ads/src/test/resources/protocols/ads/AdsDiscoverySerializerTest.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/ads/src/test/resources/protocols/ads/DriverTestsuite.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/ads/src/test/resources/protocols/ads/ParserSerializerTestsuite.xml
+ 
+*****************************************************

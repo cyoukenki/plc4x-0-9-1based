@@ -1,0 +1,33 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:12:25+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 7
+
+Apache Licensed: 7
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/src/main/java/org/apache/plc4x/nifi/BasePlc4xProcessor.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/src/main/java/org/apache/plc4x/nifi/Plc4xSinkProcessor.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/src/main/java/org/apache/plc4x/nifi/Plc4xSourceProcessor.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/src/main/resources/META-INF/services/org.apache.nifi.processor.Processor
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/src/test/java/org/apache/plc4x/processors/plc4x4nifi/Plc4xSinkProcessorTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/src/test/java/org/apache/plc4x/processors/plc4x4nifi/Plc4xSourceProcessorTest.java
+ 
+*****************************************************

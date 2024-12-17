@@ -1,0 +1,45 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:45+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 19
+
+Apache Licensed: 19
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/main/java/org/apache/plc4x/java/modbus/config/ModbusConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/main/java/org/apache/plc4x/java/modbus/field/ModbusExtendedRegister.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/main/java/org/apache/plc4x/java/modbus/field/ModbusField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/main/java/org/apache/plc4x/java/modbus/field/ModbusFieldCoil.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/main/java/org/apache/plc4x/java/modbus/field/ModbusFieldDiscreteInput.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/main/java/org/apache/plc4x/java/modbus/field/ModbusFieldHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/main/java/org/apache/plc4x/java/modbus/field/ModbusFieldHoldingRegister.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/main/java/org/apache/plc4x/java/modbus/field/ModbusFieldInputRegister.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/main/java/org/apache/plc4x/java/modbus/ModbusDriver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/main/java/org/apache/plc4x/java/modbus/protocol/ModbusProtocolLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/main/java/org/apache/plc4x/java/modbus/util/ConvertUtil.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/test/java/org/apache/plc4x/java/modbus/ManualModbusDriverTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/test/java/org/apache/plc4x/java/modbus/ModbusDriverIT.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/test/java/org/apache/plc4x/java/modbus/ModbusEncodeTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/test/java/org/apache/plc4x/java/modbus/ModbusFieldDataTypeTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/test/java/org/apache/plc4x/java/modbus/ModbusFieldTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/modbus/src/test/java/org/apache/plc4x/java/modbus/ModbusParserSerializerTest.java
+ 
+*****************************************************

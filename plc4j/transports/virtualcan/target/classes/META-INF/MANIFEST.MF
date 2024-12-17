@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Activator: org.apache.plc4x.java.osgi.TransportActivator
+Bundle-Description: Virtual CAN transport which does work without any re
+ al CAN interface.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Transports: VirtualCAN
+Bundle-SymbolicName: org.apache.plc4x.plc4j-transport-virtualcan
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.transport.virtualcan.io;uses:="org
+ .apache.plc4x.java.spi.generation,org.apache.plc4x.java.transport.virtu
+ alcan";version="0.9.1",org.apache.plc4x.java.transport.virtualcan;uses:
+ ="io.netty.buffer,org.apache.plc4x.java.spi.configuration,org.apache.pl
+ c4x.java.spi.generation,org.apache.plc4x.java.transport.can,org.apache.
+ plc4x.java.transport.test";version="0.9.1"
+Export-Service: org.apache.plc4x.java.spi.transport.Transport,org.apache
+ .plc4x.java.transport.virtualcan.VirtualCANTransport
+Implementation-Title: PLC4J: Transports: VirtualCAN
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-transports/plc4
+ j-transport-virtualcan
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: io.netty.buffer;version="[4.1,5)",org.apache.commons.cod
+ ec.binary;version="[1.15,2)",org.apache.plc4x.java.api.exceptions;versi
+ on="[0.9,1)",org.apache.plc4x.java.osgi,org.apache.plc4x.java.spi.confi
+ guration;version="[0.9,1)",org.apache.plc4x.java.spi.generation;version
+ ="[0.9,1)",org.apache.plc4x.java.transport.can;version="[0.9,1)",org.ap
+ ache.plc4x.java.transport.test;version="[0.9,1)",org.apache.plc4x.java.
+ transport.virtualcan,org.apache.plc4x.java.transport.virtualcan.io
+Include-Resource: META-INF/services/org.apache.plc4x.java.spi.transport.
+ Transport=src/main/resources/META-INF/services/org.apache.plc4x.java.sp
+ i.transport.Transport
+Private-Package: org.apache.plc4x.java.transport.virtualcan.io,org.apach
+ e.plc4x.java.transport.virtualcan
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Transports: VirtualCAN
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

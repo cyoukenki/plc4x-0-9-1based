@@ -1,0 +1,82 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Activator: org.apache.plc4x.java.osgi.DriverActivator
+Bundle-Description: Wrapper project for all PLC4J driver implementations
+ .
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Driver: Firmata
+Bundle-SymbolicName: org.apache.plc4x.plc4j-driver-firmata
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.firmata.readwrite.configuration;us
+ es:="org.apache.plc4x.java.spi.configuration,org.apache.plc4x.java.tran
+ sport.serial";version="0.9.1",org.apache.plc4x.java.firmata.readwrite.c
+ ontext;uses:="org.apache.plc4x.java.api.messages,org.apache.plc4x.java.
+ firmata.readwrite,org.apache.plc4x.java.spi.context";version="0.9.1",or
+ g.apache.plc4x.java.firmata.readwrite.field;uses:="org.apache.plc4x.jav
+ a.api.exceptions,org.apache.plc4x.java.api.model,org.apache.plc4x.java.
+ firmata.readwrite.types,org.apache.plc4x.java.spi.connection";version="
+ 0.9.1",org.apache.plc4x.java.firmata.readwrite;uses:="io.netty.buffer,o
+ rg.apache.commons.lang3.builder,org.apache.plc4x.java.api.model,org.apa
+ che.plc4x.java.api.value,org.apache.plc4x.java.firmata.readwrite.field,
+ org.apache.plc4x.java.firmata.readwrite.types,org.apache.plc4x.java.spi
+ .configuration,org.apache.plc4x.java.spi.connection,org.apache.plc4x.ja
+ va.spi.generation";version="0.9.1",org.apache.plc4x.java.firmata.readwr
+ ite.io;uses:="org.apache.plc4x.java.firmata.readwrite,org.apache.plc4x.
+ java.firmata.readwrite.types,org.apache.plc4x.java.spi.generation";vers
+ ion="0.9.1",org.apache.plc4x.java.firmata.readwrite.model;uses:="org.ap
+ ache.plc4x.java.firmata.readwrite.field,org.apache.plc4x.java.spi.messa
+ ges,org.apache.plc4x.java.spi.model";version="0.9.1",org.apache.plc4x.j
+ ava.firmata.readwrite.protocol;uses:="org.apache.plc4x.java.api.message
+ s,org.apache.plc4x.java.api.model,org.apache.plc4x.java.api.value,org.a
+ pache.plc4x.java.firmata.readwrite,org.apache.plc4x.java.spi,org.apache
+ .plc4x.java.spi.messages";version="0.9.1",org.apache.plc4x.java.firmata
+ .readwrite.types;version="0.9.1",org.apache.plc4x.java.firmata.readwrit
+ e.utils;uses:="org.apache.plc4x.java.spi.generation";version="0.9.1"
+Export-Service: org.apache.plc4x.java.api.PlcDriver,org.apache.plc4x.jav
+ a.firmata.readwrite.FirmataDriver
+Implementation-Title: PLC4J: Driver: Firmata
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-drivers/plc4j-d
+ river-firmata
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: io.netty.buffer;version="[4.1,5)",org.apache.commons.lan
+ g3;version="[3.12,4)",org.apache.commons.lang3.builder;version="[3.12,4
+ )",org.apache.plc4x.java.api.exceptions;version="[0.9,1)",org.apache.pl
+ c4x.java.api.messages;version="[0.9,1)",org.apache.plc4x.java.api.model
+ ;version="[0.9,1)",org.apache.plc4x.java.api.types;version="[0.9,1)",or
+ g.apache.plc4x.java.api.value;version="[0.9,1)",org.apache.plc4x.java.f
+ irmata.readwrite,org.apache.plc4x.java.firmata.readwrite.configuration,
+ org.apache.plc4x.java.firmata.readwrite.context,org.apache.plc4x.java.f
+ irmata.readwrite.field,org.apache.plc4x.java.firmata.readwrite.io,org.a
+ pache.plc4x.java.firmata.readwrite.model,org.apache.plc4x.java.firmata.
+ readwrite.protocol,org.apache.plc4x.java.firmata.readwrite.types,org.ap
+ ache.plc4x.java.firmata.readwrite.utils,org.apache.plc4x.java.osgi,org.
+ apache.plc4x.java.spi;version="[0.9,1)",org.apache.plc4x.java.spi.confi
+ guration;version="[0.9,1)",org.apache.plc4x.java.spi.connection;version
+ ="[0.9,1)",org.apache.plc4x.java.spi.context;version="[0.9,1)",org.apac
+ he.plc4x.java.spi.generation;version="[0.9,1)",org.apache.plc4x.java.sp
+ i.messages;version="[0.9,1)",org.apache.plc4x.java.spi.messages.utils;v
+ ersion="[0.9,1)",org.apache.plc4x.java.spi.model;version="[0.9,1)",org.
+ apache.plc4x.java.spi.values;version="[0.9,1)",org.apache.plc4x.java.tr
+ ansport.serial;version="[0.9,1)",org.slf4j;version="[1.7,2)",com.faster
+ xml.jackson.annotation;resolution:=optional;version="[2.12,3)"
+Include-Resource: META-INF/services/org.apache.plc4x.java.api.PlcDriver=
+ src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDrive
+ r
+Private-Package: org.apache.plc4x.java.firmata.readwrite.configuration,o
+ rg.apache.plc4x.java.firmata.readwrite.context,org.apache.plc4x.java.fi
+ rmata.readwrite.field,org.apache.plc4x.java.firmata.readwrite,org.apach
+ e.plc4x.java.firmata.readwrite.io,org.apache.plc4x.java.firmata.readwri
+ te.model,org.apache.plc4x.java.firmata.readwrite.protocol,org.apache.pl
+ c4x.java.firmata.readwrite.types,org.apache.plc4x.java.firmata.readwrit
+ e.utils
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Driver: Firmata
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

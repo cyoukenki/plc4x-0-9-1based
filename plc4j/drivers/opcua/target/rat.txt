@@ -1,0 +1,49 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:42+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 23
+
+Apache Licensed: 23
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/main/java/org/apache/plc4x/java/opcua/config/OpcuaConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/main/java/org/apache/plc4x/java/opcua/context/CertificateGenerator.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/main/java/org/apache/plc4x/java/opcua/context/CertificateKeyPair.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/main/java/org/apache/plc4x/java/opcua/context/EncryptionHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/main/java/org/apache/plc4x/java/opcua/context/SecureChannel.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/main/java/org/apache/plc4x/java/opcua/context/SecureChannelTransactionManager.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/main/java/org/apache/plc4x/java/opcua/field/OpcuaField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/main/java/org/apache/plc4x/java/opcua/field/OpcuaPlcFieldHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/main/java/org/apache/plc4x/java/opcua/OpcuaPlcDriver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/main/java/org/apache/plc4x/java/opcua/optimizer/OpcuaOptimizer.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/main/java/org/apache/plc4x/java/opcua/protocol/OpcuaProtocolLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/main/java/org/apache/plc4x/java/opcua/protocol/OpcuaSubscriptionHandle.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/test/java/org/apache/plc4x/java/opcua/connection/OpcuaTcpPlcConnectionTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/test/java/org/apache/plc4x/java/opcua/ManualPLC4XOpcua.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/test/java/org/apache/plc4x/java/opcua/OpcuaPlcDriverTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/test/java/org/apache/plc4x/java/opcua/protocol/OpcuaFieldTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/test/java/org/apache/plc4x/java/opcua/protocol/OpcuaPlcFieldHandlerTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/test/java/org/apache/plc4x/java/opcua/protocol/OpcuaSubscriptionHandleTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/test/java/org/apache/plc4x/java/opcua/UtilsTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/test/resources/log4j.properties
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/opcua/src/test/resources/logback.xml
+ 
+*****************************************************

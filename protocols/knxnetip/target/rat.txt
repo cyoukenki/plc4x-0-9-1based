@@ -1,0 +1,40 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:47+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 14
+
+Apache Licensed: 14
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/src/main/java/org/apache/plc4x/protocol/knxnetip/KnxNetIpProtocol.java
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/src/main/resources/META-INF/services/org.apache.plc4x.plugins.codegenerator.protocol.Protocol
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/src/main/resources/protocols/knxnetip/device-info.mspec
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/src/main/resources/protocols/knxnetip/knxnetip.mspec
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/src/main/script/getKnxMasterData.groovy
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/src/main/xslt/knx-types.xsl
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/src/site/asciidoc/index.adoc
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/src/test/java/org/apache/plc4x/protocol/knxnetip/handlers/ManufacturerIdsHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/src/test/java/org/apache/plc4x/protocol/knxnetip/handlers/ProductDescriptionHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/src/test/java/org/apache/plc4x/protocol/knxnetip/KnxDefinitionsGenerator.java
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/src/test/java/org/apache/plc4x/protocol/knxnetip/KnxSpecificationStoreUpdater.java
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/src/test/resources/org/apache/plc4x/protocols/knxnetip/protocol.tdml
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/knxnetip/src/test/resources/protocols/knxnetip/ParserSerializerTestsuite.xml
+ 
+*****************************************************

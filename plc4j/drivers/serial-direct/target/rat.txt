@@ -1,0 +1,40 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:41+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 14
+
+Apache Licensed: 14
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/src/main/java/org/apache/plc4x/java/serial/direct/readwrite/configuration/SerialDirectConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/src/main/java/org/apache/plc4x/java/serial/direct/readwrite/constant/SerialDirectConstants.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/src/main/java/org/apache/plc4x/java/serial/direct/readwrite/field/SerialDirectField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/src/main/java/org/apache/plc4x/java/serial/direct/readwrite/field/SerialDirectFieldHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/src/main/java/org/apache/plc4x/java/serial/direct/readwrite/model/io/SerialDirectIO.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/src/main/java/org/apache/plc4x/java/serial/direct/readwrite/model/PushMessageInfo.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/src/main/java/org/apache/plc4x/java/serial/direct/readwrite/model/SerialDirect.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/src/main/java/org/apache/plc4x/java/serial/direct/readwrite/model/SerialDirectCommandInfo.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/src/main/java/org/apache/plc4x/java/serial/direct/readwrite/model/types/package-info.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/src/main/java/org/apache/plc4x/java/serial/direct/readwrite/model/types/SecsDataTypeCode.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/src/main/java/org/apache/plc4x/java/serial/direct/readwrite/protocol/SerialDirectProtocolLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/src/main/java/org/apache/plc4x/java/serial/direct/readwrite/SerialDirectDriver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/serial-direct/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+ 
+*****************************************************

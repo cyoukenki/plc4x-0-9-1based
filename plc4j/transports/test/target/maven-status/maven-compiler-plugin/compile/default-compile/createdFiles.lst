@@ -1,0 +1,14 @@
+io\netty\channel\embedded\Plc4xEmbeddedEventLoop.class
+org\apache\plc4x\java\transport\test\TestTransportConfiguration.class
+org\apache\plc4x\java\transport\test\TestChannelFactory.class
+io\netty\bootstrap\EventLoopProvider.class
+io\netty\channel\embedded\Plc4xEmbeddedChannel$EmbeddedUnsafe.class
+io\netty\channel\embedded\Plc4xEmbeddedChannel.class
+io\netty\channel\embedded\Plc4xEmbeddedChannel$2.class
+io\netty\channel\embedded\Plc4xEmbeddedChannel$State.class
+io\netty\channel\embedded\Plc4xEmbeddedChannel$EmbeddedUnsafe$1.class
+io\netty\channel\embedded\Plc4xEmbeddedChannel$1.class
+org\apache\plc4x\java\transport\test\TestTransport.class
+org\apache\plc4x\java\transport\test\TestSocketAddress.class
+io\netty\bootstrap\EmbeddedBootstrap.class
+io\netty\channel\embedded\Plc4xEmbeddedChannel$EmbeddedChannelPipeline.class

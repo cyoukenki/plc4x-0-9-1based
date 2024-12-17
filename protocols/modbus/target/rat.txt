@@ -1,0 +1,32 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:36+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 6
+
+Apache Licensed: 6
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/modbus/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/modbus/src/main/java/org/apache/plc4x/protocol/modbus/ModbusProtocol.java
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/modbus/src/main/resources/META-INF/services/org.apache.plc4x.plugins.codegenerator.protocol.Protocol
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/modbus/src/main/resources/protocols/modbus/modbus.mspec
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/modbus/src/test/resources/protocols/modbus/DriverTestsuite.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/modbus/src/test/resources/protocols/modbus/ParserSerializerTestsuite.xml
+ 
+*****************************************************

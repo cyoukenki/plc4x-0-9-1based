@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Description: Base classes used by all transports using libpcap (r
+ aw-socket and pcap-replay).
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Transports: PCAP (shared)
+Bundle-SymbolicName: org.apache.plc4x.plc4j-transport-pcap-shared
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.transport.pcap;uses:="org.apache.p
+ lc4x.java.spi.transport,org.apache.plc4x.java.utils.pcap.netty.handlers
+ ";version="0.9.1"
+Implementation-Title: PLC4J: Transports: PCAP (shared)
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-transports/plc4
+ j-transport-pcap-shared
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: org.apache.plc4x.java.spi.transport;version="[0.9,1)",or
+ g.apache.plc4x.java.utils.pcap.netty.handlers;version="[0.9,1)"
+Private-Package: org.apache.plc4x.java.transport.pcap
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Transports: PCAP (shared)
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

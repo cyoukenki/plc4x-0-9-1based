@@ -1,0 +1,65 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:45+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 39
+
+Apache Licensed: 39
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/api/conversation/canopen/CANConversation.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/api/conversation/canopen/CANOpenConversationBase.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/api/conversation/canopen/SDODownloadConversation.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/api/conversation/canopen/SDOUploadConversation.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/api/segmentation/accumulator/ByteStorage.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/api/segmentation/accumulator/Storage.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/CANOpenPlcDriver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/configuration/CANOpenConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/context/CANOpenDriverContext.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/conversation/CANTransportConversation.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/field/CANOpenField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/field/CANOpenFieldHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/field/CANOpenHeartbeatField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/field/CANOpenNMTField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/field/CANOpenPDOField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/field/CANOpenSDOField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/field/CANOpenSubscriptionField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/helper/CANOpenHelper.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/listener/Callback.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/listener/CompositeCallback.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/protocol/CANOpenProtocolLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/protocol/CANOpenSubscriptionHandle.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/transport/CANOpenAbortException.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/java/org/apache/plc4x/java/canopen/transport/CANOpenFrameDataHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/test/java/org/apache/plc4x/java/canopen/CANOpenDriverSDOIT.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/test/java/org/apache/plc4x/java/canopen/CANOpenPayloadTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/test/java/org/apache/plc4x/java/canopen/CANOpenWiresharkTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/test/java/org/apache/plc4x/java/canopen/CANTestTransport.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/test/java/org/apache/plc4x/java/canopen/field/CANOpenFieldSDOTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/test/java/org/apache/plc4x/java/canopen/field/CANOpenNMTFieldTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/test/java/org/apache/plc4x/java/canopen/field/CANOpenPDOFieldTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/test/java/org/apache/plc4x/java/canopen/field/CANOpenSDOFieldTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/test/java/org/apache/plc4x/java/canopen/Main.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/test/java/org/apache/plc4x/java/canopen/ManualParserTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/test/java/org/apache/plc4x/java/canopen/transport/CANOpenFrameDataAdapter.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/test/java/org/apache/plc4x/java/canopen/transport/IdentityCANOpenFrameBuilder.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/canopen/src/test/resources/META-INF/services/org.apache.plc4x.java.spi.transport.Transport
+ 
+*****************************************************

@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Built-By: imzjh
+Bundle-Description: Base protocol specifications for the EhterNet/IP pro
+ tocol
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Protocols: EtherNet/IP
+Bundle-SymbolicName: org.apache.plc4x.protocols-eip
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.1.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.protocol.eip;uses:="org.apache.plc4x.pl
+ ugins.codegenerator.protocol,org.apache.plc4x.plugins.codegenerator.typ
+ es.definitions,org.apache.plc4x.plugins.codegenerator.types.exceptions"
+ ;version="1.1.0"
+Implementation-Title: Protocols: EtherNet/IP
+Implementation-URL: https://plc4x.apache.org/plc4x-protocols/plc4x-proto
+ cols-eip
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 1.1.0
+Import-Package: org.apache.plc4x.plugins.codegenerator.language.mspec.pa
+ rser,org.apache.plc4x.plugins.codegenerator.protocol,org.apache.plc4x.p
+ lugins.codegenerator.types.definitions,org.apache.plc4x.plugins.codegen
+ erator.types.exceptions
+Include-Resource: META-INF/services/org.apache.plc4x.plugins.codegenerat
+ or.protocol.Protocol=src/main/resources/META-INF/services/org.apache.pl
+ c4x.plugins.codegenerator.protocol.Protocol,protocols/eip/eip.mspec=src
+ /main/resources/protocols/eip/eip.mspec
+Private-Package: protocols.eip
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Protocols: EtherNet/IP
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.1.0
+Tool: Bnd-5.1.1.202006162103

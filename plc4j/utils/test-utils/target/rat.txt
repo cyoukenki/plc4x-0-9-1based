@@ -1,0 +1,80 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:12:21+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 54
+
+Apache Licensed: 54
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/dom4j/LocationAwareDocumentFactory.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/dom4j/LocationAwareElement.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/dom4j/LocationAwareSAXContentHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/dom4j/LocationAwareSAXReader.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/DriverTestsuiteRunner.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/exceptions/DriverTestsuiteException.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/api/TestField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/api/TestFieldRequest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/api/TestReadRequest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/api/TestRequest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/api/TestValueField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/api/TestWriteRequest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/ConnectionManager.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/DriverTestsuite.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/DriverTestsuiteConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/handlers/ApiRequestHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/handlers/ApiResponseHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/handlers/IncomingPlcBytesHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/handlers/IncomingPlcMessageHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/handlers/OutgoingPlcBytesHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/handlers/OutgoingPlcMessageHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/StepType.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/Testcase.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/TestStep.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/utils/ChannelUtil.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/utils/Delay.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/utils/Synchronizer.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/driver/internal/validator/ApiValidator.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/FastTests.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/manual/ManualTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/migration/MessageResolver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/migration/MessageValidatorAndMigrator.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/migration/MigrationException.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/migration/TestCasePatcher.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/model/Location.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/model/LocationAware.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/parserserializer/exceptions/ParserSerializerTestsuiteException.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/parserserializer/model/ParserSerializerTestsuite.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/parserserializer/model/Testcase.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/parserserializer/ParserSerializerTestsuiteRunner.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/RequireInternetConnection.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/RequireInternetConnectionCondition.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/RequireNonCaptureAllDns.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/RequireNonCaptureAllDnsCondition.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/RequirePcap.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/RequirePcapCondition.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/RequirePcapNg.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/RequirePcapNgCondition.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/xml/XmlHelper.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/java/org/apache/plc4x/test/XmlTestsuiteLoader.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/resources/logback.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/resources/schemas/driver-testsuite.xsd
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/utils/test-utils/src/main/resources/schemas/parser-serializer-testsuite.xsd
+ 
+*****************************************************

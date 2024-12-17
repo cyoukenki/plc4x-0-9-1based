@@ -1,0 +1,4 @@
+org\apache\plc4x\protocol\knxnetip\KnxSpecificationStoreUpdater.class
+org\apache\plc4x\protocol\knxnetip\handlers\ManufacturerIdsHandler.class
+org\apache\plc4x\protocol\knxnetip\handlers\ProductDescriptionHandler.class
+org\apache\plc4x\protocol\knxnetip\KnxDefinitionsGenerator.class

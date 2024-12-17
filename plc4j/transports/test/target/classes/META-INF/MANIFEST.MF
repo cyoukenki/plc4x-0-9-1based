@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Description: Base classes needed to implement plc4x drivers for t
+ esting using internal byte streams.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Transports: Test
+Bundle-SymbolicName: org.apache.plc4x.plc4j-transport-test
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: io.netty.bootstrap;version="4.1.67";uses:="io.netty.chan
+ nel",io.netty.channel.embedded;version="4.1.67";uses:="io.netty.bootstr
+ ap,io.netty.channel",org.apache.plc4x.java.transport.test;uses:="io.net
+ ty.bootstrap,io.netty.channel,org.apache.plc4x.java.spi.configuration,o
+ rg.apache.plc4x.java.spi.connection,org.apache.plc4x.java.spi.transport
+ ";version="0.9.1"
+Implementation-Title: PLC4J: Transports: Test
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-transports/plc4
+ j-transport-test
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: io.netty.bootstrap;version="[4.1,5)",io.netty.channel;ve
+ rsion="[4.1,5)",io.netty.channel.embedded;version="[4.1,5)",io.netty.ut
+ il;version="[4.1,5)",io.netty.util.concurrent;version="[4.1,5)",io.nett
+ y.util.internal;version="[4.1,5)",io.netty.util.internal.logging;versio
+ n="[4.1,5)",org.apache.plc4x.java.spi.configuration;version="[0.9,1)",o
+ rg.apache.plc4x.java.spi.connection;version="[0.9,1)",org.apache.plc4x.
+ java.spi.transport;version="[0.9,1)",org.slf4j;version="[1.7,2)"
+Include-Resource: META-INF/services/com.athaydes.spockframework.report.I
+ ReportCreator.properties=src/main/resources/META-INF/services/com.athay
+ des.spockframework.report.IReportCreator.properties,META-INF/services/o
+ rg.apache.plc4x.java.spi.transport.Transport=src/main/resources/META-IN
+ F/services/org.apache.plc4x.java.spi.transport.Transport
+Private-Package: io.netty.bootstrap,io.netty.channel.embedded,org.apache
+ .plc4x.java.transport.test
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Transports: Test
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

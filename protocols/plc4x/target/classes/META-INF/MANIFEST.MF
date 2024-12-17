@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Built-By: imzjh
+Bundle-Description: Base protocol specifications for the PLC4X Proxy pro
+ tocol
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Protocols: PLC4X (Proxy)
+Bundle-SymbolicName: org.apache.plc4x.protocols-plc4x
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Implementation-Title: Protocols: PLC4X (Proxy)
+Implementation-URL: https://plc4x.apache.org/plc4x-protocols/plc4x-proto
+ cols-plc4x
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Include-Resource: META-INF/services/org.apache.plc4x.plugins.codegenerat
+ or.protocol.Protocol=src/main/resources/META-INF/services/org.apache.pl
+ c4x.plugins.codegenerator.protocol.Protocol,protocols/plc4x/plc4x.mspec
+ =src/main/resources/protocols/plc4x/plc4x.mspec
+Private-Package: protocols.plc4x
+Specification-Title: Protocols: PLC4X (Proxy)
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

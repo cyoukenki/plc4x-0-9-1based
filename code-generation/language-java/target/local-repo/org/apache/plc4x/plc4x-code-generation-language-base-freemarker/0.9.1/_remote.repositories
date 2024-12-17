@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Dec 17 11:01:39 CST 2024
+plc4x-code-generation-language-base-freemarker-0.9.1.jar>=
+plc4x-code-generation-language-base-freemarker-0.9.1.pom>=

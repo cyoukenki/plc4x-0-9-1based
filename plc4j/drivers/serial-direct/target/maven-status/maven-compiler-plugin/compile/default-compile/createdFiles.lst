@@ -1,0 +1,15 @@
+org\apache\plc4x\java\serial\direct\readwrite\model\io\SerialDirectIO.class
+org\apache\plc4x\java\serial\direct\readwrite\SerialDirectDriver$ByteLengthEstimator.class
+org\apache\plc4x\java\serial\direct\readwrite\SerialDirectDriver.class
+org\apache\plc4x\java\serial\direct\readwrite\protocol\SerialDirectProtocolLogic.class
+org\apache\plc4x\java\serial\direct\readwrite\field\SerialDirectFieldHandler.class
+org\apache\plc4x\java\serial\direct\readwrite\model\PushMessageInfo.class
+org\apache\plc4x\java\serial\direct\readwrite\model\SerialDirect.class
+org\apache\plc4x\java\serial\direct\readwrite\model\types\SecsDataTypeCode.class
+org\apache\plc4x\java\serialdirect\readwrite\SerialDirect.class
+org\apache\plc4x\java\serialdirect\readwrite\io\SerialDirectIO.class
+org\apache\plc4x\java\serial\direct\readwrite\constant\SerialDirectConstants.class
+org\apache\plc4x\java\serial\direct\readwrite\model\SerialDirectCommandInfo.class
+org\apache\plc4x\java\serial\direct\readwrite\field\SerialDirectField.class
+org\apache\plc4x\java\serial\direct\readwrite\configuration\SerialDirectConfiguration.class
+org\apache\plc4x\java\serialdirect\readwrite\types\SecsDataTypeCode.class

@@ -1,0 +1,86 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Activator: org.apache.plc4x.java.osgi.DriverActivator
+Bundle-Description: Implementation of a PLC4X driver able to speak using
+  the EthernetIP Protocol with CIP Encapsulation.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Driver: UpperLink
+Bundle-SymbolicName: org.apache.plc4x.plc4j-driver-upper-link
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.upperlink.readwrite.configuration;
+ uses:="org.apache.plc4x.java.spi.configuration,org.apache.plc4x.java.tr
+ ansport.serial";version="0.9.1",org.apache.plc4x.java.upperlink.readwri
+ te.constant;version="0.9.1",org.apache.plc4x.java.upperlink.readwrite.f
+ ield;uses:="org.apache.plc4x.java.api.model,org.apache.plc4x.java.spi.c
+ onnection,org.apache.plc4x.java.spi.generation,org.apache.plc4x.java.sp
+ i.utils";version="0.9.1",org.apache.plc4x.java.upperlink.readwrite.io;u
+ ses:="org.apache.plc4x.java.spi.generation,org.apache.plc4x.java.upperl
+ ink.readwrite";version="0.9.1",org.apache.plc4x.java.upperlink.readwrit
+ e.model;uses:="org.apache.commons.lang3.builder,org.apache.plc4x.java.s
+ pi,org.apache.plc4x.java.spi.generation,org.apache.plc4x.java.spi.utils
+ ";version="0.9.1",org.apache.plc4x.java.upperlink.readwrite.model.io;us
+ es:="org.apache.plc4x.java.spi.generation,org.apache.plc4x.java.upperli
+ nk.readwrite.model";version="0.9.1",org.apache.plc4x.java.upperlink.rea
+ dwrite.protocol;uses:="org.apache.plc4x.java.api.messages,org.apache.pl
+ c4x.java.spi,org.apache.plc4x.java.spi.configuration,org.apache.plc4x.j
+ ava.upperlink.readwrite.configuration,org.apache.plc4x.java.upperlink.r
+ eadwrite.model";version="0.9.1",org.apache.plc4x.java.upperlink.readwri
+ te;uses:="org.apache.commons.lang3.builder,org.apache.plc4x.java.api.mo
+ del,org.apache.plc4x.java.api.value,org.apache.plc4x.java.spi.configura
+ tion,org.apache.plc4x.java.spi.connection,org.apache.plc4x.java.spi.gen
+ eration,org.apache.plc4x.java.upperlink.readwrite.field,org.apache.plc4
+ x.java.upperlink.readwrite.model";version="0.9.1",org.apache.plc4x.java
+ .upperlink.readwrite.utils;version="0.9.1"
+Export-Service: org.apache.plc4x.java.api.PlcDriver,org.apache.plc4x.jav
+ a.upperlink.readwrite.UpperLinkDriver
+Implementation-Title: PLC4J: Driver: UpperLink
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-drivers/plc4j-d
+ river-upper-link
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: com.fasterxml.jackson.annotation;resolution:=optional;ve
+ rsion="[2.12,3)",com.google.gson;version="[2.8,3)",com.omron.gc.data.pr
+ ovider.utils;version="[2.0,3)",io.netty.channel;version="[4.1,5)",org.a
+ pache.commons.lang3;version="[3.12,4)",org.apache.commons.lang3.builder
+ ;version="[3.12,4)",org.apache.plc4x.java.api.messages;version="[0.9,1)
+ ",org.apache.plc4x.java.api.model;version="[0.9,1)",org.apache.plc4x.ja
+ va.api.types;version="[0.9,1)",org.apache.plc4x.java.api.value;version=
+ "[0.9,1)",org.apache.plc4x.java.osgi,org.apache.plc4x.java.spi;version=
+ "[0.9,1)",org.apache.plc4x.java.spi.configuration;version="[0.9,1)",org
+ .apache.plc4x.java.spi.configuration.annotations;version="[0.9,1)",org.
+ apache.plc4x.java.spi.configuration.annotations.defaults;version="[0.9,
+ 1)",org.apache.plc4x.java.spi.connection;version="[0.9,1)",org.apache.p
+ lc4x.java.spi.generation;version="[0.9,1)",org.apache.plc4x.java.spi.me
+ ssages;version="[0.9,1)",org.apache.plc4x.java.spi.transaction;version=
+ "[0.9,1)",org.apache.plc4x.java.spi.utils;version="[0.9,1)",org.apache.
+ plc4x.java.spi.values;version="[0.9,1)",org.apache.plc4x.java.transport
+ .serial;version="[0.9,1)",org.apache.plc4x.java.upperlink.readwrite,org
+ .apache.plc4x.java.upperlink.readwrite.configuration,org.apache.plc4x.j
+ ava.upperlink.readwrite.constant,org.apache.plc4x.java.upperlink.readwr
+ ite.field,org.apache.plc4x.java.upperlink.readwrite.io,org.apache.plc4x
+ .java.upperlink.readwrite.model,org.apache.plc4x.java.upperlink.readwri
+ te.model.io,org.apache.plc4x.java.upperlink.readwrite.protocol,org.apac
+ he.plc4x.java.upperlink.readwrite.utils,org.slf4j;version="[1.7,2)"
+Include-Resource: META-INF/services/org.apache.plc4x.java.api.PlcDriver=
+ src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDrive
+ r
+Private-Package: org.apache.plc4x.java.upperlink.readwrite.configuration
+ ,org.apache.plc4x.java.upperlink.readwrite.constant,org.apache.plc4x.ja
+ va.upperlink.readwrite.field,org.apache.plc4x.java.upperlink.readwrite.
+ io,org.apache.plc4x.java.upperlink.readwrite.model,org.apache.plc4x.jav
+ a.upperlink.readwrite.model.io,org.apache.plc4x.java.upperlink.readwrit
+ e.protocol,org.apache.plc4x.java.upperlink.readwrite,org.apache.plc4x.j
+ ava.upperlink.readwrite.utils
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="org.apache.pl
+ c4x.java.api.PlcDriver"
+Require-Capability: osgi.extender;filter:="(osgi.extender=osgi.servicelo
+ ader.registrar)",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Driver: UpperLink
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

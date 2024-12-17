@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Built-By: imzjh
+Bundle-Description: Base protocol specifications for the Fins protocol
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Protocols: Fins
+Bundle-SymbolicName: org.apache.plc4x.protocols-fins
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.protocol.fins;uses:="org.apache.plc4x.p
+ lugins.codegenerator.protocol,org.apache.plc4x.plugins.codegenerator.ty
+ pes.definitions,org.apache.plc4x.plugins.codegenerator.types.exceptions
+ ";version="1.0.0"
+Implementation-Title: Protocols: Fins
+Implementation-URL: https://plc4x.apache.org/plc4x-protocols/plc4x-proto
+ cols-fins
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 1.0.0
+Import-Package: org.apache.plc4x.plugins.codegenerator.language.mspec.pa
+ rser,org.apache.plc4x.plugins.codegenerator.protocol,org.apache.plc4x.p
+ lugins.codegenerator.types.definitions,org.apache.plc4x.plugins.codegen
+ erator.types.exceptions
+Include-Resource: META-INF/services/org.apache.plc4x.plugins.codegenerat
+ or.protocol.Protocol=src/main/resources/META-INF/services/org.apache.pl
+ c4x.plugins.codegenerator.protocol.Protocol,protocols/fins/fins-test.ms
+ pec=src/main/resources/protocols/fins/fins-test.mspec,protocols/fins/fi
+ ns.mspec=src/main/resources/protocols/fins/fins.mspec
+Private-Package: protocols.fins
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Protocols: Fins
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.0.0
+Tool: Bnd-5.1.1.202006162103

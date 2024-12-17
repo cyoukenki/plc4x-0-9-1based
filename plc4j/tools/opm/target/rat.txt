@@ -1,0 +1,45 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:12:36+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 19
+
+Apache Licensed: 19
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/AliasRegistry.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/OPMException.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/OpmUtils.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/PlcEntity.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/PlcEntityInterceptor.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/PlcEntityManager.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/PlcField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/SimpleAliasRegistry.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/site/asciidoc/opm/using-opm.adoc
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/site/site.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/test/java/org/apache/plc4x/java/opm/ConnectedEntityTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/test/java/org/apache/plc4x/java/opm/OPMExceptionTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/test/java/org/apache/plc4x/java/opm/OpmUtilsTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/test/java/org/apache/plc4x/java/opm/PlcEntityInterceptorTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/test/java/org/apache/plc4x/java/opm/PlcEntityManagerComplexTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/test/java/org/apache/plc4x/java/opm/PlcEntityManagerTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/test/java/org/apache/plc4x/java/opm/SimpleAliasRegistryTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/opm/src/test/resources/logback.xml
+ 
+*****************************************************

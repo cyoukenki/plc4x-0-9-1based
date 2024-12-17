@@ -1,0 +1,52 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:12:37+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 26
+
+Apache Licensed: 26
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/docs/PLC4X.adoc
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/java/org/apache/plc4x/camel/BinaryProcessor.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/java/org/apache/plc4x/camel/BinaryProcessorMap.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/java/org/apache/plc4x/camel/BinaryProcessorMap_1.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/java/org/apache/plc4x/camel/BitConvertProcessor.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/java/org/apache/plc4x/camel/Constants.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/java/org/apache/plc4x/camel/DataConversionProcessor.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/java/org/apache/plc4x/camel/DataSpliter.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/java/org/apache/plc4x/camel/MultipleResultProcessor.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/java/org/apache/plc4x/camel/Plc4XComponent.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/java/org/apache/plc4x/camel/Plc4XConsumer.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/java/org/apache/plc4x/camel/Plc4XEndpoint.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/java/org/apache/plc4x/camel/Plc4XProducer.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/java/org/apache/plc4x/camel/TagData.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/main/resources/META-INF/services/org/apache/camel/component/plc4x
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/test/java/org/apache/plc4x/camel/ConstantsTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/test/java/org/apache/plc4x/camel/ManualTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/test/java/org/apache/plc4x/camel/MockDriver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/test/java/org/apache/plc4x/camel/Plc4XComponentTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/test/java/org/apache/plc4x/camel/Plc4XConsumerTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/test/java/org/apache/plc4x/camel/Plc4XEndpointTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/test/java/org/apache/plc4x/camel/Plc4XProducerTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/test/resources/log4j2.properties
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/test/resources/logback.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-camel/src/test/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+ 
+*****************************************************

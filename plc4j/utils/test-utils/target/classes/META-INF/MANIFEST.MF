@@ -1,0 +1,68 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Description: A set of test utils. Especially defining the test-ca
+ tegories used to categorize tests.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Utils: Test Utils
+Bundle-SymbolicName: org.apache.plc4x.plc4j-utils-test-utils
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.test.dom4j;uses:="org.apache.plc4x.test
+ .model,org.dom4j,org.dom4j.io,org.dom4j.tree,org.xml.sax";version="0.9.
+ 1",org.apache.plc4x.test.driver;uses:="org.apache.plc4x.test,org.apache
+ .plc4x.test.driver.exceptions,org.junit.jupiter.api";version="0.9.1",or
+ g.apache.plc4x.test.driver.exceptions;version="0.9.1",org.apache.plc4x.
+ test;uses:="org.junit.jupiter.api.extension";version="0.9.1",org.apache
+ .plc4x.test.manual;version="0.9.1",org.apache.plc4x.test.migration;uses
+ :="org.apache.plc4x.java.spi.generation,org.apache.plc4x.test.driver.ex
+ ceptions,org.apache.plc4x.test.parserserializer.exceptions,org.dom4j";v
+ ersion="0.9.1",org.apache.plc4x.test.model;version="0.9.1",org.apache.p
+ lc4x.test.parserserializer.exceptions;version="0.9.1",org.apache.plc4x.
+ test.parserserializer.model;uses:="org.apache.plc4x.test.model,org.dom4
+ j";version="0.9.1",org.apache.plc4x.test.parserserializer;uses:="org.ap
+ ache.plc4x.test,org.apache.plc4x.test.parserserializer.exceptions,org.j
+ unit.jupiter.api";version="0.9.1",org.apache.plc4x.test.xml;uses:="org.
+ dom4j";version="0.9.1"
+Implementation-Title: PLC4J: Utils: Test Utils
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-utils/plc4j-uti
+ ls-test-utils
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: com.fasterxml.jackson.annotation;version="[2.12,3)",io.n
+ etty.buffer;version="[4.1,5)",io.netty.channel;version="[4.1,5)",io.net
+ ty.channel.embedded;version="[4.1,5)",org.apache.commons.codec;version=
+ "[1.15,2)",org.apache.commons.codec.binary;version="[1.15,2)",org.apach
+ e.commons.lang3;version="[3.12,4)",org.apache.maven.artifact.versioning
+ ,org.apache.plc4x.java;version="[0.9,1)",org.apache.plc4x.java.api;vers
+ ion="[0.9,1)",org.apache.plc4x.java.api.exceptions;version="[0.9,1)",or
+ g.apache.plc4x.java.api.messages;version="[0.9,1)",org.apache.plc4x.jav
+ a.api.types;version="[0.9,1)",org.apache.plc4x.java.api.value;version="
+ [0.9,1)",org.apache.plc4x.java.spi.connection;version="[0.9,1)",org.apa
+ che.plc4x.java.spi.generation;version="[0.9,1)",org.apache.plc4x.java.s
+ pi.utils;version="[0.9,1)",org.apache.plc4x.java.spi.values;version="[0
+ .9,1)",org.apache.plc4x.test,org.apache.plc4x.test.dom4j,org.apache.plc
+ 4x.test.driver.exceptions,org.apache.plc4x.test.migration,org.apache.pl
+ c4x.test.model,org.apache.plc4x.test.parserserializer.exceptions,org.ap
+ ache.plc4x.test.parserserializer.model,org.apache.plc4x.test.xml,org.do
+ m4j,org.dom4j.io,org.dom4j.tree,org.junit.jupiter.api;version="[5.7,6)"
+ ,org.junit.jupiter.api.extension;version="[5.7,6)",org.junit.jupiter.ap
+ i.function;version="[5.7,6)",org.pcap4j.core,org.slf4j;version="[1.7,2)
+ ",org.xml.sax,org.xmlunit.builder;version="[2.8,3)",org.xmlunit.diff;ve
+ rsion="[2.8,3)"
+Include-Resource: logback.xml=src/main/resources/logback.xml,schemas/dri
+ ver-testsuite.xsd=src/main/resources/schemas/driver-testsuite.xsd,schem
+ as/parser-serializer-testsuite.xsd=src/main/resources/schemas/parser-se
+ rializer-testsuite.xsd
+Private-Package: org.apache.plc4x.test.driver.internal,org.apache.plc4x.
+ test.driver.internal.api,org.apache.plc4x.test.driver.internal.handlers
+ ,org.apache.plc4x.test.driver.internal.utils,org.apache.plc4x.test.driv
+ er.internal.validator,schemas
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Utils: Test Utils
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

@@ -1,0 +1,36 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:39+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 10
+
+Apache Licensed: 10
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ab-eth/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ab-eth/src/main/java/org/apache/plc4x/java/abeth/AbEthDriver.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ab-eth/src/main/java/org/apache/plc4x/java/abeth/configuration/AbEthConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ab-eth/src/main/java/org/apache/plc4x/java/abeth/field/AbEthField.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ab-eth/src/main/java/org/apache/plc4x/java/abeth/field/AbEthFieldHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ab-eth/src/main/java/org/apache/plc4x/java/abeth/protocol/AbEthProtocolLogic.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ab-eth/src/main/java/org/apache/plc4x/java/abeth/protocol/Plc4xAbEthProtocol.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ab-eth/src/main/java/org/apache/plc4x/java/abeth/types/FileType.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ab-eth/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/ab-eth/src/test/java/org/apache/plc4x/protocol/abeth/AbEthParserSerializerTest.java
+ 
+*****************************************************

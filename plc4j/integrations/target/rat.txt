@@ -1,0 +1,40 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:03:03+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 14
+
+Apache Licensed: 14
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/pom.xml
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/backend/Plc4xCommunication.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/Configuration.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/DeviceConfiguration.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/PasswordConfiguration.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/Tag.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/User.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/context/CertificateGenerator.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/context/CertificateKeyPair.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/resources/config.yml
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/resources/logback.xml
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/test/java/org/apache/plc4x/java/opcuaserver/OpcuaPlcDriverTest.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/test/resources/config.yml
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/pom.xml
+ 
+*****************************************************

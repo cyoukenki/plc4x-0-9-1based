@@ -1,0 +1,39 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:11:41+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 13
+
+Apache Licensed: 13
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/workspace/github/plc4x-0-9-1based/code-generation/language-go/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/code-generation/language-go/src/main/java/org/apache/plc4x/language/go/GoLanguageOutput.java
+  AL    F:/workspace/github/plc4x-0-9-1based/code-generation/language-go/src/main/java/org/apache/plc4x/language/go/GoLanguageTemplateHelper.java
+  AL    F:/workspace/github/plc4x-0-9-1based/code-generation/language-go/src/main/java/org/apache/plc4x/language/go/utils/FieldUtils.java
+  AL    F:/workspace/github/plc4x-0-9-1based/code-generation/language-go/src/main/resources/META-INF/services/org.apache.plc4x.plugins.codegenerator.language.LanguageOutput
+  AL    F:/workspace/github/plc4x-0-9-1based/code-generation/language-go/src/main/resources/templates/go/data-io-template.go.ftlh
+  AL    F:/workspace/github/plc4x-0-9-1based/code-generation/language-go/src/main/resources/templates/go/enum-template.go.ftlh
+  AL    F:/workspace/github/plc4x-0-9-1based/code-generation/language-go/src/main/resources/templates/go/model-template.go.ftlh
+  AL    F:/workspace/github/plc4x-0-9-1based/code-generation/language-go/src/main/resources/templates/go/parser-factory-template.go.ftlh
+  AL    F:/workspace/github/plc4x-0-9-1based/code-generation/language-go/src/main/resources/templates/go/xml-parser-factory-template.go.ftlh
+  AL    F:/workspace/github/plc4x-0-9-1based/code-generation/language-go/src/test/resources/plc4go/go.mod
+  AL    F:/workspace/github/plc4x-0-9-1based/code-generation/language-go/src/test/resources/plc4go/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/code-generation/language-go/src/test/resources/settings.xml
+ 
+*****************************************************

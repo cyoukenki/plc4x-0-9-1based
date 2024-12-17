@@ -1,0 +1,36 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Built-By: imzjh
+Bundle-Description: Base protocol specifications for the AB Df1 protocol
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Protocols: Df1
+Bundle-SymbolicName: org.apache.plc4x.protocols-df1
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.protocol.df1;uses:="org.apache.plc4x.pl
+ ugins.codegenerator.protocol,org.apache.plc4x.plugins.codegenerator.typ
+ es.definitions,org.apache.plc4x.plugins.codegenerator.types.exceptions"
+ ;version="0.9.1"
+Implementation-Title: Protocols: Df1
+Implementation-URL: https://plc4x.apache.org/plc4x-protocols/plc4x-proto
+ cols-df1
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: org.apache.plc4x.plugins.codegenerator.language.mspec.pa
+ rser,org.apache.plc4x.plugins.codegenerator.protocol,org.apache.plc4x.p
+ lugins.codegenerator.types.definitions,org.apache.plc4x.plugins.codegen
+ erator.types.exceptions
+Include-Resource: META-INF/services/org.apache.plc4x.plugins.codegenerat
+ or.protocol.Protocol=src/main/resources/META-INF/services/org.apache.pl
+ c4x.plugins.codegenerator.protocol.Protocol,protocols/df1/df1.mspec=src
+ /main/resources/protocols/df1/df1.mspec
+Private-Package: protocols.df1
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Protocols: Df1
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

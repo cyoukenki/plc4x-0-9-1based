@@ -1,0 +1,58 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-12-17T11:01:56+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 32
+
+Apache Licensed: 32
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/hsc/pom.xml
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/hsc/src/main/java/org/apache/plc4x/java/hsc/readwrite/configuration/HscConfiguration.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/hsc/src/main/java/org/apache/plc4x/java/hsc/readwrite/constant/ServerConstants.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/hsc/src/main/java/org/apache/plc4x/java/hsc/readwrite/field/HscField.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/hsc/src/main/java/org/apache/plc4x/java/hsc/readwrite/field/HscFieldHandler.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/hsc/src/main/java/org/apache/plc4x/java/hsc/readwrite/HscDriver.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/hsc/src/main/java/org/apache/plc4x/java/hsc/readwrite/model/HscPacket.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/hsc/src/main/java/org/apache/plc4x/java/hsc/readwrite/model/io/HscPacketIO.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/hsc/src/main/java/org/apache/plc4x/java/hsc/readwrite/model/types/package-info.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/hsc/src/main/java/org/apache/plc4x/java/hsc/readwrite/protocol/HscProtocolLogic.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/hsc/src/main/java/org/apache/plc4x/java/hsc/readwrite/utils/ConvertUtil.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/hsc/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/pom.xml
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/README.adoc
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/java/org/apache/plc4x/java/knxnetip/configuration/KnxNetIpConfiguration.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/java/org/apache/plc4x/java/knxnetip/context/KnxNetIpDriverContext.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/java/org/apache/plc4x/java/knxnetip/ets5/Ets5Parser.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/java/org/apache/plc4x/java/knxnetip/ets5/model/AddressType.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/java/org/apache/plc4x/java/knxnetip/ets5/model/Ets5Model.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/java/org/apache/plc4x/java/knxnetip/ets5/model/Function.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/java/org/apache/plc4x/java/knxnetip/ets5/model/GroupAddress.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/java/org/apache/plc4x/java/knxnetip/field/KnxNetIpField.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/java/org/apache/plc4x/java/knxnetip/field/KnxNetIpFieldHandler.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/java/org/apache/plc4x/java/knxnetip/KnxNetIpDriver.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/java/org/apache/plc4x/java/knxnetip/model/KnxNetIpSubscriptionHandle.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/java/org/apache/plc4x/java/knxnetip/protocol/KnxNetIpProtocolLogic.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/java/org/apache/plc4x/java/knxnetip/utils/KnxHelper.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/test/java/org/apache/plc4x/java/knxnetip/KnxNetIpParserSerializerTest.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/test/java/org/apache/plc4x/java/knxnetip/ManualKnxNetIp.java
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/knxnetip/src/test/resources/logback.xml
+  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/drivers/pom.xml
+ 
+*****************************************************

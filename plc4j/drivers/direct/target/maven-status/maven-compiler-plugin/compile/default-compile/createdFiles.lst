@@ -1,0 +1,8 @@
+org\apache\plc4x\java\direct\readwrite\field\DirectField.class
+org\apache\plc4x\java\direct\readwrite\field\DirectFieldHandler.class
+org\apache\plc4x\java\direct\readwrite\DirectDriver$ByteLengthEstimator.class
+org\apache\plc4x\java\direct\readwrite\configuration\DirectConfiguration.class
+org\apache\plc4x\java\direct\readwrite\model\DirectPacket.class
+org\apache\plc4x\java\direct\readwrite\DirectDriver.class
+org\apache\plc4x\java\direct\readwrite\protocol\DirectProtocolLogic.class
+org\apache\plc4x\java\direct\readwrite\model\io\DirectPacketIO.class
