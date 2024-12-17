@@ -17,8 +17,7 @@
  * under the License.
  */
 package org.apache.plc4x.java.api.internal;
-import com.omron.gc.omron.core.api.SentinelHandlerService;
-import com.omron.gc.omron.core.server.OmronServer;
+
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.service.component.annotations.Component;
@@ -62,24 +61,24 @@ public class Activator implements BundleActivator {
 //    protected void unRegisterOmronServer(com.omron.gc.omron.core.server.OmronServer entityService) {
 //        DataHolder.getInstance().setRegister(false);
 //    }
-    @Reference(
-        name = "com.omron.gc.omron.core.api.SentinelHandlerService",
-        service = SentinelHandlerService.class,
-        cardinality = ReferenceCardinality.OPTIONAL,
-        policy = ReferencePolicy.DYNAMIC,
-        unbind = "unsetSentinelHandlerService"
-    )
-    protected void setSentinelHandlerService(SentinelHandlerService sentinelHandlerService, Map<String,String> sentinelProperties) {
-        boolean isHasp = sentinelHandlerService.verifySentinel(Integer.parseInt(sentinelProperties.get("featureId")));
-        LOGGER.info("Sentinel key isHasp = {}",isHasp);
-        if(isHasp) {
-            DataHolder.getInstance().setRegister(true);
-        } else {
-            DataHolder.getInstance().setRegister(false);
-        }
-    }
+    // @Reference(
+    //     name = "com.omron.gc.omron.core.api.SentinelHandlerService",
+    //     service = SentinelHandlerService.class,
+    //     cardinality = ReferenceCardinality.OPTIONAL,
+    //     policy = ReferencePolicy.DYNAMIC,
+    //     unbind = "unsetSentinelHandlerService"
+    // )
+    // protected void setSentinelHandlerService(SentinelHandlerService sentinelHandlerService, Map<String,String> sentinelProperties) {
+    //     boolean isHasp = sentinelHandlerService.verifySentinel(Integer.parseInt(sentinelProperties.get("featureId")));
+    //     LOGGER.info("Sentinel key isHasp = {}",isHasp);
+    //     if(isHasp) {
+    //         DataHolder.getInstance().setRegister(true);
+    //     } else {
+    //         DataHolder.getInstance().setRegister(false);
+    //     }
+    // }
 
-    protected void unsetSentinelHandlerService(SentinelHandlerService sentinelHandlerService, Map<String,String> sentinelProperties) {
-        DataHolder.getInstance().setRegister(false);
-    }
+    // protected void unsetSentinelHandlerService(SentinelHandlerService sentinelHandlerService, Map<String,String> sentinelProperties) {
+    //     DataHolder.getInstance().setRegister(false);
+    // }
 }

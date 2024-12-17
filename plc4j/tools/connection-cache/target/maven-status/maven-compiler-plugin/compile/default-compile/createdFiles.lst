@@ -1,0 +1,17 @@
+org\apache\plc4x\java\utils\connectionpool2\CachedReadRequest.class
+org\apache\plc4x\java\utils\connectionpool2\CachedDriverManagerMBean.class
+org\apache\plc4x\java\utils\connectionpool2\CachedPlcConnection$3.class
+org\apache\plc4x\java\utils\connectionpool2\CachedWriteRequestBuilder.class
+org\apache\plc4x\java\utils\connectionpool2\PooledDriverManagerMBean.class
+org\apache\plc4x\java\utils\connectionpool2\CachedDriverManager$1.class
+org\apache\plc4x\java\utils\connectionpool2\CachedDriverManager.class
+org\apache\plc4x\java\utils\connectionpool2\CachedDriverManager$ConnectionState.class
+org\apache\plc4x\java\utils\connectionpool2\CachedPlcConnection$2.class
+org\apache\plc4x\java\utils\connectionpool2\PooledDriverManager.class
+org\apache\plc4x\java\utils\connectionpool2\CachedPlcConnection$5.class
+org\apache\plc4x\java\utils\connectionpool2\CachedPlcConnection$1.class
+org\apache\plc4x\java\utils\connectionpool2\CachedPlcConnection$4.class
+org\apache\plc4x\java\utils\connectionpool2\CachedReadRequestBuilder.class
+org\apache\plc4x\java\utils\connectionpool2\CachedWriteRequest.class
+org\apache\plc4x\java\utils\connectionpool2\PlcConnectionFactory.class
+org\apache\plc4x\java\utils\connectionpool2\CachedPlcConnection.class

@@ -2,7 +2,7 @@
 *****************************************************
 Summary
 -------
-Generated at: 2024-12-17T11:01:48+08:00
+Generated at: 2024-12-17T17:11:16+08:00
 
 Notes: 0
 Binaries: 0
@@ -22,10 +22,10 @@ Generated files do not require license headers.
   Binary files (which do not require any license headers) will be marked B
   Compressed archives will be marked A
   Notices, licenses etc. will be marked N
-  AL    F:/omron/gitlab/plc4x/plc4j/protocols/pom.xml
-  AL    F:/omron/gitlab/plc4x/plc4j/protocols/serial-direct/pom.xml
-  AL    F:/omron/gitlab/plc4x/plc4j/protocols/serial-direct/src/main/java/org/apache/plc4x/protocol/serial/direct/SerialDirectProtocol.java
-  AL    F:/omron/gitlab/plc4x/plc4j/protocols/serial-direct/src/main/resources/META-INF/services/org.apache.plc4x.plugins.codegenerator.protocol.Protocol
-  AL    F:/omron/gitlab/plc4x/plc4j/protocols/serial-direct/src/main/resources/protocols/serial/direct/serial-direct.mspec
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/serial-direct/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/serial-direct/src/main/java/org/apache/plc4x/protocol/serial/direct/SerialDirectProtocol.java
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/serial-direct/src/main/resources/META-INF/services/org.apache.plc4x.plugins.codegenerator.protocol.Protocol
+  AL    F:/workspace/github/plc4x-0-9-1based/protocols/serial-direct/src/main/resources/protocols/serial/direct/serial-direct.mspec
  
 *****************************************************

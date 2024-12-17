@@ -1,0 +1,29 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+PLC4J: Tools: Capture Replay
+
+
+From: 'an unknown organization'
+  - Java Native Access (https://github.com/java-native-access/jna) net.java.dev.jna:jna:jar:5.8.0
+    License: LGPL, version 2.1  (http://www.gnu.org/licenses/licenses.html)    License: Apache License v2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Pcap4J Core (https://github.com/kaitoy/pcap4j/pcap4j-core) org.pcap4j:pcap4j-core:jar:1.8.2
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+  - Pcap4J Static Packet Factory (https://github.com/kaitoy/pcap4j/pcap4j-packetfactory-static) org.pcap4j:pcap4j-packetfactory-static:jar:1.8.2
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - Logback Classic Module (http://logback.qos.ch/logback-classic) ch.qos.logback:logback-classic:jar:1.2.5
+    License: Eclipse Public License - v 1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: GNU Lesser General Public License  (http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
+  - Logback Core Module (http://logback.qos.ch/logback-core) ch.qos.logback:logback-core:jar:1.2.5
+    License: Eclipse Public License - v 1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: GNU Lesser General Public License  (http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Commons CLI (http://commons.apache.org/proper/commons-cli/) commons-cli:commons-cli:jar:1.4
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

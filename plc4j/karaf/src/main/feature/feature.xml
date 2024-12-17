@@ -56,6 +56,8 @@
     <bundle>wrap:mvn:org.apache.plc4x/plc4x-code-generation-language-base-freemarker/${org.apache.plc4x.version}</bundle>
     <bundle>wrap:mvn:org.apache.plc4x/plc4x-code-generation-language-java/${org.apache.plc4x.version}</bundle>
     <bundle>wrap:mvn:org.apache.plc4x/plc4x-code-generation-protocol-base-mspec/${org.apache.plc4x.version}</bundle>
+
+    <bundle>mvn:com.google.code.gson/gson/2.8.8</bundle>
   </feature>
 
   <feature name='camel-plc4x-modbus' version='${project.version}'>

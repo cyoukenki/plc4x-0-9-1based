@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Description: OSGi Module for PLC4X
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: OSGi
+Bundle-SymbolicName: org.apache.plc4x.plc4j-osgi
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.osgi;uses:="org.osgi.framework";ve
+ rsion="0.9.1"
+Implementation-Title: PLC4J: OSGi
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-osgi
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: org.apache.plc4x.java.api;version="[0.9,1)",org.apache.p
+ lc4x.java.spi.transport;version="[0.9,1)",org.osgi.framework;version="[
+ 1.8,2)",org.osgi.framework.wiring;version="[1.2,2)"
+Private-Package: org.apache.plc4x.java.osgi
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: OSGi
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

@@ -1,8 +1,0 @@
-S7IoTest.class
-org\apache\plc4x\java\s7\readwrite\ManualS7DriverTest.class
-BenchmarkGeneratedS7.class
-org\apache\plc4x\java\s7\readwrite\field\S7FieldTest.class
-org\apache\plc4x\java\s7\readwrite\DatatypesTest.class
-org\apache\plc4x\java\s7\readwrite\issues\PLC4X272.class
-org\apache\plc4x\java\s7\readwrite\S7DriverIT.class
-org\apache\plc4x\java\s7\readwrite\S7ParserSerializerTest.class

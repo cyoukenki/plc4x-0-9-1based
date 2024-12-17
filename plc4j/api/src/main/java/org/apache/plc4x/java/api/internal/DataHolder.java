@@ -32,7 +32,7 @@ public class DataHolder {
 
     private static DataHolder instance = new DataHolder();
 
-    private boolean isRegister = false;
+    private boolean isRegister = true;
 
     private DataHolder() {
     }

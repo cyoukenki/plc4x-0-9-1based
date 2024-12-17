@@ -114,7 +114,7 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
+      <!-- <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
         <executions>
@@ -139,7 +139,6 @@
                 <usedDependency>org.apache.plc4x:plc4j-driver-opcua</usedDependency>
                 <usedDependency>org.apache.plc4x:plc4j-driver-s7</usedDependency>
                 <usedDependency>org.apache.plc4x:plc4j-driver-simulated</usedDependency>
-<!--                <usedDependency>org.apache.plc4x:plc4j-driver-secsgem</usedDependency>-->
                 <usedDependency>org.apache.plc4x:plc4j-driver-fins</usedDependency>
                 <usedDependency>org.apache.plc4x:plc4j-driver-mc</usedDependency>
                 <usedDependency>org.apache.plc4x:plc4j-driver-serial-direct</usedDependency>
@@ -147,7 +146,7 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin> -->
     </plugins>
   </build>
 

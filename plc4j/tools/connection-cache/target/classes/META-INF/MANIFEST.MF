@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Description: An implementation of a connection pool based on Apac
+ he Commons Pool.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Tools: Connection Cache
+Bundle-SymbolicName: org.apache.plc4x.plc4j-connection-cache
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.0.2
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.utils.connectionpool2;uses:="org.a
+ pache.plc4x.java,org.apache.plc4x.java.api,org.apache.plc4x.java.api.au
+ thentication,org.apache.plc4x.java.api.exceptions,org.apache.plc4x.java
+ .api.messages,org.apache.plc4x.java.api.metadata,org.apache.plc4x.java.
+ api.model,org.apache.plc4x.java.api.value";version="1.0.2"
+Implementation-Title: PLC4J: Tools: Connection Cache
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-tools/plc4j-con
+ nection-cache
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 1.0.2
+Import-Package: javax.management,org.apache.commons.lang3;version="[3.12
+ ,4)",org.apache.plc4x.java;version="[0.9,1)",org.apache.plc4x.java.api;
+ version="[0.9,1)",org.apache.plc4x.java.api.authentication;version="[0.
+ 9,1)",org.apache.plc4x.java.api.exceptions;version="[0.9,1)",org.apache
+ .plc4x.java.api.messages;version="[0.9,1)",org.apache.plc4x.java.api.me
+ tadata;version="[0.9,1)",org.apache.plc4x.java.api.model;version="[0.9,
+ 1)",org.apache.plc4x.java.api.value;version="[0.9,1)",org.slf4j;version
+ ="[1.7,2)"
+Private-Package: org.apache.plc4x.java.utils.connectionpool2
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Tools: Connection Cache
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.0.2
+Tool: Bnd-5.1.1.202006162103

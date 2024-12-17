@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk: 11.0.22
+Build-Jdk: 17.0.13
 Bundle-Activator: org.apache.plc4x.java.api.internal.Activator
 Bundle-Description: Central API Module.
 Bundle-DocURL: https://www.apache.org/
@@ -11,47 +11,48 @@ Bundle-Vendor: The Apache Software Foundation
 Bundle-Version: 0.9.1
 Created-By: Apache Maven Bundle Plugin
 Export-Package: org.apache.plc4x.java.api.authentication;version="0.9.1"
- ,org.apache.plc4x.java.api;uses:="org.apache.plc4x.java.api.authenticat
- ion,org.apache.plc4x.java.api.exceptions,org.apache.plc4x.java.api.list
- ener,org.apache.plc4x.java.api.messages,org.apache.plc4x.java.api.metad
- ata,org.apache.plc4x.java.api.model";version="0.9.1",org.apache.plc4x.j
+ ,org.apache.plc4x.java.api;version="0.9.1";uses:="org.apache.plc4x.java
+ .api.authentication,org.apache.plc4x.java.api.exceptions,org.apache.plc
+ 4x.java.api.listener,org.apache.plc4x.java.api.messages,org.apache.plc4
+ x.java.api.metadata,org.apache.plc4x.java.api.model",org.apache.plc4x.j
  ava.api.exceptions;version="0.9.1",org.apache.plc4x.java.api.listener;v
- ersion="0.9.1",org.apache.plc4x.java.api.messages;uses:="org.apache.plc
- 4x.java.api.model,org.apache.plc4x.java.api.types,org.apache.plc4x.java
- .api.value";version="0.9.1",org.apache.plc4x.java.api.metadata;version=
- "0.9.1",org.apache.plc4x.java.api.model;uses:="com.fasterxml.jackson.an
- notation,org.apache.plc4x.java.api.messages,org.apache.plc4x.java.api.t
- ypes";version="0.9.1",org.apache.plc4x.java.api.types;version="0.9.1",o
- rg.apache.plc4x.java.api.value;uses:="com.fasterxml.jackson.annotation,
- org.apache.plc4x.java.api.model";version="0.9.1",org.apache.plc4x.java;
- uses:="org.apache.plc4x.java.api,org.apache.plc4x.java.api.authenticati
- on,org.apache.plc4x.java.api.exceptions";version="0.9.1"
+ ersion="0.9.1",org.apache.plc4x.java.api.messages;version="0.9.1";uses:
+ ="org.apache.plc4x.java.api.model,org.apache.plc4x.java.api.types,org.a
+ pache.plc4x.java.api.value",org.apache.plc4x.java.api.metadata;version=
+ "0.9.1",org.apache.plc4x.java.api.model;version="0.9.1";uses:="com.fast
+ erxml.jackson.annotation,org.apache.plc4x.java.api.messages,org.apache.
+ plc4x.java.api.types",org.apache.plc4x.java.api.types;version="0.9.1",o
+ rg.apache.plc4x.java.api.value;version="0.9.1";uses:="com.fasterxml.jac
+ kson.annotation,org.apache.plc4x.java.api.model",org.apache.plc4x.java;
+ version="0.9.1";uses:="org.apache.plc4x.java.api,org.apache.plc4x.java.
+ api.authentication,org.apache.plc4x.java.api.exceptions"
 Implementation-Title: PLC4J: API
 Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-api
 Implementation-Vendor: The Apache Software Foundation
 Implementation-Vendor-Id: org.apache.plc4x
 Implementation-Version: 0.9.1
 Import-Package: com.fasterxml.jackson.annotation;resolution:=optional;ve
- rsion="[2.12,3)",com.omron.gc.omron.core.api;version="[2.0.0,4.0.0)",or
- g.apache.commons.lang3;version="[3.12,4)",org.apache.plc4x.java.api,org
- .apache.plc4x.java.api.authentication,org.apache.plc4x.java.api.excepti
- ons,org.apache.plc4x.java.api.listener,org.apache.plc4x.java.api.messag
- es,org.apache.plc4x.java.api.metadata,org.apache.plc4x.java.api.model,o
- rg.apache.plc4x.java.api.types,org.apache.plc4x.java.api.value,org.osgi
- .framework;version="[1.8,2)",org.slf4j;version="[1.7,2)"
+ rsion="[2.12,3)",org.apache.commons.lang3;version="[3.12,4)",org.apache
+ .plc4x.java.api;version="[0.9,1)",org.apache.plc4x.java.api.authenticat
+ ion;version="[0.9,1)",org.apache.plc4x.java.api.exceptions;version="[0.
+ 9,1)",org.apache.plc4x.java.api.listener;version="[0.9,1)",org.apache.p
+ lc4x.java.api.messages;version="[0.9,1)",org.apache.plc4x.java.api.meta
+ data;version="[0.9,1)",org.apache.plc4x.java.api.model;version="[0.9,1)
+ ",org.apache.plc4x.java.api.types;version="[0.9,1)",org.apache.plc4x.ja
+ va.api.value;version="[0.9,1)",org.osgi.framework;version="[1.8,2)",org
+ .slf4j;version="[1.7,2)"
+Originally-Created-By: Apache Maven Bundle Plugin
 Private-Package: org.apache.plc4x.java.api.internal
 Provide-Capability: osgi.service;objectClass:List<String>="org.apache.pl
  c4x.java.api.internal.Activator";uses:="org.apache.plc4x.java.api.inter
  nal"
 Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
  nt)(version>=1.3.0)(!(version>=2.0.0)))",osgi.extender;filter:="(osgi.e
- xtender=osgi.serviceloader.processor)",osgi.service;filter:="(objectCla
- ss=com.omron.gc.omron.core.api.SentinelHandlerService)";effective:=acti
- ve;resolution:=optional,osgi.serviceloader;filter:="(osgi.serviceloader
- =org.apache.plc4x.java.api.PlcDriver)";cardinality:=multiple,osgi.ee;fi
- lter:="(&(osgi.ee=JavaSE)(version=1.8))"
+ xtender=osgi.serviceloader.processor)",osgi.serviceloader;filter:="(osg
+ i.serviceloader=org.apache.plc4x.java.api.PlcDriver)";cardinality:=mult
+ iple,osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Service-Component: OSGI-INF/org.apache.plc4x.java.api.internal.Activator
- .xml
+ .xml,OSGI-INF/org.apache.plc4x.java.api.internal.Activator.xml
 Specification-Title: PLC4J: API
 Specification-Vendor: The Apache Software Foundation
 Specification-Version: 0.9.1

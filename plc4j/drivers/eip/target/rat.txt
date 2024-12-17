@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2024-12-17T11:11:38+08:00
+Generated at: 2024-12-17T16:52:51+08:00
 
 Notes: 0
 Binaries: 0
 Archives: 0
-Standards: 11
+Standards: 12
 
-Apache Licensed: 11
+Apache Licensed: 12
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -28,6 +28,7 @@ Generated files do not require license headers.
   AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/entity/EipRequestEntity.java
   AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/field/EipField.java
   AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/field/EipFieldHandler.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/protocol/EipClass3ProtocolLogic.java
   AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/protocol/EipProtocolLogic.java
   AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/util/EipProtocolUtils.java
   AL    F:/workspace/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver

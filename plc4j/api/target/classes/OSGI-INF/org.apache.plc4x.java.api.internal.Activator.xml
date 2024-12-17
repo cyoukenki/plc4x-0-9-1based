@@ -3,6 +3,5 @@
   <service>
     <provide interface="org.apache.plc4x.java.api.internal.Activator"/>
   </service>
-  <reference name="com.omron.gc.omron.core.api.SentinelHandlerService" cardinality="0..1" policy="dynamic" interface="com.omron.gc.omron.core.api.SentinelHandlerService" bind="setSentinelHandlerService" unbind="unsetSentinelHandlerService"/>
   <implementation class="org.apache.plc4x.java.api.internal.Activator"/>
 </scr:component>

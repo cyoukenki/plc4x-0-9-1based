@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk: 17.0.13
+Build-Jdk: 11.0.22
 Bundle-Description: Tool for actively sending out packets captured via W
  ireShark.
 Bundle-DocURL: https://www.apache.org/

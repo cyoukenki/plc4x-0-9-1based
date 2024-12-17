@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2024-12-17T11:03:03+08:00
+Generated at: 2024-12-17T16:53:37+08:00
 
-Notes: 0
+Notes: 2
 Binaries: 0
 Archives: 0
-Standards: 14
+Standards: 64
 
-Apache Licensed: 14
+Apache Licensed: 64
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -22,19 +22,71 @@ Generated files do not require license headers.
   Binary files (which do not require any license headers) will be marked B
   Compressed archives will be marked A
   Notices, licenses etc. will be marked N
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/pom.xml
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/backend/Plc4xCommunication.java
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/Configuration.java
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/DeviceConfiguration.java
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/PasswordConfiguration.java
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/Tag.java
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/User.java
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/context/CertificateGenerator.java
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/context/CertificateKeyPair.java
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/resources/config.yml
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/main/resources/logback.xml
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/test/java/org/apache/plc4x/java/opcuaserver/OpcuaPlcDriverTest.java
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/opcua-server/src/test/resources/config.yml
-  AL    F:/omron/gitlab/plc4x/plc4j/plc4j/integrations/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-calcite/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-calcite/src/main/java/org/apache/plc4x/Plc4xBaseTable.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-calcite/src/main/java/org/apache/plc4x/Plc4xSchema.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-calcite/src/main/java/org/apache/plc4x/Plc4xSchemaFactory.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-calcite/src/main/java/org/apache/plc4x/Plc4xStreamTable.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-calcite/src/main/java/org/apache/plc4x/Plc4xTable.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-calcite/src/test/java/org/apache/plc4x/DriverManagerTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-calcite/src/test/java/org/apache/plc4x/Plc4XBaseTableTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-calcite/src/test/java/org/apache/plc4x/Plc4xSchemaFactoryTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-calcite/src/test/resources/example.yml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-calcite/src/test/resources/logback.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-edgent/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-edgent/src/main/java/org/apache/plc4x/edgent/package-info.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-edgent/src/main/java/org/apache/plc4x/edgent/PlcConnectionAdapter.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-edgent/src/main/java/org/apache/plc4x/edgent/PlcFunctions.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-edgent/src/test/java.sav/org/apache/plc4x/edgent/PlcConnectionAdapterTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-edgent/src/test/java.sav/org/apache/plc4x/edgent/PlcFunctionsTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/config/plc4x-sink.properties
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/config/plc4x-source.properties
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/README.md
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/Constants.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/Field.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/Job.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/JobReference.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/Sink.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/SinkConfig.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/Source.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/config/SourceConfig.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/Plc4xSinkConnector.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/Plc4xSinkTask.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/Plc4xSourceConnector.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/Plc4xSourceTask.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/main/java/org/apache/plc4x/kafka/util/VersionUtil.java
+  N     F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/remote-resources/LICENSE
+  N     F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/remote-resources/NOTICE
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/test/java/org/apache/plc4x/kafka/config/SinkConfigTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/test/java/org/apache/plc4x/kafka/config/SinkTaskTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/test/java/org/apache/plc4x/kafka/config/SourceConfigTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/test/java/org/apache/plc4x/kafka/config/SourceTaskTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/test/java/org/apache/plc4x/kafka/properties/sink_task_no_error.properties
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-kafka/src/test/java/org/apache/plc4x/kafka/properties/source_task_no_error.properties
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-nar/false-positives.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-nar/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/src/main/java/org/apache/plc4x/nifi/BasePlc4xProcessor.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/src/main/java/org/apache/plc4x/nifi/Plc4xSinkProcessor.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/src/main/java/org/apache/plc4x/nifi/Plc4xSourceProcessor.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/src/main/resources/META-INF/services/org.apache.nifi.processor.Processor
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/src/test/java/org/apache/plc4x/processors/plc4x4nifi/Plc4xSinkProcessorTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/nifi-plc4x-processors/src/test/java/org/apache/plc4x/processors/plc4x4nifi/Plc4xSourceProcessorTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/apache-nifi/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/opcua-server/pom.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/backend/Plc4xCommunication.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/Configuration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/DeviceConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/PasswordConfiguration.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/Tag.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/configuration/User.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/context/CertificateGenerator.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/opcua-server/src/main/java/org/apache/plc4x/java/opcuaserver/context/CertificateKeyPair.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/opcua-server/src/main/resources/config.yml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/opcua-server/src/main/resources/logback.xml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/opcua-server/src/test/java/org/apache/plc4x/java/opcuaserver/OpcuaPlcDriverTest.java
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/opcua-server/src/test/resources/config.yml
+  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/integrations/pom.xml
  
 *****************************************************

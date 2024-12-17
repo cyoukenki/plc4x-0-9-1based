@@ -23,6 +23,7 @@ import org.apache.plc4x.java.eip.readwrite.configuration.EIPConfiguration;
 import org.apache.plc4x.java.eip.readwrite.field.EipField;
 import org.apache.plc4x.java.eip.readwrite.field.EipFieldHandler;
 import org.apache.plc4x.java.eip.readwrite.io.EipPacketIO;
+import org.apache.plc4x.java.eip.readwrite.protocol.EipClass3ProtocolLogic;
 import org.apache.plc4x.java.eip.readwrite.protocol.EipProtocolLogic;
 import org.apache.plc4x.java.spi.values.IEC61131ValueHandler;
 import org.apache.plc4x.java.api.value.PlcValueHandler;
@@ -89,7 +90,7 @@ public class EIPDriver extends GeneratedDriverBase<EipPacket> {
     @Override
     protected ProtocolStackConfigurer<EipPacket> getStackConfigurer() {
         return SingleProtocolStackConfigurer.builder(EipPacket.class, EipPacketIO.class)
-            .withProtocol(EipProtocolLogic.class)
+            .withProtocol(EipClass3ProtocolLogic.class)
             .withPacketSizeEstimator(ByteLengthEstimator.class)
             .littleEndian()
             .build();

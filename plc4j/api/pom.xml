@@ -75,46 +75,12 @@
       <version>${osgi.core.version}</version>
       <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>com.omron.gc.omron-kernel</groupId>
-      <artifactId>com.omron.gc.omron.core</artifactId>
-      <version>${omron.gc.omron.core.version}</version>
-      <exclusions>
-        <exclusion>
-          <groupId>org.wso2.carbon.config</groupId>
-          <artifactId>org.wso2.carbon.config</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>com.fasterxml.jackson.jaxrs</groupId>
-          <artifactId>jackson-jaxrs-json-provider</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.apache.karaf.features</groupId>
-          <artifactId>org.apache.karaf.features.core</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.hibernate</groupId>
-          <artifactId>hibernate-core</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.hibernate.common</groupId>
-          <artifactId>hibernate-commons-annotations</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.slf4j</groupId>
-          <artifactId>slf4j-simple</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>ch.qos.logback</groupId>
-          <artifactId>logback-classic</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
+  
   </dependencies>
   <properties>
     <osgi.core.version>6.0.0</osgi.core.version>
-    <omron.gc.omron.core.version>2.2.5</omron.gc.omron.core.version>
-    <omron.gc.omron.core.version.range>[2.0.0,4.0.0)</omron.gc.omron.core.version.range>
+    <!-- <omron.gc.omron.core.version>2.2.5</omron.gc.omron.core.version>
+    <omron.gc.omron.core.version.range>[2.0.0,4.0.0)</omron.gc.omron.core.version.range> -->
   </properties>
   <build>
     <plugins>
@@ -127,7 +93,6 @@
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Import-Package>
               com.fasterxml.jackson.annotation;resolution:=optional,
-              com.omron.gc.omron.core.*;version="${omron.gc.omron.core.version.range}",
               *
             </Import-Package>
             <Require-Capability>

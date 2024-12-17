@@ -28,7 +28,8 @@ Import-Package: org.apache.plc4x.plugins.codegenerator.language.mspec.pa
 Include-Resource: META-INF/services/org.apache.plc4x.plugins.codegenerat
  or.protocol.Protocol=src/main/resources/META-INF/services/org.apache.pl
  c4x.plugins.codegenerator.protocol.Protocol,protocols/eip/eip.mspec=src
- /main/resources/protocols/eip/eip.mspec
+ /main/resources/protocols/eip/eip.mspec,protocols/eip/eip_class3.mspec=
+ src/main/resources/protocols/eip/eip_class3.mspec
 Private-Package: protocols.eip
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Specification-Title: Protocols: EtherNet/IP
