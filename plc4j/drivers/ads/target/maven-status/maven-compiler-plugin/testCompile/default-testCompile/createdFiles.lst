@@ -1,0 +1,6 @@
+org/apache/plc4x/protocol/ads/ManualAdsDriverTest.class
+org/apache/plc4x/protocol/ads/HexBase64Helper.class
+org/apache/plc4x/protocol/ads/AdsDiscoverySerializerParserTest.class
+org/apache/plc4x/protocol/ads/AdsSerializerParserTest.class
+org/apache/plc4x/protocol/ads/ManualParserSerializerTest.class
+org/apache/plc4x/protocol/ads/AdsDriverIT.class

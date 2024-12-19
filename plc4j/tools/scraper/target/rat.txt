@@ -2,7 +2,7 @@
 *****************************************************
 Summary
 -------
-Generated at: 2024-12-17T16:53:37+08:00
+Generated at: 2024-12-19T14:19:23+08:00
 
 Notes: 0
 Binaries: 0
@@ -22,56 +22,56 @@ Generated files do not require license headers.
   Binary files (which do not require any license headers) will be marked B
   Compressed archives will be marked A
   Notices, licenses etc. will be marked N
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/pom.xml
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/README.md
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/JobConfiguration.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/JobConfigurationClassicImpl.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/JobConfigurationClassicImplBuilder.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/JobConfigurationImpl.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/ScraperConfiguration.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/ScraperConfigurationClassicImpl.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/ScraperConfigurationClassicImplBuilder.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/triggeredscraper/JobConfigurationTriggeredImpl.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/triggeredscraper/JobConfigurationTriggeredImplBuilder.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/triggeredscraper/ScraperConfigurationTriggeredImpl.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/triggeredscraper/ScraperConfigurationTriggeredImplBuilder.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/exception/ScraperConfigurationException.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/exception/ScraperException.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/ResultHandler.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/ScrapeJob.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/ScrapeJobImpl.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/Scraper.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/ScraperImpl.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/ScraperTask.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/ScraperTaskImpl.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/TriggeredScrapeJobImpl.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/TriggeredScraperImpl.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/TriggeredScraperMBean.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/TriggeredScraperTask.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/TriggeredScraperTaskMBean.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/triggerhandler/collector/TriggerCollector.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/triggerhandler/collector/TriggerCollectorImpl.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/triggerhandler/TriggerConfiguration.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/triggerhandler/TriggerHandler.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/triggerhandler/TriggerHandlerImpl.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/util/PercentageAboveThreshold.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/s7/ManualS7PlcDriverMT.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/config/ScraperConfigurationBuilderTest.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/ScraperConfigurationTest.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/ScraperRunner.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/ScraperTaskTest.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/ScraperTest.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/triggeredscraper/TriggeredScraperImplTest.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/triggeredscraper/triggerhandler/TriggerConfigurationTest.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/TriggeredScraperRunner.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/TriggeredScraperRunnerModbus.java
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/config.yml
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/example.yml
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/example_triggered_scraper.yml
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/example_triggered_scraper_modbus.yml
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/example_with_strings.yml
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/logback-test.xml
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/logback.xml
-  AL    F:/workspace/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/mock-scraper-config.yml
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/pom.xml
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/README.md
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/logback.xml
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/logback-test.xml
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/example_triggered_scraper.yml
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/example.yml
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/example_with_strings.yml
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/config.yml
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/example_triggered_scraper_modbus.yml
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/resources/mock-scraper-config.yml
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/ScraperConfigurationTest.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/ScraperTaskTest.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/config/ScraperConfigurationBuilderTest.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/triggeredscraper/triggerhandler/TriggerConfigurationTest.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/triggeredscraper/TriggeredScraperImplTest.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/TriggeredScraperRunnerModbus.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/ScraperRunner.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/ScraperTest.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/scraper/TriggeredScraperRunner.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/test/java/org/apache/plc4x/java/s7/ManualS7PlcDriverMT.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/ScraperTaskImpl.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/util/PercentageAboveThreshold.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/ScraperConfigurationClassicImplBuilder.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/ScraperConfigurationClassicImpl.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/ScraperConfiguration.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/JobConfiguration.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/JobConfigurationClassicImplBuilder.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/triggeredscraper/ScraperConfigurationTriggeredImpl.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/triggeredscraper/JobConfigurationTriggeredImpl.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/triggeredscraper/JobConfigurationTriggeredImplBuilder.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/triggeredscraper/ScraperConfigurationTriggeredImplBuilder.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/JobConfigurationImpl.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/config/JobConfigurationClassicImpl.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/TriggeredScraperTaskMBean.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/TriggeredScraperMBean.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/TriggeredScraperTask.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/TriggeredScraperImpl.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/triggerhandler/collector/TriggerCollectorImpl.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/triggerhandler/collector/TriggerCollector.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/triggerhandler/TriggerConfiguration.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/triggerhandler/TriggerHandler.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/triggerhandler/TriggerHandlerImpl.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/triggeredscraper/TriggeredScrapeJobImpl.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/ResultHandler.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/ScrapeJob.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/Scraper.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/ScrapeJobImpl.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/exception/ScraperConfigurationException.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/exception/ScraperException.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/ScraperImpl.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/scraper/src/main/java/org/apache/plc4x/java/scraper/ScraperTask.java
  
 *****************************************************

@@ -28,7 +28,7 @@
   </parent>
 
   <artifactId>plc4j-driver-eip</artifactId>
-  <version>1.1.0</version>
+  <!-- <version>1.1.0</version> -->
   <name>PLC4J: Driver: Ethernet IP</name>
   <description>Implementation of a PLC4X driver able to speak using the EthernetIP Protocol with CIP Encapsulation.
   </description>
@@ -103,7 +103,9 @@
           <instructions>
             <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
             <Bundle-Activator>org.apache.plc4x.java.osgi.DriverActivator</Bundle-Activator>
-            <Export-Service>org.apache.plc4x.java.api.PlcDriver,org.apache.plc4x.java.eip.readwrite.EIPDriver
+            <Export-Service>
+                   org.apache.plc4x.java.api.PlcDriver,org.apache.plc4x.java.eip.readwrite.EIPDriver,
+                   org.apache.plc4x.java.api.PlcDriver,org.apache.plc4x.java.eip.readwrite.EEIPClass3Driver
             </Export-Service>
             <Import-Package> com.fasterxml.jackson.annotation;resolution:=optional,
               *
@@ -175,14 +177,14 @@
     <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4x-protocols-eip</artifactId>
-      <version>1.1.0</version>
+      <version>0.9.1</version>
       <!-- Scope is 'provided' as this way it's not shipped with the driver -->
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4x-protocols-eip</artifactId>
-      <version>1.1.0</version>
+      <version>0.9.1</version>
       <classifier>tests</classifier>
       <type>test-jar</type>
       <scope>test</scope>

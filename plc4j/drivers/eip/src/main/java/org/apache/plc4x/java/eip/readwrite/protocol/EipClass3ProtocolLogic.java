@@ -44,6 +44,7 @@ import org.apache.plc4x.java.spi.values.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.Console;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.charset.StandardCharsets;
@@ -84,7 +85,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
 
     @Override
     public void onConnect(ConversationContext<EipPacket> context) {
-        logger.debug("Sending RegisterSession EIP Package");
+        logger.info("Sending RegisterSession EIP Package");
         EipConnectionRequest connectionRequest = new EipConnectionRequest(0L, 0L, emptySenderContext, 0L);
         context.sendRequest(connectionRequest)
                 .expectResponse(EipPacket.class, REQUEST_TIMEOUT).unwrap(p -> p)
@@ -95,8 +96,10 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
                         senderContext = p.getSenderContext();
                         logger.debug("Got assigned with Session {}", sessionHandle);
                         // Send an event that connection setup is complete.
-                        context.fireConnected();
+
+                        logger.info("send open request!");
                         OpenRequest(context);
+                        
                     } else {
                         logger.warn("Got status code [{}]", p.getStatus());
                     }
@@ -107,17 +110,38 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
     private void OpenRequest(ConversationContext<EipPacket> context) {
 
         this.toId = new Random().nextLong();
-        LargeForwardOpenRequest req = new LargeForwardOpenRequest(0x00, this.toId, 0x0001, this.toId);
-        CipRRData rrdata = new CipRRData(sessionHandle, 0L, senderContext, 0L, new CipExchange(req));
+        LargeForwardOpenRequest req = new LargeForwardOpenRequest(0l, this.toId, (int)0x0001, this.toId);
+        // logger.info("large forward open request:" + req.toString());
+        CipExchange exchange = new CipExchange(req);
+        // logger.info("exchange:" + exchange.toString());
+        CipRRData rrdata = new CipRRData(sessionHandle, 0L, senderContext, 0L, exchange);
+        // logger.info("rrdata:" + rrdata.toString());
         context.sendRequest(rrdata)
                 .expectResponse(EipPacket.class, REQUEST_TIMEOUT)
                 .check(p -> p instanceof CipRRData).unwrap(p -> (CipRRData) p)
                 .check(p -> p.getExchange().getService() instanceof LargeForwardOpenResponse)
                 .unwrap(p -> (LargeForwardOpenResponse) p.getExchange().getService())
                 .handle(p -> {
+                    logger.info("handling open response");
                     otConnectionId = p.getO_t_connection_id();
+                    context.fireConnected();
 
                 });
+                logger.info("open request finished...");
+        // this.tm = new RequestTransactionManager(1);
+        // RequestTransactionManager.RequestTransaction transaction = tm.startRequest();
+        // transaction.submit(() -> context.sendRequest(rrdata)
+        // .expectResponse(EipPacket.class, REQUEST_TIMEOUT)
+        // .check(p -> p instanceof CipRRData).unwrap(p -> (CipRRData) p)
+        // .check(p -> p.getExchange().getService() instanceof LargeForwardOpenResponse)
+        // .unwrap(p -> (LargeForwardOpenResponse) p.getExchange().getService())
+        // .handle(p -> {
+        // otConnectionId = p.getO_t_connection_id();
+        // // Finish the request-transaction.
+        // transaction.endRequest();
+
+        // }));
+
     }
 
     private void CloseRequest(ConversationContext<EipPacket> context) {
@@ -854,6 +878,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
 
     private PlcValue parsePlcValue(EipField field, ByteBuf data, CIPDataTypeCode type) {
         int nb = field.getElementNb();
+        logger.info("res len:"+data.readableBytes()+";"+type);
         if (nb > 1) {
             int index = 0;
             List<PlcValue> list = new ArrayList<>();
@@ -1198,7 +1223,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
         }
         byte[] data = encodeValue(value, field.getType(), (short) elements);
         CipWriteRequest writeReq = new CipWriteRequest(requestPathSize, toAnsi(tag), field.getType(), elements,
-        data);
+                data);
         CipExchange3 exchange = new CipExchange3(
                 this.sequenceCount,
                 writeReq);
@@ -1315,14 +1340,14 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
         // Encapsulate the data
 
         SendUnitData pkt = new SendUnitData(
-                    sessionHandle,
-                    0l,
-                    senderContext,
-                    0l,
-                    otConnectionId,
-                    new CipExchange3(
-                            this.sequenceCount,
-                            new MultipleServiceRequest(servicesData)));
+                sessionHandle,
+                0l,
+                senderContext,
+                0l,
+                otConnectionId,
+                new CipExchange3(
+                        this.sequenceCount,
+                        new MultipleServiceRequest(servicesData)));
 
         transaction.submit(() -> context.sendRequest(pkt)
                 .expectResponse(EipPacket.class, REQUEST_TIMEOUT)

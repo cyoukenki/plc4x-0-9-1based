@@ -1,4 +1,4 @@
-// Generated from org\apache\plc4x\plugins\codegenerator\language\mspec\MSpec.g4 by ANTLR 4.9.2
+// Generated from org/apache/plc4x/plugins/codegenerator/language/mspec/MSpec.g4 by ANTLR 4.9.2
 package org.apache.plc4x.plugins.codegenerator.language.mspec;
 
 import org.antlr.v4.runtime.ParserRuleContext;

@@ -1448,8 +1448,10 @@
     ['699' M_SANTAN ['757', '"SANTAN"']]
     ['700' M_HUIXIANGJU_IOT_TECHNOLOGY_SHANGHAI_CO___LTD ['758', '"Huixiangju IoT Technology (Shanghai) Co., Ltd"']]
     ['701' M_SHANGHAI_BENKONG_ELECTRONIC_TECHNOLOGY_CO__LTD ['759', '"Shanghai Benkong Electronic Technology Co.,Ltd"']]
-    ['702' M_ABB___RESERVED ['43954', '"ABB - reserved"']]
-    ['703' M_BUSCH_JAEGER_ELEKTRO___RESERVED ['43959', '"Busch-Jaeger Elektro - reserved"']]
+    ['702' M_POLAR_BEAR_DESIGN ['760', '"Polar Bear Design"']]
+    ['703' M_ELESSAN_NV ['761', '"Elessan NV"']]
+    ['704' M_ABB___RESERVED ['43954', '"ABB - reserved"']]
+    ['705' M_BUSCH_JAEGER_ELEKTRO___RESERVED ['43959', '"Busch-Jaeger Elektro - reserved"']]
     
 ]
 

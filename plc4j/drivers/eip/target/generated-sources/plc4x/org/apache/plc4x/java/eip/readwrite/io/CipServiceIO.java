@@ -96,6 +96,15 @@ public class CipServiceIO implements MessageIO<CipService, CipService> {
                 if(EvaluationHelper.equals(service, 0x52)) {
             builder = CipUnconnectedRequestIO.staticParse(readBuffer);
         } else 
+                if(EvaluationHelper.equals(service, 0x5b)) {
+            builder = LargeForwardOpenRequestIO.staticParse(readBuffer);
+        } else 
+                if(EvaluationHelper.equals(service, 0xdb)) {
+            builder = LargeForwardOpenResponseIO.staticParse(readBuffer);
+        } else 
+                if(EvaluationHelper.equals(service, 0x4e)) {
+            builder = CloseRequestIO.staticParse(readBuffer);
+        } else 
                 {
             builder = DefaultUnKnownStreamFunctionIO.staticParse(readBuffer);
         }
@@ -137,6 +146,15 @@ public class CipServiceIO implements MessageIO<CipService, CipService> {
         } else 
         if(_value instanceof CipUnconnectedRequest) {
             CipUnconnectedRequestIO.staticSerialize(writeBuffer, (CipUnconnectedRequest) _value);
+        } else 
+        if(_value instanceof LargeForwardOpenRequest) {
+            LargeForwardOpenRequestIO.staticSerialize(writeBuffer, (LargeForwardOpenRequest) _value);
+        } else 
+        if(_value instanceof LargeForwardOpenResponse) {
+            LargeForwardOpenResponseIO.staticSerialize(writeBuffer, (LargeForwardOpenResponse) _value);
+        } else 
+        if(_value instanceof CloseRequest) {
+            CloseRequestIO.staticSerialize(writeBuffer, (CloseRequest) _value);
         } else 
         if(_value instanceof DefaultUnKnownStreamFunction) {
             DefaultUnKnownStreamFunctionIO.staticSerialize(writeBuffer, (DefaultUnKnownStreamFunction) _value);

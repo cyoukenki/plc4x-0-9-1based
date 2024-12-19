@@ -1,7 +1,7 @@
-org\apache\plc4x\java\transport\virtualcan\VirtualCANTransport$3$1.class
-org\apache\plc4x\java\transport\virtualcan\io\VirtualCANFrameIO.class
-org\apache\plc4x\java\transport\virtualcan\VirtualCANTransport$3.class
-org\apache\plc4x\java\transport\virtualcan\VirtualCANTransport$1.class
-org\apache\plc4x\java\transport\virtualcan\VirtualCANTransport$2.class
-org\apache\plc4x\java\transport\virtualcan\VirtualCANFrame.class
-org\apache\plc4x\java\transport\virtualcan\VirtualCANTransport.class
+org/apache/plc4x/java/transport/virtualcan/VirtualCANTransport.class
+org/apache/plc4x/java/transport/virtualcan/VirtualCANTransport$3.class
+org/apache/plc4x/java/transport/virtualcan/VirtualCANTransport$1.class
+org/apache/plc4x/java/transport/virtualcan/io/VirtualCANFrameIO.class
+org/apache/plc4x/java/transport/virtualcan/VirtualCANTransport$2.class
+org/apache/plc4x/java/transport/virtualcan/VirtualCANTransport$3$1.class
+org/apache/plc4x/java/transport/virtualcan/VirtualCANFrame.class

@@ -28,7 +28,7 @@
   </parent>
 
   <artifactId>plc4x-protocols-eip</artifactId>
-  <version>1.1.0</version>
+  <!-- <version>1.1.0</version> -->
   <name>Protocols: EtherNet/IP</name>
   <description>Base protocol specifications for the EhterNet/IP protocol</description>
 

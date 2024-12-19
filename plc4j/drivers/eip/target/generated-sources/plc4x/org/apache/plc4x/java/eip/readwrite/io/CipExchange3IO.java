@@ -90,7 +90,7 @@ CipService service = CipServiceIO.staticParse(readBuffer , (int) ((exchangeLen) 
         writeBuffer.pushContext("CipExchange3");
 
         // Implicit Field (size) (Used for parsing, but it's value is not stored as it's implicitly given by the objects content)
-        int size = (int) ((_value.getLengthInBytes()) - (44));
+        int size = (int) ((_value.getLengthInBytes()) - (2));
         writeBuffer.writeUnsignedInt("size", 16, ((Number) (size)).intValue());
 
         // Simple Field (sequence_count)

@@ -177,95 +177,95 @@ public abstract class GeneratedDriverBase<BASE_PACKET extends Message> implement
             getOptimizer());
     }
 
-    @Override
-    public PlcServerConnector getServerConnector(String connectionString) throws PlcConnectionException {
-        // Split up the connection string into it's individual segments.
-        Matcher matcher = URI_PATTERN.matcher(connectionString);
-        if (!matcher.matches()) {
-            throw new PlcConnectionException(
-                "Connection string doesn't match the format '{protocol-code}:({transport-code})?//{transport-address}(?{parameter-string)?'");
-        }
-        final String protocolCode = matcher.group("protocolCode");
-        final String transportCode = (matcher.group("transportCode") != null) ?
-            matcher.group("transportCode") : getDefaultTransport();
-        final String transportConfig = matcher.group("transportConfig");
-        final String paramString = matcher.group("paramString");
+    // @Override
+    // public PlcServerConnector getServerConnector(String connectionString) throws PlcConnectionException {
+    //     // Split up the connection string into it's individual segments.
+    //     Matcher matcher = URI_PATTERN.matcher(connectionString);
+    //     if (!matcher.matches()) {
+    //         throw new PlcConnectionException(
+    //             "Connection string doesn't match the format '{protocol-code}:({transport-code})?//{transport-address}(?{parameter-string)?'");
+    //     }
+    //     final String protocolCode = matcher.group("protocolCode");
+    //     final String transportCode = (matcher.group("transportCode") != null) ?
+    //         matcher.group("transportCode") : getDefaultTransport();
+    //     final String transportConfig = matcher.group("transportConfig");
+    //     final String paramString = matcher.group("paramString");
 
-        // Check if the protocol code matches this driver.
-        if (!protocolCode.equals(getProtocolCode())) {
-            // Actually this shouldn't happen as the DriverManager should have not used this driver in the first place.
-            throw new PlcConnectionException(
-                "This driver is not suited to handle this connection string");
-        }
+    //     // Check if the protocol code matches this driver.
+    //     if (!protocolCode.equals(getProtocolCode())) {
+    //         // Actually this shouldn't happen as the DriverManager should have not used this driver in the first place.
+    //         throw new PlcConnectionException(
+    //             "This driver is not suited to handle this connection string");
+    //     }
 
-        // Create the configuration object.
-        Configuration configuration = new ConfigurationFactory().createConfiguration(
-            getConfigurationType(), paramString);
-        if (configuration == null) {
-            throw new PlcConnectionException("Unsupported configuration");
-        }
+    //     // Create the configuration object.
+    //     Configuration configuration = new ConfigurationFactory().createConfiguration(
+    //         getConfigurationType(), paramString);
+    //     if (configuration == null) {
+    //         throw new PlcConnectionException("Unsupported configuration");
+    //     }
 
-        // Try to find a transport in order to create a communication channel.
-        Transport transport = null;
-        ServiceLoader<Transport> transportLoader = ServiceLoader.load(
-            Transport.class, Thread.currentThread().getContextClassLoader());
-        for (Transport curTransport : transportLoader) {
-            if (curTransport.getTransportCode().equals(transportCode)) {
-                transport = curTransport;
-                break;
-            }
-        }
-        if (transport == null) {
-            throw new PlcConnectionException("Unsupported transport " + transportCode);
-        }
+    //     // Try to find a transport in order to create a communication channel.
+    //     Transport transport = null;
+    //     ServiceLoader<Transport> transportLoader = ServiceLoader.load(
+    //         Transport.class, Thread.currentThread().getContextClassLoader());
+    //     for (Transport curTransport : transportLoader) {
+    //         if (curTransport.getTransportCode().equals(transportCode)) {
+    //             transport = curTransport;
+    //             break;
+    //         }
+    //     }
+    //     if (transport == null) {
+    //         throw new PlcConnectionException("Unsupported transport " + transportCode);
+    //     }
 
-        // Inject the configuration into the transport.
-        configure(configuration, transport);
+    //     // Inject the configuration into the transport.
+    //     configure(configuration, transport);
 
-        if(transportCode.equals("tcp")) {
-            return new DefaultNettyPlcTcpServerConnector(
-                canRead(), canWrite(), canSubscribe(),transportConfig,
-                getFieldHandler(),
-                getValueHandler(),
-                configuration,
-                getStackConfigurer(transport),
-                getOptimizer());
-        } else if(transportCode.equals("serial")) {
-            ChannelFactory channelFactory = transport.createChannelFactory(transportConfig);
-            initializePipeline(channelFactory);
+    //     if(transportCode.equals("tcp")) {
+    //         return new DefaultNettyPlcTcpServerConnector(
+    //             canRead(), canWrite(), canSubscribe(),transportConfig,
+    //             getFieldHandler(),
+    //             getValueHandler(),
+    //             configuration,
+    //             getStackConfigurer(transport),
+    //             getOptimizer());
+    //     } else if(transportCode.equals("serial")) {
+    //         ChannelFactory channelFactory = transport.createChannelFactory(transportConfig);
+    //         initializePipeline(channelFactory);
 
-            // Make the "await setup complete" overridable via system property.
-            boolean awaitSetupComplete = awaitSetupComplete();
-            if(System.getProperty(PROPERTY_PLC4X_FORCE_AWAIT_SETUP_COMPLETE) != null) {
-                awaitSetupComplete = Boolean.parseBoolean(System.getProperty(PROPERTY_PLC4X_FORCE_AWAIT_SETUP_COMPLETE));
-            }
+    //         // Make the "await setup complete" overridable via system property.
+    //         boolean awaitSetupComplete = awaitSetupComplete();
+    //         if(System.getProperty(PROPERTY_PLC4X_FORCE_AWAIT_SETUP_COMPLETE) != null) {
+    //             awaitSetupComplete = Boolean.parseBoolean(System.getProperty(PROPERTY_PLC4X_FORCE_AWAIT_SETUP_COMPLETE));
+    //         }
 
-            // Make the "await disconnect complete" overridable via system property.
-            boolean awaitDisconnectComplete = awaitDisconnectComplete();
-            if(System.getProperty(PROPERTY_PLC4X_FORCE_AWAIT_DISCONNECT_COMPLETE) != null) {
-                awaitDisconnectComplete = Boolean.parseBoolean(System.getProperty(PROPERTY_PLC4X_FORCE_AWAIT_DISCONNECT_COMPLETE));
-            }
+    //         // Make the "await disconnect complete" overridable via system property.
+    //         boolean awaitDisconnectComplete = awaitDisconnectComplete();
+    //         if(System.getProperty(PROPERTY_PLC4X_FORCE_AWAIT_DISCONNECT_COMPLETE) != null) {
+    //             awaitDisconnectComplete = Boolean.parseBoolean(System.getProperty(PROPERTY_PLC4X_FORCE_AWAIT_DISCONNECT_COMPLETE));
+    //         }
 
-            // Make the "await disconnect complete" overridable via system property.
-            boolean awaitDiscoverComplete = awaitDiscoverComplete();
-            if(System.getProperty(PROPERTY_PLC4X_FORCE_AWAIT_DISCOVER_COMPLETE) != null) {
-                awaitDiscoverComplete = Boolean.parseBoolean(System.getProperty(PROPERTY_PLC4X_FORCE_AWAIT_DISCOVER_COMPLETE));
-            }
-            return new DefaultNettyPlcSerialServerConnector(
-                canRead(), canWrite(), canSubscribe(),
-                getFieldHandler(),
-                getValueHandler(),
-                configuration,
-                channelFactory,
-                awaitSetupComplete,
-                awaitDisconnectComplete,
-                awaitDiscoverComplete,
-                getStackConfigurer(transport),
-                getOptimizer());
-        }
-        // Make the "await setup complete" overridable via system property.
-        return null;
-    }
+    //         // Make the "await disconnect complete" overridable via system property.
+    //         boolean awaitDiscoverComplete = awaitDiscoverComplete();
+    //         if(System.getProperty(PROPERTY_PLC4X_FORCE_AWAIT_DISCOVER_COMPLETE) != null) {
+    //             awaitDiscoverComplete = Boolean.parseBoolean(System.getProperty(PROPERTY_PLC4X_FORCE_AWAIT_DISCOVER_COMPLETE));
+    //         }
+    //         return new DefaultNettyPlcSerialServerConnector(
+    //             canRead(), canWrite(), canSubscribe(),
+    //             getFieldHandler(),
+    //             getValueHandler(),
+    //             configuration,
+    //             channelFactory,
+    //             awaitSetupComplete,
+    //             awaitDisconnectComplete,
+    //             awaitDiscoverComplete,
+    //             getStackConfigurer(transport),
+    //             getOptimizer());
+    //     }
+    //     // Make the "await setup complete" overridable via system property.
+    //     return null;
+    // }
 
     @Override
     public PlcConnection getConnection(String url, PlcAuthentication authentication) throws PlcConnectionException {

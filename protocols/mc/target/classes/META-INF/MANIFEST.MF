@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Build-Jdk: 11.0.22
-Built-By: imzjh
+Built-By: ken
 Bundle-Description: Base protocol specifications for the MC protocol
 Bundle-DocURL: https://www.apache.org/
 Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
@@ -26,14 +26,14 @@ Import-Package: org.apache.plc4x.plugins.codegenerator.language.mspec.pa
  erator.types.exceptions
 Include-Resource: META-INF/services/org.apache.plc4x.plugins.codegenerat
  or.protocol.Protocol=src/main/resources/META-INF/services/org.apache.pl
- c4x.plugins.codegenerator.protocol.Protocol,protocols/mc/mc.mspec=src/m
- ain/resources/protocols/mc/mc.mspec,protocols/mc/mc_20231112.mspec=src/
- main/resources/protocols/mc/mc_20231112.mspec,protocols/mc/mc_20231112_
- test.mspec=src/main/resources/protocols/mc/mc_20231112_test.mspec,proto
- cols/mc/mc_bak.mspec=src/main/resources/protocols/mc/mc_bak.mspec,proto
+ c4x.plugins.codegenerator.protocol.Protocol,protocols/mc/mc_20231112.ms
+ pec=src/main/resources/protocols/mc/mc_20231112.mspec,protocols/mc/mc_t
+ est_20240203.mspec=src/main/resources/protocols/mc/mc_test_20240203.msp
+ ec,protocols/mc/mc_bak.mspec=src/main/resources/protocols/mc/mc_bak.msp
+ ec,protocols/mc/mc.mspec=src/main/resources/protocols/mc/mc.mspec,proto
  cols/mc/mc_test.mspec=src/main/resources/protocols/mc/mc_test.mspec,pro
- tocols/mc/mc_test_20240203.mspec=src/main/resources/protocols/mc/mc_tes
- t_20240203.mspec
+ tocols/mc/mc_20231112_test.mspec=src/main/resources/protocols/mc/mc_202
+ 31112_test.mspec
 Private-Package: protocols.mc
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Specification-Title: Protocols: MC

@@ -1,4 +1,4 @@
-org\apache\plc4x\java\transport\udp\protocol\DatagramUnpackingHandler.class
-org\apache\plc4x\java\transport\udp\UdpTransportConfiguration.class
-org\apache\plc4x\java\transport\udp\UdpTransport.class
-org\apache\plc4x\java\transport\udp\UdpChannelFactory.class
+org/apache/plc4x/java/transport/udp/UdpTransport.class
+org/apache/plc4x/java/transport/udp/UdpTransportConfiguration.class
+org/apache/plc4x/java/transport/udp/protocol/DatagramUnpackingHandler.class
+org/apache/plc4x/java/transport/udp/UdpChannelFactory.class

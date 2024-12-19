@@ -39,10 +39,10 @@
     <module>can</module>
     <module>canopen</module>
     <module>eip</module>
-    <module>secsgem</module>
-    <module>upper-link</module>
-    <module>serial-direct</module>
-    <module>ckd</module>
+    <!-- <module>secsgem</module> -->
+    <!-- <module>upper-link</module> -->
+    <!-- <module>serial-direct</module> -->
+    <!-- <module>ckd</module> -->
     <module>fins</module>
     <module>firmata</module>
     <!-- <module>knxnetip</module> -->

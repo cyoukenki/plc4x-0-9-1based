@@ -1,7 +1,7 @@
-org\apache\plc4x\plugins\codegenerator\protocol\freemarker\BaseFreemarkerLanguageTemplateHelper$3.class
-org\apache\plc4x\plugins\codegenerator\protocol\freemarker\BaseFreemarkerLanguageTemplateHelper$1.class
-org\apache\plc4x\plugins\codegenerator\protocol\freemarker\BaseFreemarkerLanguageTemplateHelper.class
-org\apache\plc4x\plugins\codegenerator\protocol\freemarker\FreemarkerException.class
-org\apache\plc4x\plugins\codegenerator\protocol\freemarker\FreemarkerLanguageTemplateHelper.class
-org\apache\plc4x\plugins\codegenerator\protocol\freemarker\FreemarkerLanguageOutput.class
-org\apache\plc4x\plugins\codegenerator\protocol\freemarker\BaseFreemarkerLanguageTemplateHelper$2.class
+org/apache/plc4x/plugins/codegenerator/protocol/freemarker/BaseFreemarkerLanguageTemplateHelper$2.class
+org/apache/plc4x/plugins/codegenerator/protocol/freemarker/BaseFreemarkerLanguageTemplateHelper.class
+org/apache/plc4x/plugins/codegenerator/protocol/freemarker/FreemarkerLanguageOutput.class
+org/apache/plc4x/plugins/codegenerator/protocol/freemarker/FreemarkerLanguageTemplateHelper.class
+org/apache/plc4x/plugins/codegenerator/protocol/freemarker/FreemarkerException.class
+org/apache/plc4x/plugins/codegenerator/protocol/freemarker/BaseFreemarkerLanguageTemplateHelper$3.class
+org/apache/plc4x/plugins/codegenerator/protocol/freemarker/BaseFreemarkerLanguageTemplateHelper$1.class

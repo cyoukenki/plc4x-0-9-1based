@@ -1,5 +1,5 @@
-org\apache\plc4x\java\transport\can\CANFrameBuilder.class
-org\apache\plc4x\java\transport\can\CANTransportConfiguration.class
-org\apache\plc4x\java\transport\can\CANTransport$FrameHandler.class
-org\apache\plc4x\java\transport\can\CANTransport.class
-org\apache\plc4x\java\transport\can\FrameData.class
+org/apache/plc4x/java/transport/can/CANTransport.class
+org/apache/plc4x/java/transport/can/CANTransport$FrameHandler.class
+org/apache/plc4x/java/transport/can/FrameData.class
+org/apache/plc4x/java/transport/can/CANTransportConfiguration.class
+org/apache/plc4x/java/transport/can/CANFrameBuilder.class

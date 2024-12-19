@@ -2,7 +2,7 @@
 *****************************************************
 Summary
 -------
-Generated at: 2024-12-17T17:11:23+08:00
+Generated at: 2024-12-19T14:19:08+08:00
 
 Notes: 0
 Binaries: 0
@@ -22,18 +22,18 @@ Generated files do not require license headers.
   Binary files (which do not require any license headers) will be marked B
   Compressed archives will be marked A
   Notices, licenses etc. will be marked N
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/opcua/pom.xml
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/opcua/src/main/java/org/apache/plc4x/protocol/opcua/OpcuaProtocol.java
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/opcua/src/main/resources/META-INF/services/org.apache.plc4x.plugins.codegenerator.protocol.Protocol
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/opcua/src/main/resources/protocols/opcua/opc-manual.mspec
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/opcua/src/main/resources/protocols/opcua/opc-services.mspec
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/opcua/src/main/resources/protocols/opcua/opc-status.mspec
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/opcua/src/main/resources/protocols/opcua/opc-types.mspec
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/opcua/src/main/resources/protocols/opcua/opcua.mspec
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/opcua/src/main/xslt/opc-common.xsl
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/opcua/src/main/xslt/opc-manual.xsl
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/opcua/src/main/xslt/opc-services.xsl
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/opcua/src/main/xslt/opc-status.xsl
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/opcua/src/main/xslt/opc-types.xsl
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/opcua/pom.xml
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/opcua/src/main/resources/META-INF/services/org.apache.plc4x.plugins.codegenerator.protocol.Protocol
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/opcua/src/main/resources/protocols/opcua/opc-manual.mspec
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/opcua/src/main/resources/protocols/opcua/opc-types.mspec
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/opcua/src/main/resources/protocols/opcua/opc-services.mspec
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/opcua/src/main/resources/protocols/opcua/opcua.mspec
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/opcua/src/main/resources/protocols/opcua/opc-status.mspec
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/opcua/src/main/java/org/apache/plc4x/protocol/opcua/OpcuaProtocol.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/opcua/src/main/xslt/opc-services.xsl
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/opcua/src/main/xslt/opc-types.xsl
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/opcua/src/main/xslt/opc-common.xsl
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/opcua/src/main/xslt/opc-manual.xsl
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/opcua/src/main/xslt/opc-status.xsl
  
 *****************************************************

@@ -71,7 +71,7 @@ public class CipExchange3 implements Message {
 
         // Implicit Field (size)
         lengthInBits += 16;
-        //int size = (int) ((_value.getLengthInBytes()) - (44));
+        //int size = (int) ((_value.getLengthInBytes()) - (2));
 
         // Simple field (sequence_count)
         lengthInBits += 16;

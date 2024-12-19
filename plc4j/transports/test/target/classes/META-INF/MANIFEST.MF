@@ -10,12 +10,12 @@ Bundle-SymbolicName: org.apache.plc4x.plc4j-transport-test
 Bundle-Vendor: The Apache Software Foundation
 Bundle-Version: 0.9.1
 Created-By: Apache Maven Bundle Plugin
-Export-Package: io.netty.bootstrap;version="4.1.67";uses:="io.netty.chan
- nel",io.netty.channel.embedded;version="4.1.67";uses:="io.netty.bootstr
- ap,io.netty.channel",org.apache.plc4x.java.transport.test;uses:="io.net
- ty.bootstrap,io.netty.channel,org.apache.plc4x.java.spi.configuration,o
- rg.apache.plc4x.java.spi.connection,org.apache.plc4x.java.spi.transport
- ";version="0.9.1"
+Export-Package: org.apache.plc4x.java.transport.test;uses:="io.netty.boo
+ tstrap,io.netty.channel,org.apache.plc4x.java.spi.configuration,org.apa
+ che.plc4x.java.spi.connection,org.apache.plc4x.java.spi.transport";vers
+ ion="0.9.1",io.netty.bootstrap;version="4.1.67";uses:="io.netty.channel
+ ",io.netty.channel.embedded;version="4.1.67";uses:="io.netty.bootstrap,
+ io.netty.channel"
 Implementation-Title: PLC4J: Transports: Test
 Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-transports/plc4
  j-transport-test
@@ -29,13 +29,13 @@ Import-Package: io.netty.bootstrap;version="[4.1,5)",io.netty.channel;ve
  n="[4.1,5)",org.apache.plc4x.java.spi.configuration;version="[0.9,1)",o
  rg.apache.plc4x.java.spi.connection;version="[0.9,1)",org.apache.plc4x.
  java.spi.transport;version="[0.9,1)",org.slf4j;version="[1.7,2)"
-Include-Resource: META-INF/services/com.athaydes.spockframework.report.I
- ReportCreator.properties=src/main/resources/META-INF/services/com.athay
- des.spockframework.report.IReportCreator.properties,META-INF/services/o
- rg.apache.plc4x.java.spi.transport.Transport=src/main/resources/META-IN
- F/services/org.apache.plc4x.java.spi.transport.Transport
-Private-Package: io.netty.bootstrap,io.netty.channel.embedded,org.apache
- .plc4x.java.transport.test
+Include-Resource: META-INF/services/org.apache.plc4x.java.spi.transport.
+ Transport=src/main/resources/META-INF/services/org.apache.plc4x.java.sp
+ i.transport.Transport,META-INF/services/com.athaydes.spockframework.rep
+ ort.IReportCreator.properties=src/main/resources/META-INF/services/com.
+ athaydes.spockframework.report.IReportCreator.properties
+Private-Package: org.apache.plc4x.java.transport.test,io.netty.bootstrap
+ ,io.netty.channel.embedded
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Specification-Title: PLC4J: Transports: Test
 Specification-Vendor: The Apache Software Foundation

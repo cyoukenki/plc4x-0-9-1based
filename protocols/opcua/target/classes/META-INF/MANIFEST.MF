@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Build-Jdk: 11.0.22
-Built-By: imzjh
+Built-By: ken
 Bundle-Description: Base protocol specifications for the OPC UA protocol
 Bundle-DocURL: https://www.apache.org/
 Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
@@ -28,11 +28,11 @@ Include-Resource: META-INF/services/org.apache.plc4x.plugins.codegenerat
  or.protocol.Protocol=src/main/resources/META-INF/services/org.apache.pl
  c4x.plugins.codegenerator.protocol.Protocol,protocols/opcua/opc-manual.
  mspec=src/main/resources/protocols/opcua/opc-manual.mspec,protocols/opc
- ua/opc-services.mspec=src/main/resources/protocols/opcua/opc-services.m
- spec,protocols/opcua/opc-status.mspec=src/main/resources/protocols/opcu
- a/opc-status.mspec,protocols/opcua/opc-types.mspec=src/main/resources/p
- rotocols/opcua/opc-types.mspec,protocols/opcua/opcua.mspec=src/main/res
- ources/protocols/opcua/opcua.mspec
+ ua/opc-types.mspec=src/main/resources/protocols/opcua/opc-types.mspec,p
+ rotocols/opcua/opc-services.mspec=src/main/resources/protocols/opcua/op
+ c-services.mspec,protocols/opcua/opcua.mspec=src/main/resources/protoco
+ ls/opcua/opcua.mspec,protocols/opcua/opc-status.mspec=src/main/resource
+ s/protocols/opcua/opc-status.mspec
 Private-Package: protocols.opcua
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Specification-Title: Protocols: OPC UA

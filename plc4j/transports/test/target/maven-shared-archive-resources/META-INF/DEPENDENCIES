@@ -50,10 +50,6 @@ From: 'OSGi Alliance' (http://www.osgi.org/)
   - org.osgi:osgi.cmpn (http://www.osgi.org/) org.osgi:osgi.cmpn:jar:6.0.0
     License: Apache License, Version 2.0  (http://opensource.org/licenses/apache2.0.php)
 
-From: 'QOS.ch' (http://www.qos.ch)
-  - SLF4J Simple Binding (http://www.slf4j.org) org.slf4j:slf4j-simple:jar:1.7.32
-    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
-
 From: 'The Apache Software Foundation' (http://www.apache.org/)
   - Apache Commons Collections (http://commons.apache.org/collections/) commons-collections:commons-collections:jar:3.2.2
     License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
@@ -77,26 +73,12 @@ From: 'The Netty Project' (https://netty.io/)
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
   - Netty/Codec (https://netty.io/netty-codec/) io.netty:netty-codec:jar:4.1.67.Final
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
-  - Netty/Codec/HTTP (https://netty.io/netty-codec-http/) io.netty:netty-codec-http:jar:4.1.67.Final
-    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
-  - Netty/Codec/HTTP2 (https://netty.io/netty-codec-http2/) io.netty:netty-codec-http2:jar:4.1.67.Final
-    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
-  - Netty/Codec/Socks (https://netty.io/netty-codec-socks/) io.netty:netty-codec-socks:jar:4.1.67.Final
-    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
   - Netty/Common (https://netty.io/netty-common/) io.netty:netty-common:jar:4.1.67.Final
-    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
-  - Netty/Handler (https://netty.io/netty-handler/) io.netty:netty-handler:jar:4.1.67.Final
-    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
-  - Netty/Handler/Proxy (https://netty.io/netty-handler-proxy/) io.netty:netty-handler-proxy:jar:4.1.67.Final
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
   - Netty/Resolver (https://netty.io/netty-resolver/) io.netty:netty-resolver:jar:4.1.67.Final
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
   - Netty/Transport (https://netty.io/netty-transport/) io.netty:netty-transport:jar:4.1.67.Final
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
-
-From: 'WSO2' (http://www.wso2.org/)
-  - Omron Gateway - Transport Tcp Component (http://www.wso2.org/omron-parent/omron-transport-parent/components/tcp/com.omron.gc.transport.tcp/) com.omron.gc.transport:com.omron.gc.transport.tcp:bundle:1.0.1
-    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
 
 
 

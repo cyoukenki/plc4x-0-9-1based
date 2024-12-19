@@ -36,17 +36,18 @@ public class EipProtocol implements Protocol {
 
     @Override
     public Map<String, TypeDefinition> getTypeDefinitions() throws GenerationException {
-        InputStream schemaInputStream = EipProtocol.class.getResourceAsStream("/protocols/eip/eip_class3.mspec");
+        // InputStream schemaInputStream = EipProtocol.class.getResourceAsStream("/protocols/eip/eip_class3.mspec");
+        // if (schemaInputStream == null) {
+        //     throw new GenerationException("Error loading message-format schema for protocol '" + getName() + "'");
+        // }
+       
+        InputStream schemaInputStream = EipProtocol.class.getResourceAsStream("/protocols/eip/eip.mspec");
         if (schemaInputStream == null) {
             throw new GenerationException("Error loading message-format schema for protocol '" + getName() + "'");
         }
         Map<String, TypeDefinition> typeDefinitionMap = new LinkedHashMap<>(
-                new MessageFormatParser().parse(schemaInputStream));
-        InputStream schemaInputStream1 = EipProtocol.class.getResourceAsStream("/protocols/eip/eip.mspec");
-        if (schemaInputStream1 == null) {
-            throw new GenerationException("Error loading message-format schema for protocol '" + getName() + "'");
-        }
-        typeDefinitionMap.putAll(new MessageFormatParser().parse(schemaInputStream1));
+            new MessageFormatParser().parse(schemaInputStream));
+        // typeDefinitionMap.putAll(new MessageFormatParser().parse(schemaInputStream1));
         return typeDefinitionMap;
     }
 

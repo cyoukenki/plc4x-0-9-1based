@@ -100,7 +100,7 @@ long o_t_connection_id = readBuffer.readUnsignedLong("o_t_connection_id", 32) ;
         readBuffer.pullContext("exchange3");
 
         // Simple Field (exchange3)
-CipExchange3 exchange3 = CipExchange3IO.staticParse(readBuffer , (int) ((len) - (6)) ) ;        readBuffer.closeContext("exchange3");
+CipExchange3 exchange3 = CipExchange3IO.staticParse(readBuffer , (int) ((len) - (12)) ) ;        readBuffer.closeContext("exchange3");
 
         readBuffer.closeContext("SendUnitData");
         // Create the instance

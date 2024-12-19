@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Build-Jdk: 11.0.22
-Built-By: imzjh
+Built-By: ken
 Bundle-Description: Protocol of binary representation of SocketCAN frame
  s.
 Bundle-DocURL: https://www.apache.org/

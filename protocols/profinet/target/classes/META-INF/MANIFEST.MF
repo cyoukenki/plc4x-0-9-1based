@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Build-Jdk: 11.0.22
-Built-By: imzjh
+Built-By: ken
 Bundle-Description: Base protocol specifications for the Profinet protoc
  ols
 Bundle-DocURL: https://www.apache.org/

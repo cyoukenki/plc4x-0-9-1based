@@ -1,0 +1,81 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Activator: org.apache.plc4x.java.osgi.DriverActivator
+Bundle-Description: Implementation of a PLC4X driver able to speak using
+  the EthernetIP Protocol with CIP Encapsulation.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Driver: Ethernet IP
+Bundle-SymbolicName: org.apache.plc4x.plc4j-driver-eip
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.eip.readwrite;uses:="io.netty.buff
+ er,org.apache.commons.lang3.builder,org.apache.plc4x.java.api.model,org
+ .apache.plc4x.java.api.value,org.apache.plc4x.java.eip.readwrite.field,
+ org.apache.plc4x.java.eip.readwrite.types,org.apache.plc4x.java.spi.con
+ figuration,org.apache.plc4x.java.spi.connection,org.apache.plc4x.java.s
+ pi.generation";version="0.9.1",org.apache.plc4x.java.eip.readwrite.conf
+ iguration;uses:="org.apache.plc4x.java.spi.configuration,org.apache.plc
+ 4x.java.transport.tcp";version="0.9.1",org.apache.plc4x.java.eip.readwr
+ ite.types;version="0.9.1",org.apache.plc4x.java.eip.readwrite.util;uses
+ :="org.apache.plc4x.java.api.messages,org.apache.plc4x.java.eip.readwri
+ te.configuration,org.apache.plc4x.java.eip.readwrite.field";version="0.
+ 9.1",org.apache.plc4x.java.eip.readwrite.entity;uses:="org.apache.plc4x
+ .java.eip.readwrite.field";version="0.9.1",org.apache.plc4x.java.eip.re
+ adwrite.io;uses:="org.apache.plc4x.java.eip.readwrite,org.apache.plc4x.
+ java.eip.readwrite.types,org.apache.plc4x.java.spi.generation";version=
+ "0.9.1",org.apache.plc4x.java.eip.readwrite.protocol;uses:="org.apache.
+ plc4x.java.api.messages,org.apache.plc4x.java.eip.readwrite,org.apache.
+ plc4x.java.eip.readwrite.configuration,org.apache.plc4x.java.spi,org.ap
+ ache.plc4x.java.spi.configuration";version="0.9.1",org.apache.plc4x.jav
+ a.eip.readwrite.field;uses:="org.apache.plc4x.java.api.exceptions,org.a
+ pache.plc4x.java.api.model,org.apache.plc4x.java.eip.readwrite.types,or
+ g.apache.plc4x.java.spi.connection,org.apache.plc4x.java.spi.generation
+ ,org.apache.plc4x.java.spi.utils";version="0.9.1"
+Export-Service: org.apache.plc4x.java.api.PlcDriver,org.apache.plc4x.jav
+ a.eip.readwrite.EIPDriver,org.apache.plc4x.java.api.PlcDriver,org.apach
+ e.plc4x.java.eip.readwrite.EEIPClass3Driver
+Implementation-Title: PLC4J: Driver: Ethernet IP
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-drivers/plc4j-d
+ river-eip
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: io.netty.buffer;version="[4.1,5)",org.apache.commons.lan
+ g3.builder;version="[3.12,4)",org.apache.plc4x.java.api.exceptions;vers
+ ion="[0.9,1)",org.apache.plc4x.java.api.messages;version="[0.9,1)",org.
+ apache.plc4x.java.api.model;version="[0.9,1)",org.apache.plc4x.java.api
+ .types;version="[0.9,1)",org.apache.plc4x.java.api.value;version="[0.9,
+ 1)",org.apache.plc4x.java.eip.readwrite,org.apache.plc4x.java.eip.readw
+ rite.configuration,org.apache.plc4x.java.eip.readwrite.field,org.apache
+ .plc4x.java.eip.readwrite.io,org.apache.plc4x.java.eip.readwrite.protoc
+ ol,org.apache.plc4x.java.eip.readwrite.types,org.apache.plc4x.java.eip.
+ readwrite.util,org.apache.plc4x.java.osgi,org.apache.plc4x.java.spi;ver
+ sion="[0.9,1)",org.apache.plc4x.java.spi.configuration;version="[0.9,1)
+ ",org.apache.plc4x.java.spi.configuration.annotations;version="[0.9,1)"
+ ,org.apache.plc4x.java.spi.connection;version="[0.9,1)",org.apache.plc4
+ x.java.spi.generation;version="[0.9,1)",org.apache.plc4x.java.spi.messa
+ ges;version="[0.9,1)",org.apache.plc4x.java.spi.messages.utils;version=
+ "[0.9,1)",org.apache.plc4x.java.spi.transaction;version="[0.9,1)",org.a
+ pache.plc4x.java.spi.utils;version="[0.9,1)",org.apache.plc4x.java.spi.
+ values;version="[0.9,1)",org.apache.plc4x.java.transport.tcp;version="[
+ 0.9,1)",org.slf4j;version="[1.7,2)",com.fasterxml.jackson.annotation;re
+ solution:=optional;version="[2.12,3)"
+Include-Resource: META-INF/services/org.apache.plc4x.java.api.PlcDriver=
+ src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDrive
+ r
+Private-Package: org.apache.plc4x.java.eip.readwrite,org.apache.plc4x.ja
+ va.eip.readwrite.configuration,org.apache.plc4x.java.eip.readwrite.type
+ s,org.apache.plc4x.java.eip.readwrite.util,org.apache.plc4x.java.eip.re
+ adwrite.entity,org.apache.plc4x.java.eip.readwrite.io,org.apache.plc4x.
+ java.eip.readwrite.protocol,org.apache.plc4x.java.eip.readwrite.field
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="org.apache.pl
+ c4x.java.api.PlcDriver"
+Require-Capability: osgi.extender;filter:="(osgi.extender=osgi.servicelo
+ ader.registrar)",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Driver: Ethernet IP
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

@@ -1,0 +1,9 @@
+org/apache/plc4x/camel/MockDriver.class
+org/apache/plc4x/camel/ManualTest$Events.class
+org/apache/plc4x/camel/ManualTest$MyRouteBuilder.class
+org/apache/plc4x/camel/ManualTest.class
+org/apache/plc4x/camel/Plc4XEndpointTest.class
+org/apache/plc4x/camel/ManualTest$1.class
+org/apache/plc4x/camel/Plc4XConsumerTest.class
+org/apache/plc4x/camel/ConstantsTest.class
+org/apache/plc4x/camel/ManualTest$MyBean.class

@@ -1,0 +1,79 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Activator: org.apache.plc4x.java.osgi.DriverActivator
+Bundle-Description: Implementation of a PLC4X driver able to speak using
+  the MC Protocol.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Driver: MC
+Bundle-SymbolicName: org.apache.plc4x.plc4j-driver-mc
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.mc.readwrite;version="0.9.1";uses:
+ ="io.netty.buffer,org.apache.commons.lang3.builder,org.apache.plc4x.jav
+ a.api.model,org.apache.plc4x.java.api.value,org.apache.plc4x.java.mc.re
+ adwrite.field,org.apache.plc4x.java.mc.readwrite.types,org.apache.plc4x
+ .java.spi.configuration,org.apache.plc4x.java.spi.connection,org.apache
+ .plc4x.java.spi.generation,org.apache.plc4x.java.spi.optimizer",org.apa
+ che.plc4x.java.mc.readwrite.configuration;version="0.9.1";uses:="org.ap
+ ache.plc4x.java.spi.configuration,org.apache.plc4x.java.transport.tcp",
+ org.apache.plc4x.java.mc.readwrite.field;version="0.9.1";uses:="org.apa
+ che.plc4x.java.api.exceptions,org.apache.plc4x.java.api.model,org.apach
+ e.plc4x.java.mc.readwrite.types,org.apache.plc4x.java.spi.connection,or
+ g.apache.plc4x.java.spi.generation,org.apache.plc4x.java.spi.utils",org
+ .apache.plc4x.java.mc.readwrite.io;version="0.9.1";uses:="org.apache.pl
+ c4x.java.mc.readwrite,org.apache.plc4x.java.mc.readwrite.types,org.apac
+ he.plc4x.java.spi.generation",org.apache.plc4x.java.mc.readwrite.protoc
+ ol;version="0.9.1";uses:="org.apache.plc4x.java.api.messages,org.apache
+ .plc4x.java.mc.readwrite,org.apache.plc4x.java.mc.readwrite.configurati
+ on,org.apache.plc4x.java.spi,org.apache.plc4x.java.spi.configuration",o
+ rg.apache.plc4x.java.mc.readwrite.types;version="0.9.1",org.apache.plc4
+ x.java.mc.readwrite.util;version="0.9.1"
+Export-Service: org.apache.plc4x.java.api.PlcDriver,org.apache.plc4x.jav
+ a.mc.readwrite.MCDriver
+Implementation-Title: PLC4J: Driver: MC
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-drivers/plc4j-d
+ river-mc
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: io.netty.buffer;version="[4.1,5)",org.apache.commons.lan
+ g3.builder;version="[3.12,4)",org.apache.plc4x.java.api.exceptions;vers
+ ion="[0.9,1)",org.apache.plc4x.java.api.messages;version="[0.9,1)",org.
+ apache.plc4x.java.api.model;version="[0.9,1)",org.apache.plc4x.java.api
+ .types;version="[0.9,1)",org.apache.plc4x.java.api.value;version="[0.9,
+ 1)",org.apache.plc4x.java.mc.readwrite;version="[0.9,1)",org.apache.plc
+ 4x.java.mc.readwrite.configuration;version="[0.9,1)",org.apache.plc4x.j
+ ava.mc.readwrite.field;version="[0.9,1)",org.apache.plc4x.java.mc.readw
+ rite.io;version="[0.9,1)",org.apache.plc4x.java.mc.readwrite.protocol;v
+ ersion="[0.9,1)",org.apache.plc4x.java.mc.readwrite.types;version="[0.9
+ ,1)",org.apache.plc4x.java.mc.readwrite.util;version="[0.9,1)",org.apac
+ he.plc4x.java.osgi,org.apache.plc4x.java.spi;version="[0.9,1)",org.apac
+ he.plc4x.java.spi.configuration;version="[0.9,1)",org.apache.plc4x.java
+ .spi.configuration.annotations;version="[0.9,1)",org.apache.plc4x.java.
+ spi.connection;version="[0.9,1)",org.apache.plc4x.java.spi.generation;v
+ ersion="[0.9,1)",org.apache.plc4x.java.spi.messages;version="[0.9,1)",o
+ rg.apache.plc4x.java.spi.messages.utils;version="[0.9,1)",org.apache.pl
+ c4x.java.spi.optimizer;version="[0.9,1)",org.apache.plc4x.java.spi.tran
+ saction;version="[0.9,1)",org.apache.plc4x.java.spi.utils;version="[0.9
+ ,1)",org.apache.plc4x.java.spi.values;version="[0.9,1)",org.apache.plc4
+ x.java.transport.tcp;version="[0.9,1)",org.slf4j;version="[1.7,2)",com.
+ fasterxml.jackson.annotation;resolution:=optional;version="[2.12,3)"
+Include-Resource: META-INF/services/org.apache.plc4x.java.api.PlcDriver=
+ src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDrive
+ r
+Private-Package: org.apache.plc4x.java.mc.readwrite,org.apache.plc4x.jav
+ a.mc.readwrite.configuration,org.apache.plc4x.java.mc.readwrite.types,o
+ rg.apache.plc4x.java.mc.readwrite.util,org.apache.plc4x.java.mc.readwri
+ te.io,org.apache.plc4x.java.mc.readwrite.protocol,org.apache.plc4x.java
+ .mc.readwrite.field
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="org.apache.pl
+ c4x.java.api.PlcDriver"
+Require-Capability: osgi.extender;filter:="(osgi.extender=osgi.servicelo
+ ader.registrar)",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Driver: MC
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

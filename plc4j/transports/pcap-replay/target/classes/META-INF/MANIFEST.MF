@@ -1,0 +1,48 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Activator: org.apache.plc4x.java.osgi.TransportActivator
+Bundle-Description: Transport using libpcap to replay pcapng files to si
+ mulate a raw socket.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Transports: PCAP Replay
+Bundle-SymbolicName: org.apache.plc4x.plc4j-transport-pcap-replay
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.transport.pcapreplay;uses:="io.net
+ ty.bootstrap,io.netty.channel,org.apache.plc4x.java.spi.configuration,o
+ rg.apache.plc4x.java.spi.connection,org.apache.plc4x.java.spi.transport
+ ,org.apache.plc4x.java.transport.pcap,org.apache.plc4x.java.utils.pcap.
+ netty.address";version="0.9.1"
+Export-Service: org.apache.plc4x.java.spi.transport.Transport,org.apache
+ .plc4x.java.transport.pcapreplay.PcapReplayTransport
+Implementation-Title: PLC4J: Transports: PCAP Replay
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-transports/plc4
+ j-transport-pcap-replay
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: io.netty.bootstrap;version="[4.1,5)",io.netty.channel;ve
+ rsion="[4.1,5)",io.netty.channel.oio;version="[4.1,5)",org.apache.plc4x
+ .java.api.exceptions;version="[0.9,1)",org.apache.plc4x.java.osgi,org.a
+ pache.plc4x.java.spi.configuration;version="[0.9,1)",org.apache.plc4x.j
+ ava.spi.connection;version="[0.9,1)",org.apache.plc4x.java.spi.transpor
+ t;version="[0.9,1)",org.apache.plc4x.java.transport.pcap;version="[0.9,
+ 1)",org.apache.plc4x.java.utils.pcap.netty.address;version="[0.9,1)",or
+ g.apache.plc4x.java.utils.pcap.netty.config;version="[0.9,1)",org.apach
+ e.plc4x.java.utils.pcap.netty.handlers;version="[0.9,1)",org.apache.plc
+ 4x.java.utils.pcapreplay.netty;version="[0.9,1)",org.apache.plc4x.java.
+ utils.pcapreplay.netty.address;version="[0.9,1)",org.apache.plc4x.java.
+ utils.pcapreplay.netty.config;version="[0.9,1)",org.slf4j;version="[1.7
+ ,2)"
+Include-Resource: META-INF/services/org.apache.plc4x.java.spi.transport.
+ Transport=src/main/resources/META-INF/services/org.apache.plc4x.java.sp
+ i.transport.Transport
+Private-Package: org.apache.plc4x.java.transport.pcapreplay
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Transports: PCAP Replay
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

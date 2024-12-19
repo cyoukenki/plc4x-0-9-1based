@@ -100,10 +100,10 @@
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
     </dependency>
-    <dependency>
+    <!-- <dependency>
       <groupId>com.omron.gc.transport</groupId>
       <artifactId>com.omron.gc.transport.tcp</artifactId>
-    </dependency>
+    </dependency> -->
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>

@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Build-Jdk: 11.0.22
-Built-By: imzjh
+Built-By: ken
 Bundle-Description: Fake protocol intended for demonstrating the differe
  nt features and aspects of MSpec.
 Bundle-DocURL: https://www.apache.org/

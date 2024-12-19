@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Build-Jdk: 11.0.22
-Built-By: imzjh
+Built-By: ken
 Bundle-Description: Base protocol specifications for the SecsGem protoco
  l
 Bundle-DocURL: https://www.apache.org/
@@ -28,9 +28,9 @@ Import-Package: org.apache.plc4x.plugins.codegenerator.language.mspec.pa
 Include-Resource: META-INF/services/org.apache.plc4x.plugins.codegenerat
  or.protocol.Protocol=src/main/resources/META-INF/services/org.apache.pl
  c4x.plugins.codegenerator.protocol.Protocol,protocols/upperlink/upperli
- nk.mspec=src/main/resources/protocols/upperlink/upperlink.mspec,protoco
- ls/upperlink/upperlink2.mspec=src/main/resources/protocols/upperlink/up
- perlink2.mspec
+ nk2.mspec=src/main/resources/protocols/upperlink/upperlink2.mspec,proto
+ cols/upperlink/upperlink.mspec=src/main/resources/protocols/upperlink/u
+ pperlink.mspec
 Private-Package: protocols.upperlink
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Specification-Title: Protocols: Upper-link

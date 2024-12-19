@@ -90,7 +90,7 @@ public class EIPDriver extends GeneratedDriverBase<EipPacket> {
     @Override
     protected ProtocolStackConfigurer<EipPacket> getStackConfigurer() {
         return SingleProtocolStackConfigurer.builder(EipPacket.class, EipPacketIO.class)
-            .withProtocol(EipClass3ProtocolLogic.class)
+            .withProtocol(EipProtocolLogic.class)
             .withPacketSizeEstimator(ByteLengthEstimator.class)
             .littleEndian()
             .build();

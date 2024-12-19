@@ -2,7 +2,7 @@
 *****************************************************
 Summary
 -------
-Generated at: 2024-12-17T17:11:24+08:00
+Generated at: 2024-12-19T14:19:08+08:00
 
 Notes: 0
 Binaries: 0
@@ -22,9 +22,9 @@ Generated files do not require license headers.
   Binary files (which do not require any license headers) will be marked B
   Compressed archives will be marked A
   Notices, licenses etc. will be marked N
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/direct/pom.xml
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/direct/src/main/java/org/apache/plc4x/protocol/direct/DirectProtocol.java
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/direct/src/main/resources/META-INF/services/org.apache.plc4x.plugins.codegenerator.protocol.Protocol
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/direct/src/main/resources/protocols/direct/direct.mspec
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/direct/pom.xml
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/direct/src/main/resources/META-INF/services/org.apache.plc4x.plugins.codegenerator.protocol.Protocol
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/direct/src/main/resources/protocols/direct/direct.mspec
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/direct/src/main/java/org/apache/plc4x/protocol/direct/DirectProtocol.java
  
 *****************************************************

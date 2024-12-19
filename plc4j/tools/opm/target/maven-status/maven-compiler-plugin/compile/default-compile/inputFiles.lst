@@ -1,8 +1,8 @@
-F:\workspace\github\plc4x-0-9-1based\plc4j\tools\opm\src\main\java\org\apache\plc4x\java\opm\AliasRegistry.java
-F:\workspace\github\plc4x-0-9-1based\plc4j\tools\opm\src\main\java\org\apache\plc4x\java\opm\OPMException.java
-F:\workspace\github\plc4x-0-9-1based\plc4j\tools\opm\src\main\java\org\apache\plc4x\java\opm\PlcEntity.java
-F:\workspace\github\plc4x-0-9-1based\plc4j\tools\opm\src\main\java\org\apache\plc4x\java\opm\PlcEntityInterceptor.java
-F:\workspace\github\plc4x-0-9-1based\plc4j\tools\opm\src\main\java\org\apache\plc4x\java\opm\PlcField.java
-F:\workspace\github\plc4x-0-9-1based\plc4j\tools\opm\src\main\java\org\apache\plc4x\java\opm\OpmUtils.java
-F:\workspace\github\plc4x-0-9-1based\plc4j\tools\opm\src\main\java\org\apache\plc4x\java\opm\PlcEntityManager.java
-F:\workspace\github\plc4x-0-9-1based\plc4j\tools\opm\src\main\java\org\apache\plc4x\java\opm\SimpleAliasRegistry.java
+/Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/AliasRegistry.java
+/Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/PlcEntityInterceptor.java
+/Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/OpmUtils.java
+/Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/SimpleAliasRegistry.java
+/Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/OPMException.java
+/Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/PlcEntity.java
+/Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/PlcEntityManager.java
+/Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/tools/opm/src/main/java/org/apache/plc4x/java/opm/PlcField.java

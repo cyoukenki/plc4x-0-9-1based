@@ -99,6 +99,9 @@ long options = readBuffer.readUnsignedLong("options", 32) ;
         } else 
                 if(EvaluationHelper.equals(command, 0x006F)) {
             builder = CipRRDataIO.staticParse(readBuffer, len);
+        } else 
+                if(EvaluationHelper.equals(command, 0x0070)) {
+            builder = SendUnitDataIO.staticParse(readBuffer, len);
         }
         if (builder == null) {
             throw new ParseException("Unsupported case for discriminated type");
@@ -154,6 +157,9 @@ long options = readBuffer.readUnsignedLong("options", 32) ;
         } else 
         if(_value instanceof CipRRData) {
             CipRRDataIO.staticSerialize(writeBuffer, (CipRRData) _value);
+        } else 
+        if(_value instanceof SendUnitData) {
+            SendUnitDataIO.staticSerialize(writeBuffer, (SendUnitData) _value);
         }
         writeBuffer.popContext("EipPacket");
     }

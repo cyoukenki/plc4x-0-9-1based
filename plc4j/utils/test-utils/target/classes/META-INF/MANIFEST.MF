@@ -10,21 +10,21 @@ Bundle-SymbolicName: org.apache.plc4x.plc4j-utils-test-utils
 Bundle-Vendor: The Apache Software Foundation
 Bundle-Version: 0.9.1
 Created-By: Apache Maven Bundle Plugin
-Export-Package: org.apache.plc4x.test.dom4j;uses:="org.apache.plc4x.test
- .model,org.dom4j,org.dom4j.io,org.dom4j.tree,org.xml.sax";version="0.9.
- 1",org.apache.plc4x.test.driver;uses:="org.apache.plc4x.test,org.apache
- .plc4x.test.driver.exceptions,org.junit.jupiter.api";version="0.9.1",or
- g.apache.plc4x.test.driver.exceptions;version="0.9.1",org.apache.plc4x.
- test;uses:="org.junit.jupiter.api.extension";version="0.9.1",org.apache
- .plc4x.test.manual;version="0.9.1",org.apache.plc4x.test.migration;uses
- :="org.apache.plc4x.java.spi.generation,org.apache.plc4x.test.driver.ex
- ceptions,org.apache.plc4x.test.parserserializer.exceptions,org.dom4j";v
- ersion="0.9.1",org.apache.plc4x.test.model;version="0.9.1",org.apache.p
- lc4x.test.parserserializer.exceptions;version="0.9.1",org.apache.plc4x.
- test.parserserializer.model;uses:="org.apache.plc4x.test.model,org.dom4
- j";version="0.9.1",org.apache.plc4x.test.parserserializer;uses:="org.ap
- ache.plc4x.test,org.apache.plc4x.test.parserserializer.exceptions,org.j
- unit.jupiter.api";version="0.9.1",org.apache.plc4x.test.xml;uses:="org.
+Export-Package: org.apache.plc4x.test;uses:="org.junit.jupiter.api.exten
+ sion";version="0.9.1",org.apache.plc4x.test.dom4j;uses:="org.apache.plc
+ 4x.test.model,org.dom4j,org.dom4j.io,org.dom4j.tree,org.xml.sax";versio
+ n="0.9.1",org.apache.plc4x.test.driver.exceptions;version="0.9.1",org.a
+ pache.plc4x.test.driver;uses:="org.apache.plc4x.test,org.apache.plc4x.t
+ est.driver.exceptions,org.junit.jupiter.api";version="0.9.1",org.apache
+ .plc4x.test.xml;uses:="org.dom4j";version="0.9.1",org.apache.plc4x.test
+ .manual;version="0.9.1",org.apache.plc4x.test.model;version="0.9.1",org
+ .apache.plc4x.test.migration;uses:="org.apache.plc4x.java.spi.generatio
+ n,org.apache.plc4x.test.driver.exceptions,org.apache.plc4x.test.parsers
+ erializer.exceptions,org.dom4j";version="0.9.1",org.apache.plc4x.test.p
+ arserserializer;uses:="org.apache.plc4x.test,org.apache.plc4x.test.pars
+ erserializer.exceptions,org.junit.jupiter.api";version="0.9.1",org.apac
+ he.plc4x.test.parserserializer.exceptions;version="0.9.1",org.apache.pl
+ c4x.test.parserserializer.model;uses:="org.apache.plc4x.test.model,org.
  dom4j";version="0.9.1"
 Implementation-Title: PLC4J: Utils: Test Utils
 Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-utils/plc4j-uti
@@ -53,10 +53,10 @@ Import-Package: com.fasterxml.jackson.annotation;version="[2.12,3)",io.n
  i.function;version="[5.7,6)",org.pcap4j.core,org.slf4j;version="[1.7,2)
  ",org.xml.sax,org.xmlunit.builder;version="[2.8,3)",org.xmlunit.diff;ve
  rsion="[2.8,3)"
-Include-Resource: logback.xml=src/main/resources/logback.xml,schemas/dri
- ver-testsuite.xsd=src/main/resources/schemas/driver-testsuite.xsd,schem
- as/parser-serializer-testsuite.xsd=src/main/resources/schemas/parser-se
- rializer-testsuite.xsd
+Include-Resource: logback.xml=src/main/resources/logback.xml,schemas/par
+ ser-serializer-testsuite.xsd=src/main/resources/schemas/parser-serializ
+ er-testsuite.xsd,schemas/driver-testsuite.xsd=src/main/resources/schema
+ s/driver-testsuite.xsd
 Private-Package: org.apache.plc4x.test.driver.internal,org.apache.plc4x.
  test.driver.internal.api,org.apache.plc4x.test.driver.internal.handlers
  ,org.apache.plc4x.test.driver.internal.utils,org.apache.plc4x.test.driv

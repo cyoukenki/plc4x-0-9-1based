@@ -2,7 +2,7 @@
 *****************************************************
 Summary
 -------
-Generated at: 2024-12-17T17:11:23+08:00
+Generated at: 2024-12-19T14:19:08+08:00
 
 Notes: 0
 Binaries: 0
@@ -22,8 +22,8 @@ Generated files do not require license headers.
   Binary files (which do not require any license headers) will be marked B
   Compressed archives will be marked A
   Notices, licenses etc. will be marked N
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/plc4x/pom.xml
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/plc4x/src/main/resources/META-INF/services/org.apache.plc4x.plugins.codegenerator.protocol.Protocol
-  AL    F:/workspace/github/plc4x-0-9-1based/protocols/plc4x/src/main/resources/protocols/plc4x/plc4x.mspec
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/plc4x/pom.xml
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/plc4x/src/main/resources/META-INF/services/org.apache.plc4x.plugins.codegenerator.protocol.Protocol
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/plc4x/src/main/resources/protocols/plc4x/plc4x.mspec
  
 *****************************************************

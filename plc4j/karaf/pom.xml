@@ -28,7 +28,7 @@
 
     <artifactId>camel-plc4x</artifactId>
     <version>1.1.16</version>
-    <name>PLC4J: API</name>
+    <name>camel-plc4x::Features</name>
     <description>Central API Module.</description>
   <distributionManagement>
     <repository>

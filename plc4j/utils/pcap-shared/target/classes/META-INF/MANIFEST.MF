@@ -9,9 +9,9 @@ Bundle-SymbolicName: org.apache.plc4x.plc4j-utils-pcap-shared
 Bundle-Vendor: The Apache Software Foundation
 Bundle-Version: 0.9.1
 Created-By: Apache Maven Bundle Plugin
-Export-Package: org.apache.plc4x.java.utils.pcap.netty.address;version="
- 0.9.1",org.apache.plc4x.java.utils.pcap.netty.config;uses:="io.netty.ch
- annel,org.apache.plc4x.java.utils.pcap.netty.handlers";version="0.9.1",
+Export-Package: org.apache.plc4x.java.utils.pcap.netty.config;uses:="io.
+ netty.channel,org.apache.plc4x.java.utils.pcap.netty.handlers";version=
+ "0.9.1",org.apache.plc4x.java.utils.pcap.netty.address;version="0.9.1",
  org.apache.plc4x.java.utils.pcap.netty.exception;version="0.9.1",org.ap
  ache.plc4x.java.utils.pcap.netty.handlers;uses:="org.pcap4j.packet";ver
  sion="0.9.1"
@@ -23,8 +23,8 @@ Implementation-Vendor-Id: org.apache.plc4x
 Implementation-Version: 0.9.1
 Import-Package: io.netty.channel;version="[4.1,5)",org.apache.plc4x.java
  .utils.pcap.netty.handlers,org.pcap4j.packet
-Private-Package: org.apache.plc4x.java.utils.pcap.netty.address,org.apac
- he.plc4x.java.utils.pcap.netty.config,org.apache.plc4x.java.utils.pcap.
+Private-Package: org.apache.plc4x.java.utils.pcap.netty.config,org.apach
+ e.plc4x.java.utils.pcap.netty.address,org.apache.plc4x.java.utils.pcap.
  netty.exception,org.apache.plc4x.java.utils.pcap.netty.handlers
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Specification-Title: PLC4J: Utils: Pcap (Shared)

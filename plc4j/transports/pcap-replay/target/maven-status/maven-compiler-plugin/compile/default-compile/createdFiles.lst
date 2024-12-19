@@ -1,3 +1,3 @@
-org\apache\plc4x\java\transport\pcapreplay\PcapReplayChannelFactory.class
-org\apache\plc4x\java\transport\pcapreplay\PcapReplayTransportConfiguration.class
-org\apache\plc4x\java\transport\pcapreplay\PcapReplayTransport.class
+org/apache/plc4x/java/transport/pcapreplay/PcapReplayTransport.class
+org/apache/plc4x/java/transport/pcapreplay/PcapReplayTransportConfiguration.class
+org/apache/plc4x/java/transport/pcapreplay/PcapReplayChannelFactory.class

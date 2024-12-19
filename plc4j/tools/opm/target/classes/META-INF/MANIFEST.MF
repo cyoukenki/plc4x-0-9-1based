@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Description: Layer on top of Plc4X that enables mapping between O
+ bjects and PLCs.
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Tools: Object PLC Mapping
+Bundle-SymbolicName: org.apache.plc4x.plc4j-opm
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.opm;uses:="net.bytebuddy.implement
+ ation.bind.annotation,org.apache.plc4x.java,org.apache.plc4x.java.api.e
+ xceptions,org.apache.plc4x.java.api.messages";version="0.9.1"
+Implementation-Title: PLC4J: Tools: Object PLC Mapping
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-tools/plc4j-opm
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: net.bytebuddy;version="[1.11,2)",net.bytebuddy.descripti
+ on.modifier;version="[1.11,2)",net.bytebuddy.dynamic;version="[1.11,2)"
+ ,net.bytebuddy.implementation;version="[1.11,2)",net.bytebuddy.implemen
+ tation.bind.annotation;version="[1.11,2)",net.bytebuddy.matcher;version
+ ="[1.11,2)",org.apache.commons.configuration2;version="[2.7,3)",org.apa
+ che.commons.lang3;version="[3.12,4)",org.apache.commons.lang3.reflect;v
+ ersion="[3.12,4)",org.apache.plc4x.java;version="[0.9,1)",org.apache.pl
+ c4x.java.api;version="[0.9,1)",org.apache.plc4x.java.api.exceptions;ver
+ sion="[0.9,1)",org.apache.plc4x.java.api.messages;version="[0.9,1)",org
+ .apache.plc4x.java.api.types;version="[0.9,1)",org.slf4j;version="[1.7,
+ 2)"
+Private-Package: org.apache.plc4x.java.opm
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Tools: Object PLC Mapping
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103

@@ -165,7 +165,7 @@
     <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-connection-cache</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
     </dependency>
     <dependency>
       <groupId>io.netty</groupId>
@@ -212,28 +212,28 @@
     </dependency>
 
     <!-- Include all drivers -->
-    <dependency>
+    <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-ab-eth</artifactId>
       <version>0.9.1</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+    <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-ads</artifactId>
       <version>0.9.1</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+    <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-canopen</artifactId>
       <version>0.9.1</version>
       <scope>runtime</scope>
-    </dependency>
+    </dependency> -->
     <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-eip</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>0.9.1</version>
       <scope>runtime</scope>
     </dependency>
 <!--    <dependency>-->
@@ -242,66 +242,66 @@
 <!--      <version>0.9.1</version>-->
 <!--      <scope>runtime</scope>-->
 <!--    </dependency>-->
-    <dependency>
+    <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-firmata</artifactId>
       <version>0.9.1</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+    <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-knxnetip</artifactId>
       <version>0.9.1</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+    <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-modbus</artifactId>
       <version>0.9.1</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+    <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
-      <artifactId>plc4j-driver-modbus-le</artifactId>
+      <artifactId>plc4j-driver-modbus</artifactId>
       <version>0.9.1</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+    <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-fins</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+    <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-opcua</artifactId>
       <version>0.9.1</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+    <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-s7</artifactId>
       <version>0.9.1</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+    <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-mc</artifactId>
       <version>0.9.1</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+    <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-serial-direct</artifactId>
       <version>0.9.1</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+    <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-simulated</artifactId>
       <version>0.9.1</version>
       <scope>runtime</scope>
-    </dependency>
+    </dependency> -->
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>

@@ -15,20 +15,20 @@ Export-Package: org.apache.plc4x.java.abeth;uses:="io.netty.buffer,org.a
  pache.plc4x.java.abeth.field,org.apache.plc4x.java.abeth.readwrite,org.
  apache.plc4x.java.api.model,org.apache.plc4x.java.api.value,org.apache.
  plc4x.java.spi.configuration,org.apache.plc4x.java.spi.connection";vers
- ion="0.9.1",org.apache.plc4x.java.abeth.configuration;uses:="org.apache
- .plc4x.java.spi.configuration,org.apache.plc4x.java.transport.tcp";vers
- ion="0.9.1",org.apache.plc4x.java.abeth.field;uses:="org.apache.plc4x.j
- ava.abeth.types,org.apache.plc4x.java.api.exceptions,org.apache.plc4x.j
- ava.api.model,org.apache.plc4x.java.spi.connection";version="0.9.1",org
- .apache.plc4x.java.abeth.protocol;uses:="io.netty.channel,org.apache.pl
- c4x.java.abeth.configuration,org.apache.plc4x.java.abeth.readwrite,org.
- apache.plc4x.java.api.messages,org.apache.plc4x.java.spi,org.apache.plc
- 4x.java.spi.configuration,org.apache.plc4x.java.spi.messages";version="
- 0.9.1",org.apache.plc4x.java.abeth.readwrite;uses:="org.apache.commons.
- lang3.builder,org.apache.plc4x.java.spi.generation";version="0.9.1",org
- .apache.plc4x.java.abeth.readwrite.io;uses:="org.apache.plc4x.java.abet
- h.readwrite,org.apache.plc4x.java.spi.generation";version="0.9.1",org.a
- pache.plc4x.java.abeth.types;version="0.9.1"
+ ion="0.9.1",org.apache.plc4x.java.abeth.readwrite;uses:="org.apache.com
+ mons.lang3.builder,org.apache.plc4x.java.spi.generation";version="0.9.1
+ ",org.apache.plc4x.java.abeth.readwrite.io;uses:="org.apache.plc4x.java
+ .abeth.readwrite,org.apache.plc4x.java.spi.generation";version="0.9.1",
+ org.apache.plc4x.java.abeth.configuration;uses:="org.apache.plc4x.java.
+ spi.configuration,org.apache.plc4x.java.transport.tcp";version="0.9.1",
+ org.apache.plc4x.java.abeth.types;version="0.9.1",org.apache.plc4x.java
+ .abeth.protocol;uses:="io.netty.channel,org.apache.plc4x.java.abeth.con
+ figuration,org.apache.plc4x.java.abeth.readwrite,org.apache.plc4x.java.
+ api.messages,org.apache.plc4x.java.spi,org.apache.plc4x.java.spi.config
+ uration,org.apache.plc4x.java.spi.messages";version="0.9.1",org.apache.
+ plc4x.java.abeth.field;uses:="org.apache.plc4x.java.abeth.types,org.apa
+ che.plc4x.java.api.exceptions,org.apache.plc4x.java.api.model,org.apach
+ e.plc4x.java.spi.connection";version="0.9.1"
 Export-Service: org.apache.plc4x.java.api.PlcDriver,org.apache.plc4x.jav
  a.abeth.AbEthDriver
 Implementation-Title: PLC4J: Driver: AB-ETH
@@ -61,9 +61,9 @@ Include-Resource: META-INF/services/org.apache.plc4x.java.api.PlcDriver=
  src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDrive
  r
 Private-Package: org.apache.plc4x.java.abeth,org.apache.plc4x.java.abeth
- .configuration,org.apache.plc4x.java.abeth.field,org.apache.plc4x.java.
- abeth.protocol,org.apache.plc4x.java.abeth.readwrite,org.apache.plc4x.j
- ava.abeth.readwrite.io,org.apache.plc4x.java.abeth.types
+ .readwrite,org.apache.plc4x.java.abeth.readwrite.io,org.apache.plc4x.ja
+ va.abeth.configuration,org.apache.plc4x.java.abeth.types,org.apache.plc
+ 4x.java.abeth.protocol,org.apache.plc4x.java.abeth.field
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Specification-Title: PLC4J: Driver: AB-ETH
 Specification-Vendor: The Apache Software Foundation

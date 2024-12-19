@@ -1,0 +1,95 @@
+Manifest-Version: 1.0
+Build-Jdk: 11.0.22
+Bundle-Activator: org.apache.plc4x.java.osgi.DriverActivator
+Bundle-Description: Wrapper project for all PLC4J driver implementations
+ .
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: PLC4J: Driver: Beckhoff TwinCat ADS Driver
+Bundle-SymbolicName: org.apache.plc4x.plc4j-driver-ads
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.9.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.plc4x.java.ads.readwrite;uses:="org.apache.co
+ mmons.lang3.builder,org.apache.plc4x.java.ads.readwrite.types,org.apach
+ e.plc4x.java.spi.generation";version="0.9.1",org.apache.plc4x.java.ads.
+ readwrite.types;version="0.9.1",org.apache.plc4x.java.ads.readwrite.io;
+ uses:="org.apache.plc4x.java.ads.readwrite,org.apache.plc4x.java.ads.re
+ adwrite.types,org.apache.plc4x.java.api.value,org.apache.plc4x.java.spi
+ .generation";version="0.9.1",org.apache.plc4x.java.ads.configuration;us
+ es:="org.apache.plc4x.java.ads.readwrite,org.apache.plc4x.java.spi.conf
+ iguration,org.apache.plc4x.java.spi.configuration.annotations,org.apach
+ e.plc4x.java.spi.configuration.annotations.defaults,org.apache.plc4x.ja
+ va.transport.serial,org.apache.plc4x.java.transport.tcp";version="0.9.1
+ ",org.apache.plc4x.java.ads;uses:="io.netty.buffer,org.apache.plc4x.jav
+ a.ads.field,org.apache.plc4x.java.ads.readwrite,org.apache.plc4x.java.a
+ pi.value,org.apache.plc4x.java.spi.configuration,org.apache.plc4x.java.
+ spi.connection";version="0.9.1",org.apache.plc4x.java.ads.discovery.rea
+ dwrite.types;version="0.9.1",org.apache.plc4x.java.ads.discovery.readwr
+ ite;uses:="org.apache.commons.lang3.builder,org.apache.plc4x.java.ads.d
+ iscovery.readwrite.types,org.apache.plc4x.java.spi.generation";version=
+ "0.9.1",org.apache.plc4x.java.ads.discovery.readwrite.io;uses:="org.apa
+ che.plc4x.java.ads.discovery.readwrite,org.apache.plc4x.java.ads.discov
+ ery.readwrite.types,org.apache.plc4x.java.spi.generation";version="0.9.
+ 1",org.apache.plc4x.java.ads.utils;uses:="org.apache.plc4x.java.api.val
+ ue,org.apache.plc4x.java.spi.generation";version="0.9.1",org.apache.plc
+ 4x.java.ads.protocol;uses:="org.apache.plc4x.java.ads.configuration,org
+ .apache.plc4x.java.ads.field,org.apache.plc4x.java.ads.readwrite,org.ap
+ ache.plc4x.java.api.messages,org.apache.plc4x.java.api.model,org.apache
+ .plc4x.java.spi,org.apache.plc4x.java.spi.configuration";version="0.9.1
+ ",org.apache.plc4x.java.ads.field;uses:="org.apache.plc4x.java.ads.read
+ write.types,org.apache.plc4x.java.api.exceptions,org.apache.plc4x.java.
+ api.model,org.apache.plc4x.java.spi.connection,org.apache.plc4x.java.sp
+ i.generation,org.apache.plc4x.java.spi.utils";version="0.9.1",org.apach
+ e.plc4x.java.ads.model;uses:="org.apache.plc4x.java.ads.readwrite.types
+ ,org.apache.plc4x.java.spi.messages,org.apache.plc4x.java.spi.model";ve
+ rsion="0.9.1"
+Export-Service: org.apache.plc4x.java.api.PlcDriver,org.apache.plc4x.jav
+ a.ads.ADSPlcDriver
+Implementation-Title: PLC4J: Driver: Beckhoff TwinCat ADS Driver
+Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-drivers/plc4j-d
+ river-ads
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.plc4x
+Implementation-Version: 0.9.1
+Import-Package: io.netty.buffer;version="[4.1,5)",org.apache.commons.lan
+ g3;version="[3.12,4)",org.apache.commons.lang3.builder;version="[3.12,4
+ )",org.apache.plc4x.java.ads.configuration,org.apache.plc4x.java.ads.di
+ scovery.readwrite,org.apache.plc4x.java.ads.discovery.readwrite.io,org.
+ apache.plc4x.java.ads.discovery.readwrite.types,org.apache.plc4x.java.a
+ ds.field,org.apache.plc4x.java.ads.protocol,org.apache.plc4x.java.ads.r
+ eadwrite,org.apache.plc4x.java.ads.readwrite.io,org.apache.plc4x.java.a
+ ds.readwrite.types,org.apache.plc4x.java.ads.utils,org.apache.plc4x.jav
+ a.api.exceptions;version="[0.9,1)",org.apache.plc4x.java.api.messages;v
+ ersion="[0.9,1)",org.apache.plc4x.java.api.model;version="[0.9,1)",org.
+ apache.plc4x.java.api.types;version="[0.9,1)",org.apache.plc4x.java.api
+ .value;version="[0.9,1)",org.apache.plc4x.java.osgi,org.apache.plc4x.ja
+ va.spi;version="[0.9,1)",org.apache.plc4x.java.spi.configuration;versio
+ n="[0.9,1)",org.apache.plc4x.java.spi.configuration.annotations;version
+ ="[0.9,1)",org.apache.plc4x.java.spi.configuration.annotations.defaults
+ ;version="[0.9,1)",org.apache.plc4x.java.spi.connection;version="[0.9,1
+ )",org.apache.plc4x.java.spi.generation;version="[0.9,1)",org.apache.pl
+ c4x.java.spi.messages;version="[0.9,1)",org.apache.plc4x.java.spi.messa
+ ges.utils;version="[0.9,1)",org.apache.plc4x.java.spi.model;version="[0
+ .9,1)",org.apache.plc4x.java.spi.transaction;version="[0.9,1)",org.apac
+ he.plc4x.java.spi.utils;version="[0.9,1)",org.apache.plc4x.java.spi.val
+ ues;version="[0.9,1)",org.apache.plc4x.java.transport.serial;version="[
+ 0.9,1)",org.apache.plc4x.java.transport.tcp;version="[0.9,1)",org.slf4j
+ ;version="[1.7,2)",com.fasterxml.jackson.annotation;resolution:=optiona
+ l;version="[2.12,3)"
+Include-Resource: META-INF/services/org.apache.plc4x.java.api.PlcDriver=
+ src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDrive
+ r
+Private-Package: org.apache.plc4x.java.ads.readwrite,org.apache.plc4x.ja
+ va.ads.readwrite.types,org.apache.plc4x.java.ads.readwrite.io,org.apach
+ e.plc4x.java.ads.configuration,org.apache.plc4x.java.ads,org.apache.plc
+ 4x.java.ads.discovery.readwrite.types,org.apache.plc4x.java.ads.discove
+ ry.readwrite,org.apache.plc4x.java.ads.discovery.readwrite.io,org.apach
+ e.plc4x.java.ads.utils,org.apache.plc4x.java.ads.protocol,org.apache.pl
+ c4x.java.ads.field,org.apache.plc4x.java.ads.model
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: PLC4J: Driver: Beckhoff TwinCat ADS Driver
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 0.9.1
+Tool: Bnd-5.1.1.202006162103
