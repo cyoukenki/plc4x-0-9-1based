@@ -49,9 +49,9 @@ public class LargeForwardOpenRequest extends CipService implements Message {
     public static final short TOT = 0x9c;
     public static final int VENDOR_ID = 0x002f;
     public static final short TRT = 0x00;
-    public static final long OTRPI = 0x00002710;
+    public static final long OTRPI = 0x00989680;
     public static final long OTNP = 0x420007cc;
-    public static final long TORPI = 0x00002710;
+    public static final long TORPI = 0x00989680;
     public static final long TONP = 0x420007cc;
     public static final short TRANSPORT_TYPE = 0xa3;
     public static final short CONNECTION_PATH_SIZE = 0x02;

@@ -45,7 +45,7 @@ public class EIPClass3Driver extends GeneratedDriverBase<EipPacket> {
 
     @Override
     public String getProtocolName() {
-        return "EthernetIP Class3";
+        return "EthernetIP Class 3";
     }
 
     @Override

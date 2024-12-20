@@ -1450,8 +1450,10 @@
     ['701' M_SHANGHAI_BENKONG_ELECTRONIC_TECHNOLOGY_CO__LTD ['759', '"Shanghai Benkong Electronic Technology Co.,Ltd"']]
     ['702' M_POLAR_BEAR_DESIGN ['760', '"Polar Bear Design"']]
     ['703' M_ELESSAN_NV ['761', '"Elessan NV"']]
-    ['704' M_ABB___RESERVED ['43954', '"ABB - reserved"']]
-    ['705' M_BUSCH_JAEGER_ELEKTRO___RESERVED ['43959', '"Busch-Jaeger Elektro - reserved"']]
+    ['704' M_MIR ['762', '"MIR"']]
+    ['705' M_ZHEJIANG_MISILIN_TECHNOLOGY_CO___LTD ['763', '"Zhejiang Misilin Technology Co., Ltd"']]
+    ['706' M_ABB___RESERVED ['43954', '"ABB - reserved"']]
+    ['707' M_BUSCH_JAEGER_ELEKTRO___RESERVED ['43959', '"Busch-Jaeger Elektro - reserved"']]
     
 ]
 

@@ -109,7 +109,7 @@ public class EipProtocolLogic extends Plc4xProtocolBase<EipPacket> implements Ha
             List<String> singleRespOverlengthParams = EipProtocolUtils.getReadSingleRespOverlengthParams(readRequest, configuration);
             //多个请求报文超长分割，并去除单个请求报文返回超长的集合
             List<List<String>> noSingleRespOverlengthParams = EipProtocolUtils.getReadNoSingleRespOverlengthParams(readRequest, configuration);
-            logger.info("Number of read message groups is "+noSingleRespOverlengthParams.size());
+            logger.debug("Number of read message groups is "+noSingleRespOverlengthParams.size());
             for (int i = 0; i < singleRespOverlengthParams.size(); i++) {
                 //单个数据超长 分段请求 合并结果
                 String fieldName = singleRespOverlengthParams.get(i);
@@ -1010,7 +1010,7 @@ public class EipProtocolLogic extends Plc4xProtocolBase<EipPacket> implements Ha
         List<String> singleRespOverlengthParams = EipProtocolUtils.getWriteSingleRespOverlengthParams(writeRequest, configuration);
         //多个请求报文超长分割，并去除单个请求报文超长的集合
         List<List<String>> noSingleRespOverlengthParams = EipProtocolUtils.getWriteNoSingleRespOverlengthParams(writeRequest, configuration);
-        logger.info("Number of write message groups is "+noSingleRespOverlengthParams.size());
+        // logger.info("Number of write message groups is "+noSingleRespOverlengthParams.size());
         for (int i = 0; i < singleRespOverlengthParams.size(); i++) {
             String fieldName = singleRespOverlengthParams.get(i);
             //单个数据超长 分段请求 合并结果

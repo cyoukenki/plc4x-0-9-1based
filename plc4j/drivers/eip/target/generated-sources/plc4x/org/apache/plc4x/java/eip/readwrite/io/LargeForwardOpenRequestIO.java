@@ -214,13 +214,13 @@ long originator_serial_number = readBuffer.readUnsignedLong("originator_serial_n
         writeBuffer.writeUnsignedShort("reserved", 8, ((Number) (short) 0x00).shortValue());
 
         // Const Field (otrpi)
-        writeBuffer.writeUnsignedLong("otrpi", 32, ((Number) 0x00002710).longValue());
+        writeBuffer.writeUnsignedLong("otrpi", 32, ((Number) 0x00989680).longValue());
 
         // Const Field (otnp)
         writeBuffer.writeUnsignedLong("otnp", 32, ((Number) 0x420007cc).longValue());
 
         // Const Field (torpi)
-        writeBuffer.writeUnsignedLong("torpi", 32, ((Number) 0x00002710).longValue());
+        writeBuffer.writeUnsignedLong("torpi", 32, ((Number) 0x00989680).longValue());
 
         // Const Field (tonp)
         writeBuffer.writeUnsignedLong("tonp", 32, ((Number) 0x420007cc).longValue());

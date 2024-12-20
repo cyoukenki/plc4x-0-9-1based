@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <KNX xmlns="http://knx.org/xml/project/20">
-  <MasterData Id="MD-1" Version="384" Signature="UVs/7oEuCi/wkLBCxjYn/Z6hcZVolbQlJQ3aLVa6GLpjfPgTQiiJGOEgl3fQPoq2zSIlG5ZLhBR4992Zlbyu3jO4X8x+DoytNf+ACoMcf7JjnT3y90GD5H8v8sxvraknCIshEjr+U6jXiG7BPuymkFi5ZvH9z88NWDTgUE9bxf4=">
+  <MasterData Id="MD-1" Version="386" Signature="JOEv2FNf0nCq33mETmg6EDlvqKXQTmFt3IubLWwUoDr3GkXUWVcDRLgL9ufyoaD4+UEvqmm9MgsDf2Ep5FiMX0z7FU39dXdH9DRk2n8qTSyOxqMwruEeynsbBdCzczXInWv6UG2cnilLqB0p2LvdOvnR/zXYDj5g0T/n6fuGJe8=">
     <DatapointTypes>
       <DatapointType Id="DPT-1" Number="1" Name="1.xxx" Text="1-bit" SizeInBit="1" PDT="PDT-50">
         <DatapointSubtypes>
@@ -11222,6 +11222,8 @@ displayOrderNumber='';for(var n=0;n&lt;rawOrderNumber.length;n++){r=rawOrderNumb
       <Manufacturer Id="M-02F7" KnxManufacturerId="759" Name="Shanghai Benkong Electronic Technology Co.,Ltd" DefaultLanguage="en-US" ImportRestriction="Own" MemberStatus="Active" />
       <Manufacturer Id="M-02F8" KnxManufacturerId="760" Name="Polar Bear Design" DefaultLanguage="en-US" ImportRestriction="Own" MemberStatus="Active" />
       <Manufacturer Id="M-02F9" KnxManufacturerId="761" Name="Elessan NV" DefaultLanguage="en-US" ImportRestriction="Own" MemberStatus="Active" />
+      <Manufacturer Id="M-02FA" KnxManufacturerId="762" Name="MIR" DefaultLanguage="en-US" ImportRestriction="Own" MemberStatus="Active" />
+      <Manufacturer Id="M-02FB" KnxManufacturerId="763" Name="Zhejiang Misilin Technology Co., Ltd" DefaultLanguage="en-US" ImportRestriction="Own" MemberStatus="Active" />
       <Manufacturer Id="M-ABB2" KnxManufacturerId="43954" Name="ABB - reserved" CompatibilityGroup="2" DefaultLanguage="en-US" ImportRestriction="Group" ImportGroup="Group-ABB" MemberStatus="Active">
         <PublicKeys>
           <PublicKey Id="M-ABB2_K-1" Number="1" Purpose="">

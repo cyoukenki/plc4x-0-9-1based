@@ -133,7 +133,7 @@
                 [const uint 8 'request_path_size' '0x02']
                 [const uint 32 'request_path' '0x01240620']
                 [const uint 8 'ptt' '0x06']
-                [const uint 8 'tot' '0x9c']
+                [const uint 8 'tot' '0x9c'] //actual timeout = 2^6 * 9c = 9984ms
                 [simple uint 32 'o_t_id']
                 [simple uint 32 't_o_id']
                 [simple uint 16 'connection_serial_number']
@@ -142,9 +142,11 @@
                 [const uint 8 'trt' '0x00']
                 [reserved uint 16 '0x00']
                 [reserved uint 8 '0x00']
-                [const uint 32 'otrpi' '0x00002710']
+               // [const uint 32 'otrpi' '0x00002710'] //10ms
+                 [const uint 32 'otrpi' '0x00989680'] //10000ms = 0x989680 / 1000 ms
                 [const uint 32 'otnp' '0x420007cc']
-                 [const uint 32 'torpi' '0x00002710']
+                // [const uint 32 'torpi' '0x00002710']
+                 [const uint 32 'torpi' '0x00989680']
                 [const uint 32 'tonp' '0x420007cc']
                 [const uint 8 'transport_type' '0xa3']
                 [const uint 8 'connection_path_size' '0x02']

@@ -73,7 +73,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
     private long toId;
     private int sequenceCount = 1;
 
-    private int dataPackageByteLength = 456;
+    private int dataPackageByteLength = 1990;
 
     @Override
     public void setConfiguration(EIPConfiguration configuration) {
@@ -85,7 +85,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
 
     @Override
     public void onConnect(ConversationContext<EipPacket> context) {
-        logger.info("Sending RegisterSession EIP Package");
+        logger.debug("Sending RegisterSession EIP Package");
         EipConnectionRequest connectionRequest = new EipConnectionRequest(0L, 0L, emptySenderContext, 0L);
         context.sendRequest(connectionRequest)
                 .expectResponse(EipPacket.class, REQUEST_TIMEOUT).unwrap(p -> p)
@@ -97,7 +97,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
                         logger.debug("Got assigned with Session {}", sessionHandle);
                         // Send an event that connection setup is complete.
 
-                        logger.info("send open request!");
+                        // logger.info("send open request!");
                         OpenRequest(context);
                         
                     } else {
@@ -122,26 +122,12 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
                 .check(p -> p.getExchange().getService() instanceof LargeForwardOpenResponse)
                 .unwrap(p -> (LargeForwardOpenResponse) p.getExchange().getService())
                 .handle(p -> {
-                    logger.info("handling open response");
+                    // logger.info("handling open response");
                     otConnectionId = p.getO_t_connection_id();
                     context.fireConnected();
 
                 });
-                logger.info("open request finished...");
-        // this.tm = new RequestTransactionManager(1);
-        // RequestTransactionManager.RequestTransaction transaction = tm.startRequest();
-        // transaction.submit(() -> context.sendRequest(rrdata)
-        // .expectResponse(EipPacket.class, REQUEST_TIMEOUT)
-        // .check(p -> p instanceof CipRRData).unwrap(p -> (CipRRData) p)
-        // .check(p -> p.getExchange().getService() instanceof LargeForwardOpenResponse)
-        // .unwrap(p -> (LargeForwardOpenResponse) p.getExchange().getService())
-        // .handle(p -> {
-        // otConnectionId = p.getO_t_connection_id();
-        // // Finish the request-transaction.
-        // transaction.endRequest();
-
-        // }));
-
+                // logger.info("open request finished...");
     }
 
     private void CloseRequest(ConversationContext<EipPacket> context) {
@@ -166,7 +152,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
             // 多个请求报文超长分割，并去除单个请求报文返回超长的集合
             List<List<String>> noSingleRespOverlengthParams = EipProtocolUtils
                     .getReadNoSingleRespOverlengthParams(readRequest, configuration);
-            logger.info("Number of read message groups is " + noSingleRespOverlengthParams.size());
+            logger.debug("Number of read message groups is " + noSingleRespOverlengthParams.size());
             for (int i = 0; i < singleRespOverlengthParams.size(); i++) {
                 // 单个数据超长 分段请求 合并结果
                 String fieldName = singleRespOverlengthParams.get(i);
@@ -766,7 +752,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
         CompletableFuture<CipService> future = new CompletableFuture<>();
         this.tm = new RequestTransactionManager(1);
         RequestTransactionManager.RequestTransaction transaction = tm.startRequest();
-
+        this.sequenceCount = this.sequenceCount % 2 + 1;
         CipExchange3 exchange = new CipExchange3(
                 this.sequenceCount,
                 request);
@@ -878,7 +864,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
 
     private PlcValue parsePlcValue(EipField field, ByteBuf data, CIPDataTypeCode type) {
         int nb = field.getElementNb();
-        logger.info("res len:"+data.readableBytes()+";"+type);
+        // logger.info("res len:"+data.readableBytes()+";"+type);
         if (nb > 1) {
             int index = 0;
             List<PlcValue> list = new ArrayList<>();
@@ -1051,7 +1037,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
         // 多个请求报文超长分割，并去除单个请求报文超长的集合
         List<List<String>> noSingleRespOverlengthParams = EipProtocolUtils
                 .getWriteNoSingleRespOverlengthParams(writeRequest, configuration);
-        logger.info("Number of write message groups is " + noSingleRespOverlengthParams.size());
+        // logger.info("Number of write message groups is " + noSingleRespOverlengthParams.size());
         for (int i = 0; i < singleRespOverlengthParams.size(); i++) {
             String fieldName = singleRespOverlengthParams.get(i);
             // 单个数据超长 分段请求 合并结果
@@ -1106,6 +1092,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
         RequestTransactionManager.RequestTransaction transaction = tm.startRequest();
         CompletableFuture<Map<String, PlcResponseCode>> future = new CompletableFuture<>();
         Map<String, PlcResponseCode> plcResponseCodeMap = new HashMap<>();
+        this.sequenceCount = this.sequenceCount % 2 + 1;
         if (items.size() == 1) {
 
             CipExchange3 exchange = new CipExchange3(
@@ -1195,7 +1182,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
         RequestTransactionManager tm = new RequestTransactionManager(1);
         RequestTransactionManager.RequestTransaction transaction = tm.startRequest();
         CompletableFuture<Map<String, PlcResponseCode>> future = new CompletableFuture<>();
-
+        this.sequenceCount = this.sequenceCount % 2 + 1;
         final EipField field = (EipField) request.getField(fieldName);
         final PlcValue value = request.getPlcValue(fieldName);
         String tag = field.getTag();
@@ -1265,6 +1252,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
         Map<String, PlcResponseCode> plcResponseCodeMap = new HashMap<>();
         RequestTransactionManager tm = new RequestTransactionManager(1);
         RequestTransactionManager.RequestTransaction transaction = tm.startRequest();
+        this.sequenceCount = this.sequenceCount % 2 + 1;
         int arrayIndex = 0;// 用于记录数组请求的起始索引
         List<CipWriteRequest> requests = new ArrayList<>();
         String tag = plcField.getTag();

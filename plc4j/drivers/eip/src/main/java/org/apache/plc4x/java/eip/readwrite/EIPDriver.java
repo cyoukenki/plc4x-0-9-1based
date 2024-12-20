@@ -45,7 +45,7 @@ public class EIPDriver extends GeneratedDriverBase<EipPacket> {
 
     @Override
     public String getProtocolName() {
-        return "EthernetIP";
+        return "EthernetIP UCMM";
     }
 
     @Override
