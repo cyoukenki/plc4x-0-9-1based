@@ -81,6 +81,44 @@
 
         ]
 ]
+[discriminatedType 'FinsUdpPacket'
+    [simple uint 8 'ICF']
+    [const uint 8 'RSV' '0x00']
+    [const uint 8 'GCT' '0x02']
+    [const uint 8 'DNA' '0x00']
+    [simple uint 8 'DA1'] //The address node of PLc(last of ip address)
+    [const uint 8 'DA2' '0x00']
+    [const uint 8 'SNA' '0x00']
+    [simple uint 8 'SA1']//The address node of local pc(last of ip address)
+    [const uint 8 'SA2' '0x00']
+    [simple uint 8 'SID']
+    [discriminator uint 16 'finsCommand']
+    [typeSwitch 'finsCommand'
+
+        ['0x0101' UdpReadBitsRes
+            [simple uint 16 'endCode']
+            [array  int  8  'data'  length 'readBuffer.TotalBytes() - 14']
+        ]
+        ['0x0101' UdpReadBitsReq
+            [enum   FinsDataTypeCode 'dataType']
+            [simple uint 16 'wordStart']
+            [simple uint 8  'bitsStart']
+            [simple uint 16 'lenght']
+        ]
+        ['0x0102' UdpWriteBitsRes     // 1 byte = 8 bits   res mini 1 byte  我要读3个bit
+            [simple uint 16 'endCode']
+        ]
+        ['0x0102' UdpWriteBitsReq
+            [enum   FinsDataTypeCode 'dataType']
+            [simple uint 16 'wordStart']
+            [simple uint 8  'bitsStart']
+            [simple uint 16 'lenght']
+            [array  int 8 'data'   count  'lenght']
+        ]
+
+    ]
+]
+
 
 [enum  uint 8 'FinsDataTypeCode'  [uint 8  'size']
     ['0X02'   DB            ['1']]                       //DMArea  Bit

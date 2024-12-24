@@ -20,6 +20,8 @@ package org.apache.plc4x.java.spi.generation;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.plc4x.java.api.exceptions.PlcRuntimeException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -36,6 +38,10 @@ public class ReadBufferJsonBased implements ReadBuffer, BufferCommons {
     private final Deque stack;
     private final Object rootElement;
     private final boolean doValidateAttr;
+    private final long totalBytes;
+
+        private static final Logger logger = LoggerFactory.getLogger(ReadBufferJsonBased.class);
+
 
     private int pos;
 
@@ -45,11 +51,13 @@ public class ReadBufferJsonBased implements ReadBuffer, BufferCommons {
 
     public ReadBufferJsonBased(InputStream is, boolean doValidateAttr) {
         this.doValidateAttr = doValidateAttr;
+       
         pos = 1;
         stack = new ArrayDeque();
         // JsonParser here would be overkill as json is by definition not deterministic (key/value)
         ObjectMapper mapper = new ObjectMapper();
         try {
+            totalBytes = is.available();
             rootElement = mapper.readValue(is, Map.class);
         } catch (IOException e) {
             throw new PlcRuntimeException(e);
@@ -59,6 +67,10 @@ public class ReadBufferJsonBased implements ReadBuffer, BufferCommons {
     @Override
     public int getPos() {
         return pos / 8;
+    }
+    public long getTotalBytes() {
+        // logger.info("total bytes:"+totalBytes);
+        return totalBytes;
     }
 
     @Override

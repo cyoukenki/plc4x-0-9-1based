@@ -20,7 +20,10 @@ package org.apache.plc4x.java.spi.generation;
 
 import com.github.jinahya.bit.io.ArrayByteInput;
 import org.apache.plc4x.java.api.exceptions.PlcRuntimeException;
+import org.apache.plc4x.java.spi.Plc4xServerNettyWrapper;
 import org.apache.plc4x.java.spi.generation.io.MyDefaultBitInput;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -32,6 +35,7 @@ public class ReadBufferByteBased implements ReadBuffer {
     private final MyDefaultBitInput bi;
     private final boolean littleEndian;
     private final long totalBytes;
+    private static final Logger logger = LoggerFactory.getLogger(ReadBufferByteBased.class);
 
     public ReadBufferByteBased(byte[] input) {
         this(input, false);
@@ -42,6 +46,8 @@ public class ReadBufferByteBased implements ReadBuffer {
         this.bi = new MyDefaultBitInput(abi);
         this.littleEndian = littleEndian;
         this.totalBytes = input.length;
+       
+        
     }
 
     @Override
@@ -57,6 +63,7 @@ public class ReadBufferByteBased implements ReadBuffer {
     }
 
     public long getTotalBytes() {
+        // logger.info("total bytes:"+totalBytes);
         return totalBytes;
     }
 
@@ -206,6 +213,7 @@ public class ReadBufferByteBased implements ReadBuffer {
 
     @Override
     public byte readSignedByte(String logicalName, int bitLength, WithReaderArgs... readerArgs) throws ParseException {
+    //    logger.info("=======total bytes:"+totalBytes+";"+bi.getPos());
         if (bitLength <= 0) {
             throw new ParseException("byte must contain at least 1 bit");
         }

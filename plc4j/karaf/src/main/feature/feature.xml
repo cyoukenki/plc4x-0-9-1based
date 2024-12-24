@@ -52,6 +52,7 @@
     <bundle>mvn:org.apache.plc4x/plc4j-osgi/${org.apache.plc4x.version}</bundle>
     <bundle>mvn:com.github.jinahya/bit-io/${com.github.jinahya.bit-io.version}</bundle>
     <bundle start-level="60">mvn:org.apache.plc4x/plc4j-transport-tcp/${org.apache.plc4x.version}</bundle>
+    <bundle start-level="60">mvn:org.apache.plc4x/plc4j-transport-udp/${org.apache.plc4x.version}</bundle>
     <!-- <bundle start-level="60">mvn:org.apache.plc4x/plc4j-transport-serial/${org.apache.plc4x.version}</bundle>
     <bundle>wrap:mvn:com.fazecast/jSerialComm/${com.fazecast.jSerialComm.version}</bundle> -->
     <!-- <bundle>wrap:mvn:org.apache.plc4x/plc4x-code-generation-language-base-freemarker/${org.apache.plc4x.version}</bundle>
@@ -101,10 +102,10 @@
     <bundle start-level="60">mvn:org.apache.plc4x/plc4j-driver-s7/${plc4j-driver-s7.version}</bundle>
     <bundle start-level="60">mvn:org.apache.plc4x/plc4x-protocols-s7/${plc4j-driver-s7.version}</bundle>
   </feature> -->
-  <!-- <feature name='camel-plc4x-fins' version='${project.version}'>
+  <feature name='camel-plc4x-fins' version='${project.version}'>
     <bundle start-level="60">mvn:org.apache.plc4x/plc4j-driver-fins/${plc4j-driver-fins.version}</bundle>
-    <bundle start-level="60">mvn:org.apache.plc4x/plc4x-protocols-fins/${plc4j-driver-fins.version}</bundle>
-  </feature> -->
+    <!-- <bundle start-level="60">mvn:org.apache.plc4x/plc4x-protocols-fins/${plc4j-driver-fins.version}</bundle> -->
+  </feature>
   <!-- <feature name='camel-plc4x-secsgem' version='${project.version}'>
     <bundle start-level="60">mvn:org.apache.plc4x/plc4j-driver-secsgem/${plc4j-driver-secsgem.version}</bundle>
     <bundle start-level="60">mvn:org.apache.plc4x/plc4x-protocols-secsgem/${org.apache.plc4x.version}</bundle>

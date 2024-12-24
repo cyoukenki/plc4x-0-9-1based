@@ -43,4 +43,5 @@ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Specification-Title: PLC4J: Transports: UDP
 Specification-Vendor: The Apache Software Foundation
 Specification-Version: 0.9.1
+SPI-Provider: *
 Tool: Bnd-5.1.1.202006162103

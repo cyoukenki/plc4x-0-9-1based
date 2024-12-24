@@ -23,7 +23,8 @@ import java.math.BigInteger;
 
 public interface ReadBuffer {
     int getPos();
-
+    
+    long getTotalBytes();
     boolean hasMore(int numBits);
 
     void pullContext(String logicalName, WithReaderArgs... readerArgs);

@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2024-12-20T11:05:22+08:00
+Generated at: 2024-12-24T13:40:45+08:00
 
 Notes: 0
 Binaries: 0
 Archives: 0
-Standards: 6
+Standards: 7
 
-Apache Licensed: 6
+Apache Licensed: 7
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -25,6 +25,7 @@ Generated files do not require license headers.
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/fins/pom.xml
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/fins/genarate-source/pom.xml
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/fins/src/main/resources/META-INF/services/org.apache.plc4x.plugins.codegenerator.protocol.Protocol
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/fins/src/main/resources/protocols/fins/fins-udp.mspec
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/fins/src/main/resources/protocols/fins/fins-test.mspec
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/fins/src/main/resources/protocols/fins/fins.mspec
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/protocols/fins/src/main/java/org/apache/plc4x/protocol/fins/FinsProtocol.java

@@ -26,9 +26,10 @@ Import-Package: org.apache.plc4x.plugins.codegenerator.language.mspec.pa
  erator.types.exceptions
 Include-Resource: META-INF/services/org.apache.plc4x.plugins.codegenerat
  or.protocol.Protocol=src/main/resources/META-INF/services/org.apache.pl
- c4x.plugins.codegenerator.protocol.Protocol,protocols/fins/fins-test.ms
- pec=src/main/resources/protocols/fins/fins-test.mspec,protocols/fins/fi
- ns.mspec=src/main/resources/protocols/fins/fins.mspec
+ c4x.plugins.codegenerator.protocol.Protocol,protocols/fins/fins-udp.msp
+ ec=src/main/resources/protocols/fins/fins-udp.mspec,protocols/fins/fins
+ -test.mspec=src/main/resources/protocols/fins/fins-test.mspec,protocols
+ /fins/fins.mspec=src/main/resources/protocols/fins/fins.mspec
 Private-Package: protocols.fins
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Specification-Title: Protocols: Fins

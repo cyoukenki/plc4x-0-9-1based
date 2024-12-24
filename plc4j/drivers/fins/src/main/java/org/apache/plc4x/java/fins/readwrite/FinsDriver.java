@@ -48,7 +48,7 @@ public class FinsDriver extends GeneratedDriverBase<FinsPacket> {
 
     @Override
     public String getProtocolName() {
-        return "fins";
+        return "Omron Fins Tcp";
     }
 
     @Override

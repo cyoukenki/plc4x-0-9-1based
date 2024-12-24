@@ -33,7 +33,8 @@ Export-Package: org.apache.plc4x.java.fins.readwrite;version="1.0.0";use
  .java.fins.readwrite.types;version="1.0.0",org.apache.plc4x.java.fins.r
  eadwrite.util;version="1.0.0"
 Export-Service: org.apache.plc4x.java.api.PlcDriver,org.apache.plc4x.jav
- a.fins.readwrite.FinsDriver
+ a.fins.readwrite.FinsDriver,org.apache.plc4x.java.api.PlcDriver,org.apa
+ che.plc4x.java.fins.readwrite.FinsUdpDriver
 Implementation-Title: PLC4J: Driver: Fins
 Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-drivers/plc4j-d
  river-fins

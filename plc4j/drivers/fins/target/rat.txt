@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2024-12-20T11:05:29+08:00
+Generated at: 2024-12-24T13:40:52+08:00
 
 Notes: 0
 Binaries: 0
 Archives: 0
-Standards: 8
+Standards: 10
 
-Apache Licensed: 8
+Apache Licensed: 10
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -26,9 +26,11 @@ Generated files do not require license headers.
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/fins/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/fins/src/main/java/org/apache/plc4x/java/fins/readwrite/configuration/FinsConfiguration.java
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/fins/src/main/java/org/apache/plc4x/java/fins/readwrite/util/ByteUtils.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/fins/src/main/java/org/apache/plc4x/java/fins/readwrite/protocol/FinsUdpProtocolLogic.java
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/fins/src/main/java/org/apache/plc4x/java/fins/readwrite/protocol/FinsProtocolLogic.java
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/fins/src/main/java/org/apache/plc4x/java/fins/readwrite/field/FinsField.java
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/fins/src/main/java/org/apache/plc4x/java/fins/readwrite/field/FinsFieldHandler.java
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/fins/src/main/java/org/apache/plc4x/java/fins/readwrite/FinsDriver.java
+  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/fins/src/main/java/org/apache/plc4x/java/fins/readwrite/FinsUdpDriver.java
  
 *****************************************************

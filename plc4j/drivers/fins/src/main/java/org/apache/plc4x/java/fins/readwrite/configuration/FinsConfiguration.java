@@ -33,25 +33,25 @@ public class FinsConfiguration implements Configuration, TcpTransportConfigurati
     @IntDefaultValue(1)
     private int unitIdentifier;
     @ConfigurationParameter
-    private int backplane;
+    private int da;
 
     @ConfigurationParameter
-    private int slot;
+    private int sa;
 
-    public int getBackplane() {
-        return backplane;
+    public int getDa() {
+        return da;
     }
 
-    public void setBackplane(int backpane) {
-        this.backplane = backpane;
+    public void setDa(int da) {
+        this.da = da;
     }
 
-    public int getSlot() {
-        return slot;
+    public int getSa() {
+        return sa;
     }
 
-    public void setSlot(int slot) {
-        this.slot = slot;
+    public void setSa(int sa) {
+        this.sa = sa;
     }
 
     @Override

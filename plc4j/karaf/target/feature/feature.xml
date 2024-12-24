@@ -52,6 +52,7 @@
     <bundle>mvn:org.apache.plc4x/plc4j-osgi/0.9.1</bundle>
     <bundle>mvn:com.github.jinahya/bit-io/1.4.3</bundle>
     <bundle start-level="60">mvn:org.apache.plc4x/plc4j-transport-tcp/0.9.1</bundle>
+    <bundle start-level="60">mvn:org.apache.plc4x/plc4j-transport-udp/0.9.1</bundle>
     <!-- <bundle start-level="60">mvn:org.apache.plc4x/plc4j-transport-serial/0.9.1</bundle>
     <bundle>wrap:mvn:com.fazecast/jSerialComm/2.7.0</bundle> -->
     <!-- <bundle>wrap:mvn:org.apache.plc4x/plc4x-code-generation-language-base-freemarker/0.9.1</bundle>
@@ -101,10 +102,10 @@
     <bundle start-level="60">mvn:org.apache.plc4x/plc4j-driver-s7/1.0.1</bundle>
     <bundle start-level="60">mvn:org.apache.plc4x/plc4x-protocols-s7/1.0.1</bundle>
   </feature> -->
-  <!-- <feature name='camel-plc4x-fins' version='1.1.16'>
+  <feature name='camel-plc4x-fins' version='1.1.16'>
     <bundle start-level="60">mvn:org.apache.plc4x/plc4j-driver-fins/1.0.0</bundle>
-    <bundle start-level="60">mvn:org.apache.plc4x/plc4x-protocols-fins/1.0.0</bundle>
-  </feature> -->
+    <!-- <bundle start-level="60">mvn:org.apache.plc4x/plc4x-protocols-fins/1.0.0</bundle> -->
+  </feature>
   <!-- <feature name='camel-plc4x-secsgem' version='1.1.16'>
     <bundle start-level="60">mvn:org.apache.plc4x/plc4j-driver-secsgem/1.1.5</bundle>
     <bundle start-level="60">mvn:org.apache.plc4x/plc4x-protocols-secsgem/0.9.1</bundle>
