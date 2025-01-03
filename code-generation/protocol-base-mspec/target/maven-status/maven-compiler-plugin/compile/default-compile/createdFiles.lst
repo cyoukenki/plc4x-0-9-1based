@@ -11,7 +11,6 @@ org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecParser$CaseStatementC
 org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionParser$IdentifierSegmentRestContext.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/model/fields/DefaultImplicitField.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionParser$ArgumentsContext.class
-ExpressionLexer.tokens
 org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionParser$IdentifierSegmentArgumentsContext.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/model/fields/DefaultConstField.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecParser$DiscriminatorFieldContext.class
@@ -39,10 +38,8 @@ org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecParser$ComplexTypeCon
 org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecParser$DataIoDefinitionContext.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionParser$OrExpressionContext.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/model/fields/DefaultReservedField.class
-MSpecLexer.tokens
 org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionParser$NotExpressionContext.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionParser$IdentifierExpressionContext.class
-org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecLexer.interp
 org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecParser$EnumValueDefinitionContext.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionParser$EqExpressionContext.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/parser/MessageFormatListener.class
@@ -59,7 +56,6 @@ org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecParser$DataTypeContex
 org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionParser$ExpressionContext.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/model/fields/DefaultSimpleField.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/parser/MessageFormatParser.class
-org/apache/plc4x/plugins/codegenerator/language/mspec/MSpec.interp
 org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecParser$OptionalFieldContext.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecParser$EnumFieldContext.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecParser$SimpleFieldContext.class
@@ -72,19 +68,15 @@ org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionStrin
 org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionStringListener.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionBaseListener.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionParser$ExpressionExpressionContext.class
-org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionLexer.interp
 org/apache/plc4x/plugins/codegenerator/language/mspec/model/fields/DefaultTaggedField.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecParser$ManualFieldContext.class
-org/apache/plc4x/plugins/codegenerator/language/mspec/expression/Expression.interp
 org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecParser$UnknownFieldContext.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecParser$MultipleExpressionsContext.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/model/definitions/DefaultComplexTypeDefinition.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/MSpecParser$FieldDefinitionContext.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/model/definitions/DefaultEnumTypeDefinition.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/expression/ExpressionParser$IfExpressionContext.class
-Expression.tokens
 org/apache/plc4x/plugins/codegenerator/language/mspec/model/definitions/DefaultTypeDefinition.class
-MSpec.tokens
 org/apache/plc4x/plugins/codegenerator/language/mspec/model/fields/DefaultChecksumField.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/model/fields/DefaultArrayField.class
 org/apache/plc4x/plugins/codegenerator/language/mspec/model/fields/DefaultSwitchField.class

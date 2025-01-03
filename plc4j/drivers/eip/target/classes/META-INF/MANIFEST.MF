@@ -66,13 +66,8 @@ Import-Package: io.netty.buffer;version="[4.1,5)",org.apache.commons.lan
  0.9,1)",org.apache.plc4x.java.spi.transaction;version="[0.9,1)",org.apa
  che.plc4x.java.spi.utils;version="[0.9,1)",org.apache.plc4x.java.spi.va
  lues;version="[0.9,1)",org.apache.plc4x.java.transport.tcp;version="[0.
- 9,1)",org.apache.plc4x.language.java,org.apache.plc4x.plugins.codegener
- ator.language,org.apache.plc4x.plugins.codegenerator.language.mspec.mod
- el.definitions,org.apache.plc4x.plugins.codegenerator.language.mspec.pa
- rser,org.apache.plc4x.plugins.codegenerator.types.definitions,org.apach
- e.plc4x.plugins.codegenerator.types.fields,org.slf4j;version="[1.7,2)",
- com.fasterxml.jackson.annotation;resolution:=optional;version="[2.12,3)
- "
+ 9,1)",org.slf4j;version="[1.7,2)",com.fasterxml.jackson.annotation;reso
+ lution:=optional;version="[2.12,3)"
 Include-Resource: META-INF/services/org.apache.plc4x.java.api.PlcDriver=
  src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDrive
  r

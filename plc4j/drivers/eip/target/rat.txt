@@ -2,14 +2,14 @@
 *****************************************************
 Summary
 -------
-Generated at: 2025-01-03T10:15:58+08:00
+Generated at: 2025-01-03T10:48:53+08:00
 
 Notes: 0
 Binaries: 0
 Archives: 0
-Standards: 22
+Standards: 19
 
-Apache Licensed: 22
+Apache Licensed: 19
 Generated Documents: 0
 
 JavaDocs are generated, thus a license header is optional.
@@ -27,9 +27,6 @@ Generated files do not require license headers.
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/test/java/org/apache/plc4x/java/eip/readwrite/EIPParserSerializerTestsuite.java
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDriver
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/configuration/EIPConfiguration.java
-  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/util/MspecRuntime.java
-  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/util/structs/struct_aaa.mspec
-  AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/util/TestMspecRuntime.java
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/util/EipProtocolUtils.java
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/EIPClass3Driver.java
   AL    /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/entity/EipRequestEntity.java

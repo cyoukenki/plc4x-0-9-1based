@@ -22,7 +22,6 @@ org/apache/plc4x/java/eip/readwrite/field/EipStruct.class
 org/apache/plc4x/java/eip/readwrite/util/EipProtocolUtils$1.class
 org/apache/plc4x/java/eip/struct/io/MachineStruct1IO.class
 org/apache/plc4x/java/eip/readwrite/io/ServicesIO.class
-org/apache/plc4x/java/eip/readwrite/util/MspecRuntime.class
 org/apache/plc4x/java/eip/readwrite/protocol/EipProtocolLogic.class
 org/apache/plc4x/java/eip/readwrite/EipDisconnectRequest.class
 org/apache/plc4x/java/eip/readwrite/CipRRData.class
@@ -54,7 +53,6 @@ org/apache/plc4x/java/eip/readwrite/io/CloseRequestIO$CloseRequestBuilder.class
 org/apache/plc4x/java/eip/readwrite/protocol/EipClass3ProtocolLogic.class
 org/apache/plc4x/java/eip/readwrite/io/CipExchangeIO.class
 org/apache/plc4x/java/eip/readwrite/field/EipFieldHandler.class
-org/apache/plc4x/java/eip/readwrite/util/TestMspecRuntime.class
 org/apache/plc4x/java/eip/readwrite/io/CipUnconnectedRequestIO$CipUnconnectedRequestBuilder.class
 org/apache/plc4x/java/eip/readwrite/io/CipServiceIO.class
 org/apache/plc4x/java/eip/readwrite/io/EipConnectionRequestIO$EipConnectionRequestBuilder.class

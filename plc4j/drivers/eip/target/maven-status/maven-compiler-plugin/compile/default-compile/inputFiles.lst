@@ -7,7 +7,6 @@
 /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/target/generated-sources/plc4x/org/apache/plc4x/java/eip/readwrite/io/CipExchangeIO.java
 /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/target/generated-sources/plc4x/org/apache/plc4x/java/eip/readwrite/CipWriteRequest.java
 /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/target/generated-sources/plc4x/org/apache/plc4x/java/eip/readwrite/io/CipRRDataIO.java
-/Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/util/TestMspecRuntime.java
 /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/target/generated-sources/plc4x/org/apache/plc4x/java/eip/readwrite/CipReadResponse.java
 /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/protocol/EipProtocolLogic.java
 /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/target/generated-sources/plc4x/org/apache/plc4x/java/eip/readwrite/io/EipDisconnectRequestIO.java
@@ -45,7 +44,6 @@
 /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/target/generated-sources/plc4x/org/apache/plc4x/java/eip/readwrite/io/ResponseOkIO.java
 /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/field/EipStruct.java
 /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/target/generated-sources/plc4x/org/apache/plc4x/java/eip/readwrite/ResponseError.java
-/Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/util/MspecRuntime.java
 /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/target/generated-sources/plc4x/org/apache/plc4x/java/eip/readwrite/io/CipWriteResponseIO.java
 /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/target/generated-sources/plc4x/org/apache/plc4x/java/eip/readwrite/CipExchange.java
 /Users/ken/CYOU/github/plc4x-0-9-1based/plc4j/drivers/eip/src/main/java/org/apache/plc4x/java/eip/readwrite/EIPClass3Driver.java
