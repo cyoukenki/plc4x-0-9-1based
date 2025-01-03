@@ -18,11 +18,15 @@ org/apache/plc4x/java/eip/readwrite/field/EipField.class
 org/apache/plc4x/java/eip/readwrite/types/EiPCommand.class
 org/apache/plc4x/java/eip/readwrite/io/DefaultUnKnownStreamFunctionIO.class
 org/apache/plc4x/java/eip/readwrite/ResponseError.class
+org/apache/plc4x/java/eip/readwrite/field/EipStruct.class
 org/apache/plc4x/java/eip/readwrite/util/EipProtocolUtils$1.class
+org/apache/plc4x/java/eip/struct/io/MachineStruct1IO.class
 org/apache/plc4x/java/eip/readwrite/io/ServicesIO.class
+org/apache/plc4x/java/eip/readwrite/util/MspecRuntime.class
 org/apache/plc4x/java/eip/readwrite/protocol/EipProtocolLogic.class
 org/apache/plc4x/java/eip/readwrite/EipDisconnectRequest.class
 org/apache/plc4x/java/eip/readwrite/CipRRData.class
+org/apache/plc4x/java/eip/struct/io/MachineStructIO.class
 org/apache/plc4x/java/eip/readwrite/io/CipExchange3IO.class
 org/apache/plc4x/java/eip/readwrite/MultipleServiceResponse.class
 org/apache/plc4x/java/eip/readwrite/util/EipProtocolUtils.class
@@ -50,6 +54,7 @@ org/apache/plc4x/java/eip/readwrite/io/CloseRequestIO$CloseRequestBuilder.class
 org/apache/plc4x/java/eip/readwrite/protocol/EipClass3ProtocolLogic.class
 org/apache/plc4x/java/eip/readwrite/io/CipExchangeIO.class
 org/apache/plc4x/java/eip/readwrite/field/EipFieldHandler.class
+org/apache/plc4x/java/eip/readwrite/util/TestMspecRuntime.class
 org/apache/plc4x/java/eip/readwrite/io/CipUnconnectedRequestIO$CipUnconnectedRequestBuilder.class
 org/apache/plc4x/java/eip/readwrite/io/CipServiceIO.class
 org/apache/plc4x/java/eip/readwrite/io/EipConnectionRequestIO$EipConnectionRequestBuilder.class
@@ -78,8 +83,10 @@ org/apache/plc4x/java/eip/readwrite/ResponseOk.class
 org/apache/plc4x/java/eip/readwrite/EIPDriver$ByteLengthEstimator.class
 org/apache/plc4x/java/eip/readwrite/EIPDriver.class
 org/apache/plc4x/java/eip/readwrite/io/CipWriteRequestIO.class
+org/apache/plc4x/java/eip/struct/MachineStruct.class
 org/apache/plc4x/java/eip/readwrite/io/EipPacketIO$EipPacketBuilder.class
 org/apache/plc4x/java/eip/readwrite/CloseRequest.class
 org/apache/plc4x/java/eip/readwrite/io/CloseRequestIO.class
+org/apache/plc4x/java/eip/struct/MachineStruct1.class
 org/apache/plc4x/java/eip/readwrite/entity/EipRequestEntity.class
 org/apache/plc4x/java/eip/readwrite/io/EipPacketIO.class

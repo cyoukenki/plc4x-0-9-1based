@@ -28,6 +28,7 @@ import org.apache.plc4x.java.api.value.*;
 import org.apache.plc4x.java.eip.readwrite.*;
 import org.apache.plc4x.java.eip.readwrite.configuration.EIPConfiguration;
 import org.apache.plc4x.java.eip.readwrite.field.EipField;
+import org.apache.plc4x.java.eip.readwrite.field.EipStruct;
 import org.apache.plc4x.java.eip.readwrite.io.CipServiceIO;
 import org.apache.plc4x.java.eip.readwrite.types.CIPDataTypeCode;
 import org.apache.plc4x.java.eip.readwrite.util.EipProtocolUtils;
@@ -81,6 +82,10 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
         this.dataPackageByteLength = configuration.getDataPackageByteLength();
         // Set the transaction manager to allow only one message at a time.
         this.tm = new RequestTransactionManager(1);
+        logger.info("================"+configuration.getStructPath());
+        // for (String s : configuration.getStructPath().keySet()) {
+        //     logger.info("================"+s);
+        // }
     }
 
     @Override
@@ -1646,6 +1651,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
     public void close(ConversationContext<EipPacket> context) {
         logger.debug("Sending UnregisterSession EIP Pakcet");
         context.sendRequest(new EipDisconnectRequest(sessionHandle, 0L, emptySenderContext, 0L)); // Unregister gets no
+        this.CloseRequest(context);
         // response
         logger.debug("Unregistred Session {}", sessionHandle);
     }

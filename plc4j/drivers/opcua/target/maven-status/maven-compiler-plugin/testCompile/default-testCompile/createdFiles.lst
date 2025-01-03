@@ -1,7 +1,0 @@
-org/apache/plc4x/java/opcua/UtilsTest.class
-org/apache/plc4x/java/opcua/protocol/OpcuaPlcFieldHandlerTest.class
-org/apache/plc4x/java/opcua/protocol/OpcuaFieldTest.class
-org/apache/plc4x/java/opcua/OpcuaPlcDriverTest.class
-org/apache/plc4x/java/opcua/connection/OpcuaTcpPlcConnectionTest.class
-org/apache/plc4x/java/opcua/protocol/OpcuaSubscriptionHandleTest.class
-org/apache/plc4x/java/opcua/ManualPLC4XOpcua.class

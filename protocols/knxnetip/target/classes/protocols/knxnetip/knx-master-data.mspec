@@ -1452,8 +1452,10 @@
     ['703' M_ELESSAN_NV ['761', '"Elessan NV"']]
     ['704' M_MIR ['762', '"MIR"']]
     ['705' M_ZHEJIANG_MISILIN_TECHNOLOGY_CO___LTD ['763', '"Zhejiang Misilin Technology Co., Ltd"']]
-    ['706' M_ABB___RESERVED ['43954', '"ABB - reserved"']]
-    ['707' M_BUSCH_JAEGER_ELEKTRO___RESERVED ['43959', '"Busch-Jaeger Elektro - reserved"']]
+    ['706' M_LEAX_CONTROLS_CO___LTD_ ['764', '"LEAX CONTROLS CO., LTD."']]
+    ['707' M_ALCAD ['765', '"alcad"']]
+    ['708' M_ABB___RESERVED ['43954', '"ABB - reserved"']]
+    ['709' M_BUSCH_JAEGER_ELEKTRO___RESERVED ['43959', '"Busch-Jaeger Elektro - reserved"']]
     
 ]
 

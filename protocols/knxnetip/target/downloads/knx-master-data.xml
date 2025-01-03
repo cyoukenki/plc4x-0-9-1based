@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <KNX xmlns="http://knx.org/xml/project/20">
-  <MasterData Id="MD-1" Version="386" Signature="JOEv2FNf0nCq33mETmg6EDlvqKXQTmFt3IubLWwUoDr3GkXUWVcDRLgL9ufyoaD4+UEvqmm9MgsDf2Ep5FiMX0z7FU39dXdH9DRk2n8qTSyOxqMwruEeynsbBdCzczXInWv6UG2cnilLqB0p2LvdOvnR/zXYDj5g0T/n6fuGJe8=">
+  <MasterData Id="MD-1" Version="388" Signature="e2asCgSy3/S1q7kD6FzWjiz8YJjaXdLCoz1PankL+xCNd5lnqkfeXl4bRvUsaRbRTq7SsRmXp3g37EgVuogaZPjIODI+W9a5dk1oNDCWEruEbqX1GOKTzlpDTEpcwJelwKLAyX1o69DLbY14K+uEOOWorO2Hxs5VEJ7xECgaTy0=">
     <DatapointTypes>
       <DatapointType Id="DPT-1" Number="1" Name="1.xxx" Text="1-bit" SizeInBit="1" PDT="PDT-50">
         <DatapointSubtypes>
@@ -10450,7 +10450,16 @@ displayOrderNumber='';for(var n=0;n&lt;rawOrderNumber.length;n++){r=rawOrderNumb
           </PublicKey>
         </PublicKeys>
       </Manufacturer>
-      <Manufacturer Id="M-00FD" KnxManufacturerId="253" Name="Siemens HVAC" DefaultLanguage="en-US" ImportRestriction="Group" ImportGroup="Group-SAG" MemberStatus="Active" />
+      <Manufacturer Id="M-00FD" KnxManufacturerId="253" Name="Siemens HVAC" DefaultLanguage="en-US" ImportRestriction="Group" ImportGroup="Group-SAG" MemberStatus="Active">
+        <PublicKeys>
+          <PublicKey Id="M-00FD_K-1" Number="1" Purpose="FirmwarePackage">
+            <RSAKeyValue>
+              <Modulus>MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAmz8b3sUySiVpsEvg+nGB I5W2No1YvbLpwgfcB7Xek9PDcgjSL+9KTiC+QHSFq1+b54n120fygxDkMBClM01q bkOx80gYRYf+ohqvrc9YaC87j4bnvbqDPAhSJ789p5SVC/Rwa+ITs6KSd2/lUGrp LWx/b5bD5wCT/GpWOuGJFDsjTNfGFeQImQXfD8hqUuEAeDVF98akHMc3GN3LXDbP 5E4C5TDuze44TCIMPbuBktEXF/u24gQo3vdvPVCLJuwpYvlzoqr26EUg1fN3hjI3 kQgEIYOVxAXXrRLM1Wz9ZdNw8CWJKVVHPYKkFBcNnkD/gKpdnu8XmwR03ze2LeDI sOmUuCD/Ai3ohRH94CTj2LsFOcpMKyUMl5WmvHs9S8K4igD++4wzxnKXRX9AOec6 VNX0XzyscR50AX5Xj8SHTMlT6NqFQ7Du1m8pZqcF/kAtSCKK/xalhnvrhqV02YNy rb3tiFcSec/Rebt2e1QizZMuEwJZ9R5O9YEC54HqR2RPJb563y5B5XN2dKM66L9X A8KQoPCV6mM0SJjvIglE36UBYEms6OFE5sDzaITI6j6ZmyVffJ9KSpPECPQkbk97 a/VuY2ZG+2h2HyFoKxecfPIDLRWSPdnSLDbZtklDNrn4rl/Izslxh4VCkRhMyGQz L9cRUUcNG7PZQufUpuxTs/0CAwEAAQ==</Modulus>
+              <Exponent>AQAB</Exponent>
+            </RSAKeyValue>
+          </PublicKey>
+        </PublicKeys>
+      </Manufacturer>
       <Manufacturer Id="M-00FE" KnxManufacturerId="254" Name="APT" DefaultLanguage="en-US" ImportRestriction="Own" MemberStatus="Inactive" />
       <Manufacturer Id="M-0100" KnxManufacturerId="256" Name="HighDom" DefaultLanguage="en-US" ImportRestriction="Own" MemberStatus="Inactive" />
       <Manufacturer Id="M-0101" KnxManufacturerId="257" Name="Top Services" DefaultLanguage="en-US" ImportRestriction="Own" MemberStatus="Inactive" />
@@ -11224,6 +11233,8 @@ displayOrderNumber='';for(var n=0;n&lt;rawOrderNumber.length;n++){r=rawOrderNumb
       <Manufacturer Id="M-02F9" KnxManufacturerId="761" Name="Elessan NV" DefaultLanguage="en-US" ImportRestriction="Own" MemberStatus="Active" />
       <Manufacturer Id="M-02FA" KnxManufacturerId="762" Name="MIR" DefaultLanguage="en-US" ImportRestriction="Own" MemberStatus="Active" />
       <Manufacturer Id="M-02FB" KnxManufacturerId="763" Name="Zhejiang Misilin Technology Co., Ltd" DefaultLanguage="en-US" ImportRestriction="Own" MemberStatus="Active" />
+      <Manufacturer Id="M-02FC" KnxManufacturerId="764" Name="LEAX CONTROLS CO., LTD." DefaultLanguage="en-US" ImportRestriction="Own" MemberStatus="Active" />
+      <Manufacturer Id="M-02FD" KnxManufacturerId="765" Name="alcad" DefaultLanguage="en-US" ImportRestriction="Own" MemberStatus="Active" />
       <Manufacturer Id="M-ABB2" KnxManufacturerId="43954" Name="ABB - reserved" CompatibilityGroup="2" DefaultLanguage="en-US" ImportRestriction="Group" ImportGroup="Group-ABB" MemberStatus="Active">
         <PublicKeys>
           <PublicKey Id="M-ABB2_K-1" Number="1" Purpose="">
