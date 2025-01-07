@@ -43,7 +43,7 @@ import org.slf4j.LoggerFactory;
 
 import com.google.gson.*;
 
-
+import java.io.Console;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.HashMap;
@@ -162,8 +162,10 @@ public class Plc4XConsumer extends DefaultConsumer implements MessageExchangeLis
                 exchange.getIn().setBody(rsp);
                 getProcessor().process(exchange);
 
-                LOGGER.debug("Response message :" + rsp.toString());
+                LOGGER.info("Response message :" + rsp.toString());
+                LOGGER.info("Response response message :" + response.getAsPlcValue().toString());
             } catch (Exception e) {
+                LOGGER.info("Response error message :" + response.getAsPlcValue().toString());
                 getExceptionHandler().handleException(e);
             } finally {
                 try {
@@ -181,6 +183,7 @@ public class Plc4XConsumer extends DefaultConsumer implements MessageExchangeLis
         ScraperConfiguration configuration = getScraperConfig(validateTags());
         collector = new TriggerCollectorImpl(plc4XEndpoint.getPlcDriverManager());
         scraper = new TriggeredScraperImpl(configuration, plc4XEndpoint.getPlcDriverManager(), (job, alias, response) -> {
+           LOGGER.info("..................response:"+response.toString());
             try {
                 if (eventModel) {
                     if (response.equals(lastRes)) {
@@ -188,6 +191,7 @@ public class Plc4XConsumer extends DefaultConsumer implements MessageExchangeLis
                     }
 
                 }
+                
                 Exchange exchange = plc4XEndpoint.createExchange();
                 exchange.getIn().setBody(response);
                 getProcessor().process(exchange);

@@ -29,6 +29,7 @@ import org.apache.plc4x.java.eip.readwrite.*;
 import org.apache.plc4x.java.eip.readwrite.configuration.EIPConfiguration;
 import org.apache.plc4x.java.eip.readwrite.field.EipField;
 import org.apache.plc4x.java.eip.readwrite.field.EipStruct;
+import org.apache.plc4x.java.eip.readwrite.field.EipStructHandler;
 import org.apache.plc4x.java.eip.readwrite.io.CipServiceIO;
 import org.apache.plc4x.java.eip.readwrite.types.CIPDataTypeCode;
 import org.apache.plc4x.java.eip.readwrite.util.EipProtocolUtils;
@@ -75,6 +76,8 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
     private int sequenceCount = 1;
 
     private int dataPackageByteLength = 1990;
+    private Map<String,Map<String,Object>> structs;
+    private Map<String,Short> crcs = new HashMap<>();
 
     @Override
     public void setConfiguration(EIPConfiguration configuration) {
@@ -82,7 +85,12 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
         this.dataPackageByteLength = configuration.getDataPackageByteLength();
         // Set the transaction manager to allow only one message at a time.
         this.tm = new RequestTransactionManager(1);
-        logger.info("================"+configuration.getStructPath());
+        if(configuration.getStructs() != null){
+            
+            this.structs = configuration.getStructInstance();
+            logger.info("================"+structs.toString());
+        }
+        
         // for (String s : configuration.getStructPath().keySet()) {
         //     logger.info("================"+s);
         // }
@@ -133,6 +141,9 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
 
                 });
                 // logger.info("open request finished...");
+    }
+    private void ReadStructs(ConversationContext<EipPacket> context){
+
     }
 
     private void CloseRequest(ConversationContext<EipPacket> context) {
@@ -222,6 +233,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
                 .thenApply(p -> {
                     Map<String, ResponseItem<PlcValue>> values = new HashMap<>();
                     // only 1 field
+                    logger.info("get plc read response .....");
                     if (p instanceof CipReadResponse) {
                         CipReadResponse resp = (CipReadResponse) p;
                         PlcResponseCode code = decodeResponseCode(resp.getReadResponseContent().getStatus());
@@ -233,9 +245,12 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
                             ResponseOk responseOk = (ResponseOk) readResponseContent;
                             CIPDataTypeCode type = responseOk.getDataType();
                             ByteBuf data = Unpooled.wrappedBuffer(responseOk.getData());
+                            logger.info("pares plc value .....");
                             plcValue = parsePlcValue(plcField, data, type);
                             ResponseItem<PlcValue> result = new ResponseItem<>(code, plcValue);
                             values.put(eipRequestEntities.get(0), result);
+                            logger.info("read plc response values ....."+values.toString());
+                            logger.info("read plc response results ....."+result.toString());
                         } else {
                             values.put(eipRequestEntities.get(0),
                                     new ResponseItem<>(PlcResponseCode.INTERNAL_ERROR, plcValue));
@@ -671,6 +686,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
 
     private CompletableFuture<PlcReadResponse> toPlcReadResponse(PlcReadRequest readRequest,
             CompletableFuture<CipService> response) {
+                logger.info("de code read response  .....");
         return response
                 .thenApply(p -> {
                     return ((PlcReadResponse) decodeReadResponse(p, readRequest));
@@ -788,22 +804,28 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
     private PlcResponse decodeReadResponse(CipService p, PlcReadRequest readRequest) {
         Map<String, ResponseItem<PlcValue>> values = new HashMap<>();
         // only 1 field
+        logger.info("decode read response .....");
         if (p instanceof CipReadResponse) {
+            logger.info("decode read response .1....");
             CipReadResponse resp = (CipReadResponse) p;
             String fieldName = readRequest.getFieldNames().iterator().next();
             EipField field = (EipField) readRequest.getField(fieldName);
             PlcValue plcValue = null;
             PlcResponseCode code = null;
             ReadResponseContent readResponseContent = resp.getReadResponseContent();
+            logger.info("decode read response 2.....");
             if (readResponseContent.getStatus() == 0) {
                 code = PlcResponseCode.OK;
                 ResponseOk responseOk = (ResponseOk) readResponseContent;
                 CIPDataTypeCode type = responseOk.getDataType();
                 ByteBuf data = Unpooled.wrappedBuffer(responseOk.getData());
+                logger.info("parse plc value .....");
                 plcValue = parsePlcValue(field, data, type);
                 ResponseItem<PlcValue> result = new ResponseItem<>(code, plcValue);
                 values.put(fieldName, result);
+                logger.info("values:"+values.toString());
             } else {
+                logger.info("status code != 0 .....");
                 code = PlcResponseCode.INTERNAL_ERROR;
                 ResponseItem<PlcValue> result = new ResponseItem<>(code, plcValue);
                 values.put(fieldName, result);
@@ -811,6 +833,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
         }
         // Multiple response
         else if (p instanceof MultipleServiceResponse) {
+            logger.info("decode read response mutilple.....");
             MultipleServiceResponse responses = (MultipleServiceResponse) p;
             int nb = responses.getServiceNb();
             CipService[] arr = new CipService[nb];
@@ -869,7 +892,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
 
     private PlcValue parsePlcValue(EipField field, ByteBuf data, CIPDataTypeCode type) {
         int nb = field.getElementNb();
-        // logger.info("res len:"+data.readableBytes()+";"+type);
+        logger.info("res len:"+data.readableBytes()+";"+type);
         if (nb > 1) {
             int index = 0;
             List<PlcValue> list = new ArrayList<>();
@@ -980,6 +1003,13 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
                     return new PlcWORD(data.getIntLE(0));
                 case LWORD:
                     return new PlcWORD(data.getLongLE(0));
+                case STRUCTURED:
+                    short crc = data.getShortLE(0);
+                    this.crcs.put(field.getTag(), crc);
+                    logger.info("struct crc:"+this.crcs.toString());
+                    PlcValue value = new EipStructHandler().initIndex(2).parse(this.structs.get(field.getTag()), data);
+                    logger.info("struct value:"+value.getStruct().toString());
+                    return value;
                 default:
                     return null;
             }

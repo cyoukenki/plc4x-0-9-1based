@@ -1,5 +1,6 @@
 org/apache/plc4x/java/eip/readwrite/MultipleServiceRequest.class
 org/apache/plc4x/java/eip/readwrite/io/CipReadResponseIO.class
+org/apache/plc4x/java/eip/readwrite/field/EipStructHandler$1.class
 org/apache/plc4x/java/eip/readwrite/field/EipField$1.class
 org/apache/plc4x/java/eip/readwrite/CipUnconnectedRequest.class
 org/apache/plc4x/java/eip/readwrite/CipReadResponse.class
@@ -22,6 +23,7 @@ org/apache/plc4x/java/eip/readwrite/field/EipStruct.class
 org/apache/plc4x/java/eip/readwrite/util/EipProtocolUtils$1.class
 org/apache/plc4x/java/eip/struct/io/MachineStruct1IO.class
 org/apache/plc4x/java/eip/readwrite/io/ServicesIO.class
+org/apache/plc4x/java/eip/readwrite/field/EipStructHandler.class
 org/apache/plc4x/java/eip/readwrite/protocol/EipProtocolLogic.class
 org/apache/plc4x/java/eip/readwrite/EipDisconnectRequest.class
 org/apache/plc4x/java/eip/readwrite/CipRRData.class
@@ -70,6 +72,7 @@ org/apache/plc4x/java/eip/readwrite/io/LargeForwardOpenResponseIO$LargeForwardOp
 org/apache/plc4x/java/eip/readwrite/EIPDriver$CorruptPackageCleaner.class
 org/apache/plc4x/java/eip/readwrite/io/EipDisconnectRequestIO$EipDisconnectRequestBuilder.class
 org/apache/plc4x/java/eip/readwrite/CipExchange3.class
+org/apache/plc4x/java/eip/readwrite/field/TestStruct.class
 org/apache/plc4x/java/eip/readwrite/io/EipDisconnectRequestIO.class
 org/apache/plc4x/java/eip/readwrite/Services.class
 org/apache/plc4x/java/eip/readwrite/io/ResponseErrorIO$ResponseErrorBuilder.class

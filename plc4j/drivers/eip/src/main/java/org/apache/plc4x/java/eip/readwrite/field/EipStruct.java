@@ -21,6 +21,8 @@ package org.apache.plc4x.java.eip.readwrite.field;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.plc4x.java.api.value.PlcValue;
+
 public class EipStruct {
     
     private List<String> sourceFieldStrings = new ArrayList<String>();
@@ -46,4 +48,5 @@ public class EipStruct {
     public void setCrc(int crc){
         this.crc = crc;
     }
+  
 }

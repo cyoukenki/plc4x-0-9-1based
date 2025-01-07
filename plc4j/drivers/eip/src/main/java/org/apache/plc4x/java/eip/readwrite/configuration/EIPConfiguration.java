@@ -18,10 +18,12 @@
  */
 package org.apache.plc4x.java.eip.readwrite.configuration;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.plc4x.java.eip.readwrite.EIPDriver;
 import org.apache.plc4x.java.eip.readwrite.field.EipStruct;
+import org.apache.plc4x.java.eip.readwrite.protocol.EipClass3ProtocolLogic;
 import org.apache.plc4x.java.spi.configuration.Configuration;
 import org.apache.plc4x.java.spi.configuration.annotations.ConfigurationParameter;
 import org.apache.plc4x.java.spi.generation.Message;
@@ -30,8 +32,14 @@ import org.apache.plc4x.java.spi.generation.ReadBuffer;
 import org.apache.plc4x.java.spi.generation.ReadBufferByteBased;
 import org.apache.plc4x.java.spi.generation.WriteBufferByteBased;
 import org.apache.plc4x.java.transport.tcp.TcpTransportConfiguration;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.google.gson.Gson;
 
 public class EIPConfiguration implements Configuration, TcpTransportConfiguration {
+
+     private static final Logger logger = LoggerFactory.getLogger(EIPConfiguration.class);
 
     @ConfigurationParameter
     private int backplane;
@@ -43,7 +51,7 @@ public class EIPConfiguration implements Configuration, TcpTransportConfiguratio
     private int dataPackageByteLength;
 
     @ConfigurationParameter
-    private String structPath;
+    private String structs;
 
 
 //    public static final int UCMM_PACKAGE_LENGTH = 482;
@@ -76,13 +84,25 @@ public class EIPConfiguration implements Configuration, TcpTransportConfiguratio
     public void setDataPackageByteLength(int dataPackageByteLength) {
         this.dataPackageByteLength = dataPackageByteLength;
     }
-    public String getStructPath() {
+    public String getStructs() {
        
-        return this.structPath;
+        return this.structs;
+    }
+    public Map<String,Map<String,Object>> getStructInstance(){
+        try{
+            Map<String,Map<String,Object>> res =  new Gson().fromJson(this.structs, HashMap.class);
+            return res;
+        }catch (Exception e){
+            logger.warn("Undefined correct structure data source .");
+            return null;
+        }
+      
+       
+       
     }
 
-    public void setStructPath(String structs) {
-        this.structPath = structs;
+    public void setStructs(String structs) {
+        this.structs = structs;
     }
 
     @Override

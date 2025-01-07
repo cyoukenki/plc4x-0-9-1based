@@ -30,14 +30,14 @@ Export-Package: org.apache.plc4x.java.eip.readwrite;uses:="io.netty.buff
  plc4x.java.api.messages,org.apache.plc4x.java.eip.readwrite,org.apache.
  plc4x.java.eip.readwrite.configuration,org.apache.plc4x.java.spi,org.ap
  ache.plc4x.java.spi.configuration";version="0.9.1",org.apache.plc4x.jav
- a.eip.readwrite.field;uses:="org.apache.plc4x.java.api.exceptions,org.a
- pache.plc4x.java.api.model,org.apache.plc4x.java.eip.readwrite.types,or
- g.apache.plc4x.java.spi.connection,org.apache.plc4x.java.spi.generation
- ,org.apache.plc4x.java.spi.utils";version="0.9.1",org.apache.plc4x.java
- .eip.struct;uses:="org.apache.commons.lang3.builder,org.apache.plc4x.ja
- va.spi.generation";version="0.9.1",org.apache.plc4x.java.eip.struct.io;
- uses:="org.apache.plc4x.java.eip.struct,org.apache.plc4x.java.spi.gener
- ation";version="0.9.1"
+ a.eip.readwrite.field;uses:="io.netty.buffer,org.apache.plc4x.java.api.
+ exceptions,org.apache.plc4x.java.api.model,org.apache.plc4x.java.eip.re
+ adwrite.types,org.apache.plc4x.java.spi.connection,org.apache.plc4x.jav
+ a.spi.generation,org.apache.plc4x.java.spi.utils,org.apache.plc4x.java.
+ spi.values";version="0.9.1",org.apache.plc4x.java.eip.struct;uses:="org
+ .apache.commons.lang3.builder,org.apache.plc4x.java.spi.generation";ver
+ sion="0.9.1",org.apache.plc4x.java.eip.struct.io;uses:="org.apache.plc4
+ x.java.eip.struct,org.apache.plc4x.java.spi.generation";version="0.9.1"
 Export-Service: org.apache.plc4x.java.api.PlcDriver,org.apache.plc4x.jav
  a.eip.readwrite.EIPDriver,org.apache.plc4x.java.api.PlcDriver,org.apach
  e.plc4x.java.eip.readwrite.EEIPClass3Driver
@@ -47,27 +47,27 @@ Implementation-URL: https://plc4x.apache.org/plc4j/plc4j-drivers/plc4j-d
 Implementation-Vendor: The Apache Software Foundation
 Implementation-Vendor-Id: org.apache.plc4x
 Implementation-Version: 0.9.1
-Import-Package: io.netty.buffer;version="[4.1,5)",org.apache.commons.lan
- g3.builder;version="[3.12,4)",org.apache.plc4x.java.api.exceptions;vers
- ion="[0.9,1)",org.apache.plc4x.java.api.messages;version="[0.9,1)",org.
- apache.plc4x.java.api.model;version="[0.9,1)",org.apache.plc4x.java.api
- .types;version="[0.9,1)",org.apache.plc4x.java.api.value;version="[0.9,
- 1)",org.apache.plc4x.java.eip.readwrite,org.apache.plc4x.java.eip.readw
- rite.configuration,org.apache.plc4x.java.eip.readwrite.field,org.apache
- .plc4x.java.eip.readwrite.io,org.apache.plc4x.java.eip.readwrite.protoc
- ol,org.apache.plc4x.java.eip.readwrite.types,org.apache.plc4x.java.eip.
- readwrite.util,org.apache.plc4x.java.eip.struct,org.apache.plc4x.java.e
- ip.struct.io,org.apache.plc4x.java.osgi,org.apache.plc4x.java.spi;versi
- on="[0.9,1)",org.apache.plc4x.java.spi.configuration;version="[0.9,1)",
- org.apache.plc4x.java.spi.configuration.annotations;version="[0.9,1)",o
- rg.apache.plc4x.java.spi.connection;version="[0.9,1)",org.apache.plc4x.
- java.spi.generation;version="[0.9,1)",org.apache.plc4x.java.spi.message
- s;version="[0.9,1)",org.apache.plc4x.java.spi.messages.utils;version="[
- 0.9,1)",org.apache.plc4x.java.spi.transaction;version="[0.9,1)",org.apa
- che.plc4x.java.spi.utils;version="[0.9,1)",org.apache.plc4x.java.spi.va
- lues;version="[0.9,1)",org.apache.plc4x.java.transport.tcp;version="[0.
- 9,1)",org.slf4j;version="[1.7,2)",com.fasterxml.jackson.annotation;reso
- lution:=optional;version="[2.12,3)"
+Import-Package: com.google.gson;version="[2.8,3)",io.netty.buffer;versio
+ n="[4.1,5)",org.apache.commons.lang3.builder;version="[3.12,4)",org.apa
+ che.plc4x.java.api.exceptions;version="[0.9,1)",org.apache.plc4x.java.a
+ pi.messages;version="[0.9,1)",org.apache.plc4x.java.api.model;version="
+ [0.9,1)",org.apache.plc4x.java.api.types;version="[0.9,1)",org.apache.p
+ lc4x.java.api.value;version="[0.9,1)",org.apache.plc4x.java.eip.readwri
+ te,org.apache.plc4x.java.eip.readwrite.configuration,org.apache.plc4x.j
+ ava.eip.readwrite.field,org.apache.plc4x.java.eip.readwrite.io,org.apac
+ he.plc4x.java.eip.readwrite.protocol,org.apache.plc4x.java.eip.readwrit
+ e.types,org.apache.plc4x.java.eip.readwrite.util,org.apache.plc4x.java.
+ eip.struct,org.apache.plc4x.java.eip.struct.io,org.apache.plc4x.java.os
+ gi,org.apache.plc4x.java.spi;version="[0.9,1)",org.apache.plc4x.java.sp
+ i.configuration;version="[0.9,1)",org.apache.plc4x.java.spi.configurati
+ on.annotations;version="[0.9,1)",org.apache.plc4x.java.spi.connection;v
+ ersion="[0.9,1)",org.apache.plc4x.java.spi.generation;version="[0.9,1)"
+ ,org.apache.plc4x.java.spi.messages;version="[0.9,1)",org.apache.plc4x.
+ java.spi.messages.utils;version="[0.9,1)",org.apache.plc4x.java.spi.tra
+ nsaction;version="[0.9,1)",org.apache.plc4x.java.spi.utils;version="[0.
+ 9,1)",org.apache.plc4x.java.spi.values;version="[0.9,1)",org.apache.plc
+ 4x.java.transport.tcp;version="[0.9,1)",org.slf4j;version="[1.7,2)",com
+ .fasterxml.jackson.annotation;resolution:=optional;version="[2.12,3)"
 Include-Resource: META-INF/services/org.apache.plc4x.java.api.PlcDriver=
  src/main/resources/META-INF/services/org.apache.plc4x.java.api.PlcDrive
  r

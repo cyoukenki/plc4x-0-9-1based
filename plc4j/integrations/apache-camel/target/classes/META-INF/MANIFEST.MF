@@ -29,15 +29,16 @@ Import-Package: com.google.gson;version="[2.8,3)",io.netty.buffer;versio
  ersion="[0.9,1)",org.apache.plc4x.java.api.exceptions;version="[0.9,1)"
  ,org.apache.plc4x.java.api.listener;version="[0.9,1)",org.apache.plc4x.
  java.api.messages;version="[0.9,1)",org.apache.plc4x.java.api.types;ver
- sion="[0.9,1)",org.apache.plc4x.java.scraper;version="[0.9,1)",org.apac
- he.plc4x.java.scraper.config;version="[0.9,1)",org.apache.plc4x.java.sc
- raper.config.triggeredscraper;version="[0.9,1)",org.apache.plc4x.java.s
- craper.exception;version="[0.9,1)",org.apache.plc4x.java.scraper.trigge
- redscraper;version="[0.9,1)",org.apache.plc4x.java.scraper.triggeredscr
- aper.triggerhandler.collector;version="[0.9,1)",org.apache.plc4x.java.s
- pi.messages;version="[0.9,1)",org.apache.plc4x.java.spi.values;version=
- "[0.9,1)",org.apache.plc4x.java.utils.connectionpool2;version="[1.0,2)"
- ,org.slf4j;version="[1.7,2)"
+ sion="[0.9,1)",org.apache.plc4x.java.api.value;version="[0.9,1)",org.ap
+ ache.plc4x.java.scraper;version="[0.9,1)",org.apache.plc4x.java.scraper
+ .config;version="[0.9,1)",org.apache.plc4x.java.scraper.config.triggere
+ dscraper;version="[0.9,1)",org.apache.plc4x.java.scraper.exception;vers
+ ion="[0.9,1)",org.apache.plc4x.java.scraper.triggeredscraper;version="[
+ 0.9,1)",org.apache.plc4x.java.scraper.triggeredscraper.triggerhandler.c
+ ollector;version="[0.9,1)",org.apache.plc4x.java.spi.messages;version="
+ [0.9,1)",org.apache.plc4x.java.spi.values;version="[0.9,1)",org.apache.
+ plc4x.java.utils.connectionpool2;version="[1.0,2)",org.slf4j;version="[
+ 1.7,2)"
 Include-Resource: META-INF/services/org/apache/camel/component/plc4x=src
  /main/resources/META-INF/services/org/apache/camel/component/plc4x
 Private-Package: org.apache.plc4x.camel

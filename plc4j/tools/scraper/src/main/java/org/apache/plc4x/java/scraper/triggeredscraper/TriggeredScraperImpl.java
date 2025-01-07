@@ -42,6 +42,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.management.*;
+
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -372,11 +374,21 @@ public class TriggeredScraperImpl implements Scraper, TriggeredScraperMBean {
      * @return the converted map
      */
     public static Map<String, Object> convertPlcResponseToMap(PlcReadResponse plcReadResponse) {
-        return plcReadResponse.getFieldNames().stream()
-            .collect(Collectors.toMap(
-                name -> name,
-                plcReadResponse::getObject
-            ));
+        LOGGER.info("..............convert response to map");
+        Map<String, Object> result = new HashMap<>();
+        for (String name : plcReadResponse.getFieldNames()) {
+            LOGGER.info("..............field name:"+name);
+            Object value = plcReadResponse.getObject(name);
+            LOGGER.info("..............field value:"+value);
+            result.put(name, value);
+            
+        }
+        return result;
+        // return plcReadResponse.getFieldNames().stream()
+        //     .collect(Collectors.toMap(
+        //         name -> name,
+        //         plcReadResponse::getObject
+        //     ));
     }
 
 

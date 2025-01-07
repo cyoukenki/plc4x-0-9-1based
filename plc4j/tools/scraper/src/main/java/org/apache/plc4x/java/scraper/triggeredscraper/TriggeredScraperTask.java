@@ -149,8 +149,9 @@ public class TriggeredScraperTask implements ScraperTask, TriggeredScraperTaskMB
                 successCounter.incrementAndGet();
                 // Validate response
                 validateResponse(plcReadResponse);
+                LOGGER.info("=============Handle response (Async)");
                 // Handle response (Async)
-                CompletableFuture.runAsync(() -> resultHandler.handle(jobName, connectionAlias, TriggeredScraperImpl.convertPlcResponseToMap(plcReadResponse)), executorService2);
+                CompletableFuture.runAsync(() -> HandleResponse(plcReadResponse), executorService2);
             } catch (Exception e) {
                 LOGGER.warn("Exception during scraping of Job {}, Connection-Alias {}: Error-message: {} - for stack-trace change logging to DEBUG", jobName,connectionAlias,e.getCause());
                 LOGGER.warn(e.getMessage(),e);
@@ -167,12 +168,18 @@ public class TriggeredScraperTask implements ScraperTask, TriggeredScraperTaskMB
             }
         }
     }
+    private void HandleResponse(PlcReadResponse plcReadResponse){
+        LOGGER.info(".............Handling plc response");
+        resultHandler.handle(jobName, connectionAlias, TriggeredScraperImpl.convertPlcResponseToMap(plcReadResponse));
+        LOGGER.info(".............Handling plc response finished");
+    }
 
     /**
      * detects if {@link PlcReadResponse} is valid
      * @param response the {@link PlcReadResponse} that should be validated
      */
     private void validateResponse(PlcReadResponse response) {
+        LOGGER.info("=============validate response");
         Map<String, PlcResponseCode> failedFields = response.getFieldNames().stream()
             .filter(name -> !PlcResponseCode.OK.equals(response.getResponseCode(name)))
             .collect(Collectors.toMap(
@@ -182,6 +189,7 @@ public class TriggeredScraperTask implements ScraperTask, TriggeredScraperTaskMB
         if (failedFields.size() > 0) {
             handleErrorResponse(failedFields);
         }
+        LOGGER.info("==============validate response finished");
     }
 
     @Override

@@ -50,7 +50,7 @@ public enum CIPDataTypeCode {
     STRING2((int) 0X00D5, (short) 2),
     STRINGN((int) 0X00D9, (short) 'N'),
     SHORT_STRING((int) 0X00DA, (short) 1),
-    STRING36((int) 0X02A0, (short) 40);
+    STRUCTURED((int) 0X02A0, (short) 88);
 
     private static final Logger logger = LoggerFactory.getLogger(CIPDataTypeCode.class);
 

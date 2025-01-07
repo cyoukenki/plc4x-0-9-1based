@@ -33,6 +33,7 @@ import org.apache.plc4x.java.utils.connectionpool2.CachedPlcConnection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.Console;
 import java.util.Map;
 import java.util.Objects;
 
@@ -46,6 +47,8 @@ public class Plc4XEndpoint extends DefaultEndpoint {
 
     @UriParam
     private Map<String, Object> tags;
+    @UriParam
+    private Map<String, Map<String,Object>> structs;
     @UriParam
     private Boolean eventModel = false;
 
@@ -91,6 +94,9 @@ public class Plc4XEndpoint extends DefaultEndpoint {
     public String getUri() {
         return uri;
     }
+    public void setUri(String uri) {
+        this.uri = uri;
+    }
 
     public String getTrigger() {
         return trigger;
@@ -122,6 +128,7 @@ public class Plc4XEndpoint extends DefaultEndpoint {
         // to avoid disconnecting and reconnecting for every request
         this.plcDriverManager = ((Plc4XComponent) component).getDriverManager(endpointUri);
         this.uri = endpointUri.replaceFirst("plc4x:/?/?", "");
+       
     }
 
     @Override
@@ -164,6 +171,13 @@ public class Plc4XEndpoint extends DefaultEndpoint {
 
     public void setTags(Map<String, Object> tags) {
         this.tags = tags;
+    }
+    public Map<String,Map<String, Object>> getStructs() {
+        return structs;
+    }
+
+    public void setStructs(Map<String,Map<String, Object>> structs) {
+        this.structs = structs;
     }
 
     public void setRetryCount(int retryCount) {

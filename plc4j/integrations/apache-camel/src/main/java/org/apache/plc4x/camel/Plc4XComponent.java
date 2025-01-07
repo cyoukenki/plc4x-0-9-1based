@@ -31,6 +31,10 @@ import org.apache.plc4x.java.utils.connectionpool2.PlcConnectionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.google.gson.Gson;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -49,12 +53,13 @@ public class Plc4XComponent extends DefaultComponent {
             if (!StringUtils.isEmpty(driverMode) && driverMode.equals("passive")) {
                 plcDriverManager = new PlcDriverManager();
             } else {
-                plcDriverManager = new CachedDriverManager(uri.replaceFirst("plc4x:/?/?", ""), new PlcConnectionFactory() {
-                    @Override
-                    public PlcConnection create() throws PlcConnectionException {
-                        return new PlcDriverManager().getConnection(uri.replaceFirst("plc4x:/?/?", ""));
-                    }
-                });
+                plcDriverManager = new CachedDriverManager(uri.replaceFirst("plc4x:/?/?", ""),
+                        new PlcConnectionFactory() {
+                            @Override
+                            public PlcConnection create() throws PlcConnectionException {
+                                return new PlcDriverManager().getConnection(uri.replaceFirst("plc4x:/?/?", ""));
+                            }
+                        });
             }
             plcConnectionMap.put(connectionUrl, plcDriverManager);
         }
@@ -71,13 +76,46 @@ public class Plc4XComponent extends DefaultComponent {
         if (!StringUtils.isEmpty(retryCountStr)) {
             this.retryCount = Integer.parseInt(retryCountStr);
         }
+        if (parameters.containsKey("structs")) {
+
+            Map<String, Map<String, Object>> structs = getAndRemoveOrResolveReferenceParameter(parameters, "structs",
+                    Map.class);
+            LOGGER.info("aaaa=====" + structs.toString());
+            parameters.remove("structs");
+            parameters.put("structs", structs);
+            String strucConfig =new Gson().toJson(structs);
+            try {
+                strucConfig = URLEncoder.encode(strucConfig, "UTF-8");
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+
+            uri = uri.replaceAll("(?<=structs=)([^&]*)", strucConfig);
+            LOGGER.info("uri:" + uri);
+            // this.uri = this.uri.replaceAll("(?<=structs=)([^&]*)",
+            // this.structs.get(structRef).toString());
+            // for (String string : uriContext) {
+            // if(string.startsWith("structs")){
+            // logger.info("source struct config:"+string);
+            // structRef = string.split("=")[1];
+            // logger.info("source struct ref config:"+structRef);
+            // if(this.structs.containsKey(structRef)){
+            // this.uri = this.uri.replaceAll("(?<=structs=)([^&]*)",
+            // this.structs.get(structRef).toString());
+            // logger.info("The uri contains a structure:"+this.uri);
+            // }else{
+            // logger.error("The structure "+ structRef+" used in the URI is undefined !");
+            // }
+            // }
+            // }
+
+        }
         Plc4XEndpoint endpoint = new Plc4XEndpoint(uri, this);
-        //Tags have a Name, a query and an optional value (for writing)
-        //Reading --> Map<String,String>
-        //Writing --> Map<String,Map.Entry<String,Object>>
+        // Tags have a Name, a query and an optional value (for writing)
+        // Reading --> Map<String,String>
+        // Writing --> Map<String,Map.Entry<String,Object>>
 
         Map<String, Object> tags = getAndRemoveOrResolveReferenceParameter(parameters, "tags", Map.class);
-
 
         if (tags != null) {
             LOGGER.info(tags.values().toString());
@@ -104,6 +142,7 @@ public class Plc4XComponent extends DefaultComponent {
         if (isRead != null) {
             endpoint.setRead(isRead);
         }
+
         setProperties(endpoint, parameters);
         return endpoint;
     }

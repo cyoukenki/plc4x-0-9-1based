@@ -78,12 +78,24 @@ public class PlcStruct extends PlcValueAdapter {
     public Map<String, ? extends PlcValue> getStruct() {
         return map;
     }
+    @Override
+    public Object getObject() {
+        return map;
+    }
 
+
+
+    // @Override
+    // @JsonIgnore
+    // public String toString() {
+    //     return "{" + map.entrySet().stream().map(entry -> String.format("\"%s\": %s", entry.getKey(), entry.getValue())).collect(Collectors.joining(",")) + "}";
+    // }
     @Override
     @JsonIgnore
     public String toString() {
-        return "{" + map.entrySet().stream().map(entry -> String.format("\"%s\": %s", entry.getKey(), entry.getValue())).collect(Collectors.joining(",")) + "}";
+        return "{" + map.entrySet().stream().map(entry -> String.format("%s=%s", entry.getKey(), entry.getValue())).collect(Collectors.joining(",")) + "}";
     }
+
 
     @Override
     public void serialize(WriteBuffer writeBuffer) throws ParseException {

@@ -130,7 +130,7 @@ public class EipField implements PlcField, Serializable {
             case WORD:
                 return java.lang.Integer.class;
             case STRING:
-            case STRING36:
+            // case STRING36:
                 return java.lang.String.class;
             case REAL:
                 return java.lang.Double.class;
