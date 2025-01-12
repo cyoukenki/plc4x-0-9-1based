@@ -19,6 +19,7 @@
 package org.apache.plc4x.java.eip.readwrite.field;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.apache.plc4x.java.api.value.PlcValue;
@@ -29,18 +30,21 @@ import io.netty.buffer.PooledByteBufAllocator;
 
 public class TestStruct {
     public static void main(String[] args) {
-        Map<String,Object> data = new HashMap<>();
-        Map<String,Object> subData = new HashMap<>();
+        Map<String,Object> data = new LinkedHashMap<>();
+        Map<String,Object> subData = new LinkedHashMap<>();
         Map<String,Object> subData1 = new HashMap<>();
         
         data.put("t1", "%t1:INT");
-        data.put("t2", "%t2:REAL");
+        data.put("a2", "%t2:REAL");
         subData.put("t1", "%t1:INT");
-        subData.put("t2", "%t2:INT");
+        subData.put("a2", "%t2:INT");
         data.put("t3", subData);
         subData1.put("aaaa", "%t2:LREAL");
         
         subData.put("subsub", subData1);
+        for (String string : data.keySet()) {
+            System.out.println("key:"+string);
+        }
 
         System.out.println("source:"+data.toString());
         ByteBuf byteBuf = PooledByteBufAllocator.DEFAULT.buffer(200);

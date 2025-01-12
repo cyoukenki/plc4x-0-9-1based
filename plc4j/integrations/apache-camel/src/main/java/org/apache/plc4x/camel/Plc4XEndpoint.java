@@ -60,6 +60,7 @@ public class Plc4XEndpoint extends DefaultEndpoint {
     private int period;
     @UriParam
     private Boolean isRead = false;
+    @UriParam
     private String driverMode;
     private String protocal;
     private int retryCount;

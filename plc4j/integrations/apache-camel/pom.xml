@@ -17,7 +17,8 @@
   specific language governing permissions and limitations
   under the License.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
@@ -157,11 +158,11 @@
       <version>0.9.1</version>
     </dependency>
 
-<!--    <dependency>-->
-<!--      <groupId>org.apache.plc4x</groupId>-->
-<!--      <artifactId>plc4j-connection-pool</artifactId>-->
-<!--      <version>0.9.1</version>-->
-<!--    </dependency>-->
+    <!--    <dependency>-->
+    <!--      <groupId>org.apache.plc4x</groupId>-->
+    <!--      <artifactId>plc4j-connection-pool</artifactId>-->
+    <!--      <version>0.9.1</version>-->
+    <!--    </dependency>-->
     <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-connection-cache</artifactId>
@@ -180,26 +181,26 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>org.apache.camel</groupId>-->
-<!--      <artifactId>camel-core-engine</artifactId>-->
-<!--      <version>${camel.version}</version>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.apache.camel</groupId>-->
-<!--      <artifactId>camel-core-model</artifactId>-->
-<!--      <version>${camel.version}</version>-->
-<!--    </dependency>-->
+    <!--    <dependency>-->
+    <!--      <groupId>org.apache.camel</groupId>-->
+    <!--      <artifactId>camel-core-engine</artifactId>-->
+    <!--      <version>${camel.version}</version>-->
+    <!--    </dependency>-->
+    <!--    <dependency>-->
+    <!--      <groupId>org.apache.camel</groupId>-->
+    <!--      <artifactId>camel-core-model</artifactId>-->
+    <!--      <version>${camel.version}</version>-->
+    <!--    </dependency>-->
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-api</artifactId>
       <version>${camel.version}</version>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>org.apache.camel</groupId>-->
-<!--      <artifactId>camel-mock</artifactId>-->
-<!--      <version>${camel.version}</version>-->
-<!--    </dependency>-->
+    <!--    <dependency>-->
+    <!--      <groupId>org.apache.camel</groupId>-->
+    <!--      <artifactId>camel-mock</artifactId>-->
+    <!--      <version>${camel.version}</version>-->
+    <!--    </dependency>-->
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-support</artifactId>
@@ -236,12 +237,12 @@
       <version>0.9.1</version>
       <scope>runtime</scope>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>org.apache.plc4x</groupId>-->
-<!--      <artifactId>plc4j-driver-secsgem</artifactId>-->
-<!--      <version>0.9.1</version>-->
-<!--      <scope>runtime</scope>-->
-<!--    </dependency>-->
+    <!--    <dependency>-->
+    <!--      <groupId>org.apache.plc4x</groupId>-->
+    <!--      <artifactId>plc4j-driver-secsgem</artifactId>-->
+    <!--      <version>0.9.1</version>-->
+    <!--      <scope>runtime</scope>-->
+    <!--    </dependency>-->
     <!-- <dependency>
       <groupId>org.apache.plc4x</groupId>
       <artifactId>plc4j-driver-firmata</artifactId>
@@ -334,6 +335,15 @@
       <artifactId>plc4j-spi</artifactId>
       <version>0.9.1</version>
       <scope>compile</scope>
+    </dependency>
+
+
+
+    <!-- modbus server -->
+    <dependency>
+      <groupId>com.intelligt.modbus</groupId>
+      <artifactId>jlibmodbus</artifactId>
+      <version>1.2.9.5</version>
     </dependency>
   </dependencies>
 

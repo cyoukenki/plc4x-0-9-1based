@@ -23,6 +23,7 @@ import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.support.DefaultConsumer;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.plc4x.camel.modbus.ModbusServer;
 import org.apache.plc4x.java.api.PlcConnection;
 import org.apache.plc4x.java.api.PlcDriver;
 import org.apache.plc4x.java.api.PlcServerConnector;
@@ -96,10 +97,20 @@ public class Plc4XConsumer extends DefaultConsumer implements MessageExchangeLis
     public Endpoint getEndpoint() {
         return plc4XEndpoint;
     }
-
+    ModbusServer modbusServer = null;
     @Override
     protected void doStart() throws ScraperException {
+        if (!StringUtils.isEmpty(driverMode) && driverMode.equals("server")) {
+        
+                LOGGER.info("Registering driver for Protocol modbus-server (Modbus Server)");
+              
+                modbusServer =  new ModbusServer(this);
+                modbusServer.start();
+                return;    
+    
+        }
         if (!StringUtils.isEmpty(driverMode) && driverMode.equals("passive") && !StringUtils.isEmpty(protocal)) {
+          
             startSub();
         } else {
             if (trigger == null) {
@@ -234,6 +245,9 @@ public class Plc4XConsumer extends DefaultConsumer implements MessageExchangeLis
 
     @Override
     protected void doStop() {
+        if(modbusServer != null){
+            modbusServer.stop();
+        }
         // First stop the polling process
         if (future != null) {
             future.cancel(true);
@@ -252,6 +266,9 @@ public class Plc4XConsumer extends DefaultConsumer implements MessageExchangeLis
             }
         }
         PlcConnection connection = null;
+        if (!StringUtils.isEmpty(driverMode) && driverMode.equals("server")){
+            return;
+        }
         try {
             connection = plc4XEndpoint.getPlcDriverManager().getConnection(plc4XEndpoint.getUri());
             if (connection != null && connection.isConnected()) {
@@ -264,6 +281,7 @@ public class Plc4XConsumer extends DefaultConsumer implements MessageExchangeLis
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+
     }
 
     @Override

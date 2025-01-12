@@ -36,6 +36,7 @@ import com.google.gson.Gson;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -78,18 +79,24 @@ public class Plc4XComponent extends DefaultComponent {
         }
         if (parameters.containsKey("structs")) {
 
-            Map<String, Map<String, Object>> structs = getAndRemoveOrResolveReferenceParameter(parameters, "structs",
-                    Map.class);
-            LOGGER.info("aaaa=====" + structs.toString());
-            parameters.remove("structs");
-            parameters.put("structs", structs);
-            String strucConfig =new Gson().toJson(structs);
+            // Map<String, LinkedHashMap<String, Object>> structs = getAndRemoveOrResolveReferenceParameter(parameters, "structs",
+            //         LinkedHashMap.class);
+            // LinkedHashMap<String, LinkedHashMap<String, Object>> structs = getAndRemoveOrResolveReferenceParameter(parameters, "structs",LinkedHashMap.class);
+            PlcStructureConfig structs = getAndRemoveOrResolveReferenceParameter(parameters, "structs",PlcStructureConfig.class);
+            LOGGER.info("aaaa===a==" + structs.get().toString());
+            // LOGGER.info("kkkkkk===="+(LinkedHashMap)parameters.get("structs"));
+            for (String key : structs.get().keySet()) {
+                LOGGER.info("bbbb=====" + key);
+            }
+            // parameters.remove("structs");
+            // parameters.put("structs", structs);
+            String strucConfig =new Gson().toJson(structs.get(),LinkedHashMap.class);
             try {
                 strucConfig = URLEncoder.encode(strucConfig, "UTF-8");
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
-
+            LOGGER.info("============struct config:" + strucConfig);
             uri = uri.replaceAll("(?<=structs=)([^&]*)", strucConfig);
             LOGGER.info("uri:" + uri);
             // this.uri = this.uri.replaceAll("(?<=structs=)([^&]*)",

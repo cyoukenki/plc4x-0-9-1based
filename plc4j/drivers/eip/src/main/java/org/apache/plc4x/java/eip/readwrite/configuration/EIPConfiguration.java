@@ -19,6 +19,7 @@
 package org.apache.plc4x.java.eip.readwrite.configuration;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.apache.plc4x.java.eip.readwrite.EIPDriver;
@@ -90,7 +91,7 @@ public class EIPConfiguration implements Configuration, TcpTransportConfiguratio
     }
     public Map<String,Map<String,Object>> getStructInstance(){
         try{
-            Map<String,Map<String,Object>> res =  new Gson().fromJson(this.structs, HashMap.class);
+            Map<String,Map<String,Object>> res =  new Gson().fromJson(this.structs, LinkedHashMap.class);
             return res;
         }catch (Exception e){
             logger.warn("Undefined correct structure data source .");
