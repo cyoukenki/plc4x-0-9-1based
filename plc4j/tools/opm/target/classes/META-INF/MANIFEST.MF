@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk: 11.0.22
+Build-Jdk: 17.0.13
 Bundle-Description: Layer on top of Plc4X that enables mapping between O
  bjects and PLCs.
 Bundle-DocURL: https://www.apache.org/

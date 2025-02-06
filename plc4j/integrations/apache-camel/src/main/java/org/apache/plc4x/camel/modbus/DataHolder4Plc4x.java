@@ -95,9 +95,12 @@ public class DataHolder4Plc4x extends DataHolder {
     @Override
     public int[] readHoldingRegisterRange(int offset, int quantity) throws IllegalDataAddressException {
         for (ModbusEventListener l : modbusEventListenerList) {
-            l.readHoldingRegisterRange(offset,quantity);
+            int[] result = l.readHoldingRegisterRange(offset,quantity);
+            if(result != null){
+                return result;
+            }          
         }
-        return super.readHoldingRegisterRange(offset,quantity);
+        throw new IllegalDataAddressException(offset);
     }
 
 }

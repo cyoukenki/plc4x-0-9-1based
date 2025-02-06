@@ -83,34 +83,7 @@ public class ModbusServer {
             DataHolder4Plc4x dh = new DataHolder4Plc4x();
             dh.addEventListener(new Plc4xListener(consumer));
             slave.setDataHolder(dh);
-            // ModbusHoldingRegisters hr = new ModbusHoldingRegisters(10);
-            // hr.set(0, 12345);
-            // slave.getDataHolder().setHoldingRegisters(hr);
-            // slave.getDataHolder().setCoils(new ModbusCoils(
-            //         new byte[] { (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff }));
-
-            // /*
-            //  * since 1.2.8
-            //  */
-            // if (slave.isListening()) {
-            //     Runtime.getRuntime().addShutdownHook(new Thread() {
-            //         @Override
-            //         public void run() {
-            //             synchronized (slave) {
-            //                 slave.notifyAll();
-            //             }
-            //         }
-            //     });
-
-            //     synchronized (slave) {
-            //         slave.wait();
-            //     }
-
-            //     /*
-            //      * using master-branch it should be #slave.close();
-            //      */
-            //     slave.shutdown();
-            // }
+          
         } catch (RuntimeException e) {
             throw e;
         } catch (Exception e) {

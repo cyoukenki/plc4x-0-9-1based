@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk: 11.0.22
+Build-Jdk: 17.0.13
 Bundle-Activator: org.apache.plc4x.java.osgi.TransportActivator
 Bundle-Description: Virtual CAN transport which does work without any re
  al CAN interface.

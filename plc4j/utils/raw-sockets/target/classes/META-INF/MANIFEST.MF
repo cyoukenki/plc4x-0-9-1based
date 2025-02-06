@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk: 11.0.22
+Build-Jdk: 17.0.13
 Bundle-Description: An implementation of a Netty Channel that allows imp
  lementing protocols below the TCP and UCP level.
 Bundle-DocURL: https://www.apache.org/

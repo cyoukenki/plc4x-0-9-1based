@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk: 11.0.22
+Build-Jdk: 17.0.13
 Bundle-Description: Base classes used by all transports using libpcap (r
  aw-socket and pcap-replay).
 Bundle-DocURL: https://www.apache.org/

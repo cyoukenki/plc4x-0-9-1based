@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk: 11.0.22
+Build-Jdk: 17.0.13
 Bundle-Description: Utility to efficiently collect a large number of ite
  ms on multiple devices by different triggers.
 Bundle-DocURL: https://www.apache.org/

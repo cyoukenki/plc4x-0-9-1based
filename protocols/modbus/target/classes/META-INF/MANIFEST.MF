@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk: 11.0.22
+Build-Jdk: 17.0.13
 Built-By: ken
 Bundle-Description: Base protocol specifications for the Modbus protocol
 Bundle-DocURL: https://www.apache.org/

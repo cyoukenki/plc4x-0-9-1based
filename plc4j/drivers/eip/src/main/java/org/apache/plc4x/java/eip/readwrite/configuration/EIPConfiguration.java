@@ -21,6 +21,8 @@ package org.apache.plc4x.java.eip.readwrite.configuration;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
+import java.util.LinkedHashMap;
 
 import org.apache.plc4x.java.eip.readwrite.EIPDriver;
 import org.apache.plc4x.java.eip.readwrite.field.EipStruct;
@@ -89,12 +91,28 @@ public class EIPConfiguration implements Configuration, TcpTransportConfiguratio
        
         return this.structs;
     }
-    public Map<String,Map<String,Object>> getStructInstance(){
+    public LinkedHashMap<String,LinkedHashMap<String,Object>> getStructInstance(){
         try{
-            Map<String,Map<String,Object>> res =  new Gson().fromJson(this.structs, LinkedHashMap.class);
-            return res;
+            logger.info("+++++++++++"+structs);
+            LinkedHashMap<String,LinkedHashMap<String,Object>> res =  new Gson().fromJson(this.structs, LinkedHashMap.class);
+
+            LinkedHashMap<String, LinkedHashMap<String, Object>> result = new LinkedHashMap<>();
+           
+            for (String key : res.keySet()) {
+                LinkedHashMap<String, Object>  subMap = new LinkedHashMap<>();
+                subMap =  sortNestedMap(res.get(key));
+                // this.trimMapKeys(subMap);
+                result.put(key, subMap);
+            }
+            LinkedHashMap<String, LinkedHashMap<String, Object>> result1 = new LinkedHashMap<>();
+            for (String key : result.keySet()) {
+               
+                result1.put(key, this.processNestedMapKeys(result.get(key)));
+            }
+            
+            return result1;
         }catch (Exception e){
-            logger.warn("Undefined correct structure data source .");
+            logger.warn("Undefined correct structure data source ."+e.getMessage());
             return null;
         }
       
@@ -110,6 +128,58 @@ public class EIPConfiguration implements Configuration, TcpTransportConfiguratio
     public int getDefaultPort() {
         return EIPDriver.PORT;
     }
+
+    private LinkedHashMap<String, Object> sortNestedMap(Map<String, Object> map) {
+        // 使用TreeMap来保持排序
+        TreeMap<String, Object> sortedMap = new TreeMap<>((key1, key2) -> {
+            // 提取键中的数字部分进行排序
+            int num1 = Integer.parseInt(key1.split(":")[1]);
+            int num2 = Integer.parseInt(key2.split(":")[1]);
+            return Integer.compare(num1, num2);
+        });
+
+        for (Map.Entry<String, Object> entry : map.entrySet()) {
+          
+            if (entry.getValue() instanceof Map<?, ?>) {
+                // 如果值是Map，递归排序
+                @SuppressWarnings("unchecked")
+                Map<String, Object> subMap = (Map<String, Object>) entry.getValue();
+                sortedMap.put(entry.getKey(), sortNestedMap(subMap));
+            } else {
+                // 否则直接放入
+                sortedMap.put(entry.getKey(), entry.getValue());  
+            }
+        }
+        LinkedHashMap<String, Object> res=  new LinkedHashMap<>();
+        res.putAll(sortedMap);
+        return res;
+    }
+
+    private LinkedHashMap<String, Object> processNestedMapKeys(LinkedHashMap<String, Object> map) {
+        LinkedHashMap<String, Object> processedMap = new LinkedHashMap<>();
+
+        for (Map.Entry<String, Object> entry : map.entrySet()) {
+            String key = entry.getKey();
+            Object value = entry.getValue();
+
+            // 处理键：去掉冒号及后面的内容
+            String processedKey = key.contains(":") ? key.split(":")[0] : key;
+
+            if (value instanceof Map<?, ?>) {
+                // 如果值是Map，递归处理
+                @SuppressWarnings("unchecked")
+                LinkedHashMap<String, Object> subMap = (LinkedHashMap<String, Object>) value;
+                processedMap.put(processedKey, processNestedMapKeys(subMap));
+            } else {
+                // 否则直接放入处理后的键
+                processedMap.put(processedKey, value);
+            }
+        }
+
+        return processedMap;
+    }
+
+
 
 
     

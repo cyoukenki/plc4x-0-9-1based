@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk: 11.0.22
+Build-Jdk: 17.0.13
 Bundle-Activator: org.apache.plc4x.java.osgi.TransportActivator
 Bundle-Description: Transport using libpcap to replay pcapng files to si
  mulate a raw socket.

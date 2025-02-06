@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk: 11.0.22
+Build-Jdk: 17.0.13
 Bundle-Description: Base classes needed to implement plc4x drivers for t
  esting using internal byte streams.
 Bundle-DocURL: https://www.apache.org/

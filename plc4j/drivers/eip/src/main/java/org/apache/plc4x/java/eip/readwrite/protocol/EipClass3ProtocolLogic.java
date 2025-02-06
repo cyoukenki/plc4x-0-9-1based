@@ -76,7 +76,7 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
     private int sequenceCount = 1;
 
     private int dataPackageByteLength = 1990;
-    private Map<String,Map<String,Object>> structs;
+    private LinkedHashMap<String,LinkedHashMap<String,Object>> structs;
     private Map<String,Short> crcs = new HashMap<>();
 
     @Override

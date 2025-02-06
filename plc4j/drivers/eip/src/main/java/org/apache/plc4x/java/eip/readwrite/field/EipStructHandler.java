@@ -133,7 +133,7 @@ public class EipStructHandler {
                                 break;
                             case BOOL:
                                 list.add(new PlcBOOL(data.getBoolean(index)));
-                                index += type.getSize();
+                                index += type.getSize()+1;
                                 break;
                             case DWORD:
                                 list.add(new PlcDWORD(data.getIntLE(index)));
@@ -161,31 +161,31 @@ public class EipStructHandler {
                             index += type.getSize();
                             break;
                         case UDINT:
-                            result.put(key, new PlcUDINT(data.getUnsignedInt(index)));
+                            result.put(key, new PlcUDINT(data.getUnsignedIntLE(index)));
                             index += type.getSize();
                             break;
                         case DINT:
-                            result.put(key, new PlcDINT(data.getInt(index)));
+                            result.put(key, new PlcDINT(data.getIntLE(index)));
                             index += type.getSize();
                             break;
                         case UINT:
-                            result.put(key, new PlcUINT(data.getUnsignedShort(index)));
+                            result.put(key, new PlcUINT(data.getUnsignedShortLE(index)));
                             index += type.getSize();
                             break;
                         case INT:
-                            result.put(key, new PlcINT(data.getShort(index)));
+                            result.put(key, new PlcINT(data.getShortLE(index)));
                             index += type.getSize();
                             break;
                         case WORD:
-                            result.put(key, new PlcWORD(data.getUnsignedShort(index)));
+                            result.put(key, new PlcWORD(data.getUnsignedShortLE(index)));
                             index += type.getSize();
                             break;
                         case ULINT:
-                            result.put(key, new PlcULINT(data.getLong(index)));
+                            result.put(key, new PlcULINT(data.getLongLE(index)));
                             index += type.getSize();
                             break;
                         case LINT:
-                            result.put(key, new PlcLINT(data.getLong(index)));
+                            result.put(key, new PlcLINT(data.getLongLE(index)));
                             index += type.getSize();
                             break;
                         case USINT:
@@ -197,23 +197,23 @@ public class EipStructHandler {
                             index += type.getSize();
                             break;
                         case REAL:
-                            result.put(key, new PlcREAL(data.getFloat(index)));
+                            result.put(key, new PlcREAL(data.getFloatLE(index)));
                             index += type.getSize();
                             break;
                         case LREAL:
-                            result.put(key, new PlcLREAL(data.getDouble(index)));
+                            result.put(key, new PlcLREAL(data.getDoubleLE(index)));
                             index += type.getSize();
                             break;
                         case BOOL:
                             result.put(key, new PlcBOOL(data.getBoolean(index)));
-                            index += type.getSize();
+                            index += type.getSize()+1;
                             break;
                         case DWORD:
-                            result.put(key, new PlcDWORD(data.getInt(index)));
+                            result.put(key, new PlcDWORD(data.getIntLE(index)));
                             index += type.getSize();
                             break;
                         case LWORD:
-                            result.put(key, new PlcDWORD(data.getLong(index)));
+                            result.put(key, new PlcDWORD(data.getLongLE(index)));
                             index += type.getSize();
                             break;
                         case STRING:
