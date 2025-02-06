@@ -523,6 +523,66 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
         boolean isArray = false;
         boolean isStruct = false;
         String tagFinal = tag;
+        if (tag.contains(".")) {
+            tagFinal = tag.substring(0, tag.indexOf("."));
+            isStruct = true;
+        }
+        if (tagFinal.contains("[")) {
+            isArray = true;
+            String index = tagFinal.substring(tagFinal.indexOf("[") + 1, tagFinal.indexOf("]"));
+            arrayIndex = Integer.parseInt(index);
+            tagFinal = tagFinal.substring(0, tag.indexOf("["));
+        }
+      
+        boolean isPadded = tagFinal.length() % 2 != 0;
+        int dataSegLength = 2 + tagFinal.length()
+                + (isPadded ? 1 : 0)
+                + (isArray ? 2 : 0);
+
+        if (isStruct) {
+            for (String subStr : tag.substring(tag.indexOf(".") + 1).split("\\.", -1)) {
+                dataSegLength += 2 + subStr.length() + subStr.length() % 2;
+            }
+        }
+        ByteBuffer buffer = ByteBuffer.allocate(dataSegLength).order(ByteOrder.LITTLE_ENDIAN);
+        if (isArray) {
+            if (arrayIndex > 255) {
+                buffer = ByteBuffer.allocate(dataSegLength + 2).order(ByteOrder.LITTLE_ENDIAN);
+            }
+        }
+        buffer.put((byte) 0x91);
+        buffer.put((byte) tagFinal.length());
+        byte[] tagBytes = null;
+        tagBytes = tagFinal.getBytes(StandardCharsets.US_ASCII);
+
+        buffer.put(tagBytes);
+        buffer.position(2 + tagBytes.length);
+
+        if (isPadded) {
+            buffer.put((byte) 0x00);
+        }
+
+       
+        if (isStruct) {
+            buffer.put(toAnsi(tag.substring(tag.indexOf(".") + 1, tag.length())));
+        }
+        if (isArray) {
+            if (arrayIndex > 255) {
+                buffer.put((byte) 0x29);
+                buffer.put((byte) 0x00);
+                buffer.putShort((short) arrayIndex);
+            } else {
+                buffer.put((byte) 0x28);
+                buffer.put((byte) arrayIndex);
+            }
+        }
+        return buffer.array();
+    }
+    private byte[] toAnsiSubName(String tag) {
+        int arrayIndex = 0;
+        boolean isArray = false;
+        boolean isStruct = false;
+        String tagFinal = tag;
         if (tag.contains("[")) {
             isArray = true;
             String index = tag.substring(tag.indexOf("[") + 1, tag.indexOf("]"));
@@ -561,6 +621,10 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
             buffer.put((byte) 0x00);
         }
 
+       
+        if (isStruct) {
+            buffer.put(toAnsi(tag.substring(tag.indexOf(".") + 1, tag.length())));
+        }
         if (isArray) {
             if (arrayIndex > 255) {
                 buffer.put((byte) 0x29);
@@ -570,9 +634,6 @@ public class EipClass3ProtocolLogic extends Plc4xProtocolBase<EipPacket> impleme
                 buffer.put((byte) 0x28);
                 buffer.put((byte) arrayIndex);
             }
-        }
-        if (isStruct) {
-            buffer.put(toAnsi(tag.substring(tag.indexOf(".") + 1, tag.length())));
         }
         return buffer.array();
     }
